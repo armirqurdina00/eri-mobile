@@ -42,6 +42,7 @@
   "PromoBar": {
     "badge": "Ofertë me Kohë të Kufizuar",
     "title": "Këmbeni pajisjen tuaj të vjetër",
+    "description": "Merrni deri në <bold>600$ zbritje</bold> kur këmbeni iPhone-in tuaj të vjetër me modelin më të ri. Transport falas i përfshirë.",
     "descriptionPrefix": "Merrni deri në ",
     "descriptionBold": "600$ zbritje",
     "descriptionSuffix": " kur këmbeni iPhone-in tuaj të vjetër me modelin më të ri. Transport falas i përfshirë.",
