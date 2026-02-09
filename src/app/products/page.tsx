@@ -1,14 +1,16 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useRef, useEffect } from "react";
 import { products } from "@/data/products";
 import ProductCard from "@/components/ProductCard";
-import { SlidersHorizontal } from "lucide-react";
-import { motion } from "framer-motion";
+import { ChevronDown, Check } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 import { useSearchParams } from "next/navigation";
 import { Suspense } from "react";
+import { useTranslations } from "next-intl";
 
 function ProductsContent() {
+  const t = useTranslations("Products");
   const searchParams = useSearchParams();
   const categoryParam = searchParams.get("category");
 
@@ -16,8 +18,25 @@ function ProductsContent() {
     categoryParam || "All"
   );
   const [sortBy, setSortBy] = useState<string>("featured");
+  const [sortOpen, setSortOpen] = useState(false);
+  const sortRef = useRef<HTMLDivElement>(null);
 
-  const categories = ["All", "Pro", "Standard", "Accessories"];
+  useEffect(() => {
+    function handleClickOutside(e: MouseEvent) {
+      if (sortRef.current && !sortRef.current.contains(e.target as Node)) {
+        setSortOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  const categories = [
+    { key: "all", label: t("all") },
+    { key: "pro", label: t("pro") },
+    { key: "standard", label: t("standard") },
+    { key: "accessories", label: t("accessories") },
+  ];
 
   const filtered = useMemo(() => {
     let result =
@@ -51,10 +70,10 @@ function ProductsContent() {
           animate={{ opacity: 1, y: 0 }}
         >
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-            All Products
+            {t("title")}
           </h1>
           <p className="mt-3 text-lg text-gray-500">
-            Find the perfect iPhone for you
+            {t("subtitle")}
           </p>
         </motion.div>
 
@@ -69,38 +88,82 @@ function ProductsContent() {
           <div className="flex flex-wrap gap-2">
             {categories.map((cat) => (
               <button
-                key={cat}
-                onClick={() => setSelectedCategory(cat)}
-                className={`rounded-full px-5 py-2 text-sm font-medium transition-all ${
-                  selectedCategory === cat
+                key={cat.key}
+                onClick={() => setSelectedCategory(cat.key === "all" ? "All" : cat.key === "pro" ? "Pro" : cat.key === "standard" ? "Standard" : "Accessories")}
+                className={`rounded-full px-5 py-2 text-sm font-medium transition-all ${selectedCategory === (cat.key === "all" ? "All" : cat.key === "pro" ? "Pro" : cat.key === "standard" ? "Standard" : "Accessories")
                     ? "bg-gray-900 text-white shadow-lg"
                     : "bg-gray-100 text-gray-600 hover:bg-gray-200"
-                }`}
+                  }`}
               >
-                {cat}
+                {cat.label}
               </button>
             ))}
           </div>
 
           {/* Sort */}
-          <div className="flex items-center gap-2">
-            <SlidersHorizontal className="h-4 w-4 text-gray-400" />
-            <select
-              value={sortBy}
-              onChange={(e) => setSortBy(e.target.value)}
-              className="rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+          <div ref={sortRef} className="relative">
+            <button
+              onClick={() => setSortOpen((o) => !o)}
+              className="flex items-center gap-2 rounded-xl border border-gray-200 bg-white px-4 py-2.5 text-sm font-medium text-gray-700 transition-all hover:border-gray-300 hover:shadow-sm"
             >
-              <option value="featured">Featured</option>
-              <option value="price-low">Price: Low to High</option>
-              <option value="price-high">Price: High to Low</option>
-              <option value="rating">Top Rated</option>
-            </select>
+              {
+                [
+                  { value: "featured", label: t("featured") },
+                  { value: "price-low", label: t("priceLowHigh") },
+                  { value: "price-high", label: t("priceHighLow") },
+                  { value: "rating", label: t("topRated") },
+                ].find((o) => o.value === sortBy)?.label
+              }
+              <ChevronDown
+                className={`h-4 w-4 text-gray-400 transition-transform duration-200 ${sortOpen ? "rotate-180" : ""}`}
+              />
+            </button>
+
+            <AnimatePresence>
+              {sortOpen && (
+                <motion.div
+                  initial={{ opacity: 0, y: 6, scale: 0.97 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  exit={{ opacity: 0, y: 6, scale: 0.97 }}
+                  transition={{ duration: 0.15 }}
+                  className="absolute right-0 z-30 mt-2 w-48 overflow-hidden rounded-xl border border-gray-200 bg-white py-1 shadow-lg"
+                >
+                  {[
+                    { value: "featured", label: t("featured") },
+                    { value: "price-low", label: t("priceLowHigh") },
+                    { value: "price-high", label: t("priceHighLow") },
+                    { value: "rating", label: t("topRated") },
+                  ].map((option) => (
+                    <button
+                      key={option.value}
+                      onClick={() => {
+                        setSortBy(option.value);
+                        setSortOpen(false);
+                      }}
+                      className={`flex w-full items-center justify-between px-4 py-2.5 text-sm transition-colors ${
+                        sortBy === option.value
+                          ? "bg-gray-50 font-semibold text-gray-900"
+                          : "text-gray-600 hover:bg-gray-50"
+                      }`}
+                    >
+                      {option.label}
+                      {sortBy === option.value && (
+                        <Check className="h-4 w-4 text-gray-900" />
+                      )}
+                    </button>
+                  ))}
+                </motion.div>
+              )}
+            </AnimatePresence>
           </div>
         </motion.div>
 
         {/* Results count */}
         <p className="mt-6 text-sm text-gray-400">
-          {filtered.length} product{filtered.length !== 1 && "s"}
+          {filtered.length === 1
+            ? t("productCount", { count: filtered.length })
+            : t("productsCount", { count: filtered.length })
+          }
         </p>
 
         {/* Product Grid */}

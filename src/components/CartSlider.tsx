@@ -5,8 +5,10 @@ import { X, Plus, Minus, ShoppingBag, ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export default function CartSlider() {
+  const t = useTranslations("CartSlider");
   const { items, removeFromCart, updateQuantity, totalPrice, isCartOpen, setIsCartOpen } =
     useCart();
 
@@ -35,9 +37,9 @@ export default function CartSlider() {
             <div className="flex items-center justify-between border-b border-gray-100 px-6 py-5">
               <div className="flex items-center gap-3">
                 <ShoppingBag className="h-5 w-5 text-gray-900" />
-                <h2 className="text-lg font-semibold text-gray-900">Your Cart</h2>
+                <h2 className="text-lg font-semibold text-gray-900">{t("yourCart")}</h2>
                 <span className="rounded-full bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-600">
-                  {items.length} {items.length === 1 ? "item" : "items"}
+                  {items.length} {items.length === 1 ? t("item") : t("items")}
                 </span>
               </div>
               <button
@@ -55,14 +57,14 @@ export default function CartSlider() {
                   <div className="flex h-20 w-20 items-center justify-center rounded-full bg-gray-50">
                     <ShoppingBag className="h-8 w-8 text-gray-300" />
                   </div>
-                  <p className="mt-4 text-sm font-medium text-gray-900">Your cart is empty</p>
-                  <p className="mt-1 text-sm text-gray-500">Start shopping to add items</p>
+                  <p className="mt-4 text-sm font-medium text-gray-900">{t("emptyTitle")}</p>
+                  <p className="mt-1 text-sm text-gray-500">{t("emptySubtitle")}</p>
                   <Link
                     href="/products"
                     onClick={() => setIsCartOpen(false)}
                     className="mt-6 rounded-full bg-gray-900 px-6 py-2.5 text-sm font-medium text-white transition-colors hover:bg-gray-800"
                   >
-                    Browse Products
+                    {t("browseProducts")}
                   </Link>
                 </div>
               ) : (
@@ -135,18 +137,18 @@ export default function CartSlider() {
             {items.length > 0 && (
               <div className="border-t border-gray-100 px-6 py-5">
                 <div className="flex items-center justify-between mb-4">
-                  <span className="text-sm text-gray-500">Subtotal</span>
+                  <span className="text-sm text-gray-500">{t("subtotal")}</span>
                   <span className="text-lg font-bold text-gray-900">
                     ${totalPrice.toLocaleString()}
                   </span>
                 </div>
-                <p className="mb-4 text-xs text-gray-400">Shipping & taxes calculated at checkout</p>
+                <p className="mb-4 text-xs text-gray-400">{t("shippingNote")}</p>
                 <Link
                   href="/checkout"
                   onClick={() => setIsCartOpen(false)}
                   className="flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-blue-600 to-violet-600 px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-blue-500/25 transition-all hover:shadow-xl hover:shadow-blue-500/30 hover:brightness-110"
                 >
-                  Checkout
+                  {t("checkout")}
                   <ArrowRight className="h-4 w-4" />
                 </Link>
               </div>

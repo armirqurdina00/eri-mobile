@@ -4,8 +4,10 @@ import { products } from "@/data/products";
 import ProductCard from "@/components/ProductCard";
 import { motion } from "framer-motion";
 import { Sparkles, Clock } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function DealsPage() {
+  const t = useTranslations("Deals");
   const deals = products.filter((p) => p.originalPrice);
 
   return (
@@ -21,16 +23,16 @@ export default function DealsPage() {
             <Sparkles className="h-6 w-6 text-white" />
           </div>
           <h1 className="mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-            Hot Deals
+            {t("title")}
           </h1>
           <p className="mt-3 text-lg text-gray-500">
-            Limited-time offers on premium devices
+            {t("subtitle")}
           </p>
 
           {/* Urgency Banner */}
           <div className="mt-8 inline-flex items-center gap-2 rounded-full bg-red-50 px-5 py-2.5 text-sm font-medium text-red-700 ring-1 ring-red-100">
             <Clock className="h-4 w-4" />
-            Sale ends soon — while supplies last
+            {t("urgency")}
           </div>
         </motion.div>
 
@@ -48,10 +50,9 @@ export default function DealsPage() {
           viewport={{ once: true }}
           className="mt-20 rounded-3xl bg-gradient-to-r from-gray-900 to-gray-800 p-8 text-center text-white sm:p-12"
         >
-          <h2 className="text-3xl font-bold">Trade In & Save More</h2>
+          <h2 className="text-3xl font-bold">{t("tradeInTitle")}</h2>
           <p className="mt-3 text-lg text-gray-300">
-            Get up to $600 off when you trade in your old device. Plus free
-            shipping on all orders.
+            {t("tradeInDescription")}
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-6 text-sm text-gray-400">
             {["iPhone 15 Pro Max → $350", "iPhone 14 Pro → $250", "iPhone 13 → $150"].map(

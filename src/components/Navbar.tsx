@@ -6,11 +6,14 @@ import { ShoppingBag, Menu, X, Search, Smartphone } from "lucide-react";
 import { useCart } from "@/context/CartContext";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 export default function Navbar() {
   const { totalItems, setIsCartOpen } = useCart();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const t = useTranslations("Navbar");
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -46,10 +49,10 @@ export default function Navbar() {
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-1">
               {[
-                { href: "/", label: "Home" },
-                { href: "/products", label: "Products" },
-                { href: "/deals", label: "Deals" },
-                { href: "/about", label: "About" },
+                { href: "/", label: t("home") },
+                { href: "/products", label: t("products") },
+                { href: "/deals", label: t("deals") },
+                { href: "/about", label: t("about") },
               ].map((link) => (
                 <Link
                   key={link.href}
@@ -63,6 +66,10 @@ export default function Navbar() {
 
             {/* Right Actions */}
             <div className="flex items-center gap-2">
+              <div className="hidden md:block">
+                <LanguageSwitcher />
+              </div>
+
               <button className="hidden md:flex h-10 w-10 items-center justify-center rounded-full text-gray-500 transition-colors hover:bg-gray-100 hover:text-gray-700">
                 <Search className="h-5 w-5" />
               </button>
@@ -105,10 +112,10 @@ export default function Navbar() {
           >
             <div className="flex flex-col gap-1 px-4 py-4">
               {[
-                { href: "/", label: "Home" },
-                { href: "/products", label: "Products" },
-                { href: "/deals", label: "Deals" },
-                { href: "/about", label: "About" },
+                { href: "/", label: t("home") },
+                { href: "/products", label: t("products") },
+                { href: "/deals", label: t("deals") },
+                { href: "/about", label: t("about") },
               ].map((link) => (
                 <Link
                   key={link.href}
@@ -119,6 +126,11 @@ export default function Navbar() {
                   {link.label}
                 </Link>
               ))}
+
+              {/* Language switcher */}
+              <div className="mt-2 border-t border-gray-100 pt-3 px-4">
+                <LanguageSwitcher />
+              </div>
             </div>
           </motion.div>
         )}

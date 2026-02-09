@@ -4,8 +4,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Zap, Shield, Truck } from "lucide-react";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 export default function Hero() {
+  const t = useTranslations("Hero");
   return (
     <section className="relative min-h-screen overflow-hidden bg-[#fafafa]">
       {/* Background Gradients */}
@@ -29,7 +31,7 @@ export default function Hero() {
             className="inline-flex items-center gap-2 rounded-full bg-blue-50 px-4 py-1.5 text-sm font-medium text-blue-700 ring-1 ring-blue-100"
           >
             <Zap className="h-3.5 w-3.5" />
-            New iPhone 17 Series Available
+            {t("badge")}
           </motion.div>
 
           <motion.h1
@@ -38,11 +40,11 @@ export default function Hero() {
             transition={{ delay: 0.3, duration: 0.7 }}
             className="mt-6 text-5xl font-bold leading-[1.1] tracking-tight text-gray-900 sm:text-6xl lg:text-7xl"
           >
-            The Future of{" "}
+            {t("titlePart1")}{" "}
             <span className="bg-gradient-to-r from-blue-600 via-violet-600 to-purple-600 bg-clip-text text-transparent">
-              Mobile
+              {t("titleHighlight")}
             </span>{" "}
-            is Here
+            {t("titlePart2")}
           </motion.h1>
 
           <motion.p
@@ -51,7 +53,7 @@ export default function Hero() {
             transition={{ delay: 0.4, duration: 0.7 }}
             className="mt-6 text-lg leading-relaxed text-gray-500 sm:text-xl"
           >
-            Discover the latest iPhone lineup at Eri Mobile Shop. Premium devices, competitive prices, and exceptional service — all in one place.
+            {t("description")}
           </motion.p>
 
           <motion.div
@@ -64,14 +66,14 @@ export default function Hero() {
               href="/products"
               className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-blue-600 to-violet-600 px-8 py-4 text-sm font-semibold text-white shadow-xl shadow-blue-500/25 transition-all hover:shadow-2xl hover:shadow-blue-500/30 hover:brightness-110"
             >
-              Shop Now
+              {t("shopNow")}
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Link>
             <Link
               href="/products"
               className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white px-8 py-4 text-sm font-semibold text-gray-900 shadow-sm transition-all hover:border-gray-300 hover:shadow-md"
             >
-              View All Models
+              {t("viewAllModels")}
             </Link>
           </motion.div>
 
@@ -83,9 +85,9 @@ export default function Hero() {
             className="mt-12 flex flex-wrap items-center gap-6 lg:gap-8"
           >
             {[
-              { icon: Truck, label: "Free Shipping" },
-              { icon: Shield, label: "1-Year Warranty" },
-              { icon: Zap, label: "Same Day Delivery" },
+              { icon: Truck, label: t("freeShipping") },
+              { icon: Shield, label: t("warranty") },
+              { icon: Zap, label: t("sameDayDelivery") },
             ].map(({ icon: Icon, label }) => (
               <div key={label} className="flex items-center gap-2 text-sm text-gray-500">
                 <Icon className="h-4 w-4 text-blue-600" />
@@ -119,8 +121,8 @@ export default function Hero() {
             transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
             className="absolute -left-4 top-1/4 rounded-2xl bg-white/90 px-4 py-3 shadow-xl backdrop-blur-sm sm:left-0 lg:-left-8"
           >
-            <p className="text-xs font-semibold text-gray-900">A18 Pro Chip</p>
-            <p className="text-xs text-gray-500">Fastest ever</p>
+            <p className="text-xs font-semibold text-gray-900">{t("a18ProChip")}</p>
+            <p className="text-xs text-gray-500">{t("fastestEver")}</p>
           </motion.div>
 
           <motion.div

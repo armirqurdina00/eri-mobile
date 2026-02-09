@@ -5,8 +5,10 @@ import ProductCard from "./ProductCard";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 export default function FeaturedProducts() {
+  const t = useTranslations("FeaturedProducts");
   const featured = products.filter((p) => p.category !== "Accessories").slice(0, 4);
 
   return (
@@ -20,17 +22,17 @@ export default function FeaturedProducts() {
         >
           <div>
             <p className="text-sm font-semibold uppercase tracking-wider text-blue-600">
-              Featured
+              {t("subtitle")}
             </p>
             <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Popular iPhones
+              {t("title")}
             </h2>
           </div>
           <Link
             href="/products"
             className="hidden items-center gap-1 text-sm font-semibold text-gray-600 transition-colors hover:text-blue-600 sm:flex"
           >
-            View All
+            {t("viewAll")}
             <ArrowRight className="h-4 w-4" />
           </Link>
         </motion.div>
@@ -46,7 +48,7 @@ export default function FeaturedProducts() {
             href="/products"
             className="inline-flex items-center gap-1 rounded-full bg-gray-100 px-6 py-2.5 text-sm font-semibold text-gray-900 transition-colors hover:bg-gray-200"
           >
-            View All Products
+            {t("viewAllProducts")}
             <ArrowRight className="h-4 w-4" />
           </Link>
         </div>

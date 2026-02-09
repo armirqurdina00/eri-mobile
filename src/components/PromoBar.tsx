@@ -3,8 +3,11 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function PromoBar() {
+  const t = useTranslations("PromoBar");
+
   return (
     <section className="relative overflow-hidden bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 py-24">
       {/* Grid Pattern */}
@@ -18,27 +21,29 @@ export default function PromoBar() {
           viewport={{ once: true }}
         >
           <span className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm font-medium text-blue-400 backdrop-blur-sm">
-            Limited Time Offer
+            {t("badge")}
           </span>
           <h2 className="mt-6 text-4xl font-bold tracking-tight text-white sm:text-5xl">
-            Trade in your old device
+            {t("title")}
           </h2>
           <p className="mt-4 text-lg text-gray-400">
-            Get up to <span className="font-semibold text-white">$600 off</span> when you trade in your old iPhone for the latest model. Free shipping included.
+            {t("descriptionPrefix")}
+            <span className="font-semibold text-white">{t("descriptionBold")}</span>
+            {t("descriptionSuffix")}
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Link
               href="/products"
               className="group inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 text-sm font-semibold text-gray-900 shadow-xl transition-all hover:shadow-2xl hover:bg-gray-50"
             >
-              Shop the Sale
+              {t("shopTheSale")}
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Link>
             <Link
               href="/about"
               className="inline-flex items-center gap-2 rounded-full border border-white/20 px-8 py-4 text-sm font-semibold text-white transition-all hover:bg-white/10"
             >
-              Learn More
+              {t("learnMore")}
             </Link>
           </div>
         </motion.div>
