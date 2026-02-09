@@ -24,7 +24,7 @@ export const products: Product[] = [
     subtitle: "The ultimate iPhone.",
     price: 1499,
     image: "https://m.media-amazon.com/images/I/51fpWBn0ZQL._AC_UF894,1000_QL80_.jpg",
-    color: "Silver",
+    color: "Cosmic Orange",
     colors: [
       { name: "Cosmic Orange", hex: "#FF6F00", image: "https://m.media-amazon.com/images/I/51fpWBn0ZQL._AC_UF894,1000_QL80_.jpg" },
       { name: "Deep Blue", hex: "#1F3B6F", image: "https://m.media-amazon.com/images/I/41exs-G+5BL._AC_UF894,1000_QL80_.jpg" },
