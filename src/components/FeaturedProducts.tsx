@@ -1,15 +1,24 @@
 "use client";
 
-import { products } from "@/data/products";
+import type { Product } from "@/data/products";
 import ProductCard from "./ProductCard";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 
-export default function FeaturedProducts() {
+export default function FeaturedProducts({
+  products,
+}: {
+  products?: Product[];
+}) {
   const t = useTranslations("FeaturedProducts");
-  const featured = products.filter((p) => p.category !== "Accessories").slice(0, 4);
+
+  // Use passed products or empty array (will be passed from server component)
+  const allProducts = products || [];
+  const featured = allProducts
+    .filter((p) => p.category !== "Accessories")
+    .slice(0, 4);
 
   return (
     <section className="bg-white py-24">

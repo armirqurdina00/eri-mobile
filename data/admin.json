@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "id": "admin-1",
+      "email": "admin@erimobile.com",
+      "passwordHash": "$2b$12$NTty7LL7AlBZ74Q79RIJae2xlTiGX0TQHYK55/XT69o2NFrlQLNay",
+      "name": "Admin",
+      "role": "admin"
+    }
+  ],
+  "settings": {
+    "storeName": "Eri Mobile Shop",
+    "storeEmail": "info@erimobile.com",
+    "storePhone": "+383 44 123 456",
+    "storeAddress": "Gjakovë, Kosovë",
+    "currency": "EUR",
+    "taxRate": 0.08,
+    "freeShippingThreshold": 0
+  }
+}

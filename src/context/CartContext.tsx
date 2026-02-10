@@ -22,6 +22,13 @@ interface CartContextType {
   setIsCartOpen: (open: boolean) => void;
 }
 
+function getItemPrice(item: CartItem): number {
+  const variant = item.product.variants.find(
+    (v) => v.color === item.selectedColor && v.storage === item.selectedStorage
+  );
+  return variant?.price ?? item.product.variants[0]?.price ?? 0;
+}
+
 const CartContext = createContext<CartContextType | undefined>(undefined);
 
 export function CartProvider({ children }: { children: ReactNode }) {
@@ -66,7 +73,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
   const totalItems = items.reduce((sum, item) => sum + item.quantity, 0);
   const totalPrice = items.reduce(
-    (sum, item) => sum + item.product.price * item.quantity,
+    (sum, item) => sum + getItemPrice(item) * item.quantity,
     0
   );
 

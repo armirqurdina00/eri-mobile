@@ -6,6 +6,7 @@ import { Star, ShoppingBag } from "lucide-react";
 import { Product } from "@/data/products";
 import { useCart } from "@/context/CartContext";
 import { motion } from "framer-motion";
+import { useMemo } from "react";
 
 export default function ProductCard({
   product,
@@ -15,6 +16,29 @@ export default function ProductCard({
   index?: number;
 }) {
   const { addToCart } = useCart();
+
+  const firstVariant = product.variants[0];
+  const minPrice = useMemo(
+    () => Math.min(...product.variants.map((v) => v.price)),
+    [product.variants]
+  );
+  const maxOriginalPrice = useMemo(() => {
+    const originals = product.variants
+      .filter((v) => v.originalPrice)
+      .map((v) => v.originalPrice!);
+    return originals.length > 0 ? Math.max(...originals) : undefined;
+  }, [product.variants]);
+
+  // Unique colors for color dots
+  const uniqueColors = useMemo(() => {
+    const seen = new Map<string, { color: string; colorHex: string }>();
+    product.variants.forEach((v) => {
+      if (!seen.has(v.color)) {
+        seen.set(v.color, { color: v.color, colorHex: v.colorHex });
+      }
+    });
+    return [...seen.values()];
+  }, [product.variants]);
 
   return (
     <motion.div
@@ -63,16 +87,16 @@ export default function ProductCard({
 
         {/* Colors */}
         <div className="mt-3 flex items-center gap-1.5">
-          {product.colors.slice(0, 4).map((c) => (
+          {uniqueColors.slice(0, 4).map((c) => (
             <span
-              key={c.name}
+              key={c.color}
               className="h-4 w-4 rounded-full border border-gray-200 shadow-sm"
-              style={{ backgroundColor: c.hex }}
-              title={c.name}
+              style={{ backgroundColor: c.colorHex }}
+              title={c.color}
             />
           ))}
-          {product.colors.length > 4 && (
-            <span className="text-xs text-gray-400">+{product.colors.length - 4}</span>
+          {uniqueColors.length > 4 && (
+            <span className="text-xs text-gray-400">+{uniqueColors.length - 4}</span>
           )}
         </div>
 
@@ -99,18 +123,20 @@ export default function ProductCard({
         <div className="mt-auto flex items-end justify-between pt-4">
           <div className="flex items-baseline gap-2">
             <span className="text-xl font-bold text-gray-900">
-              €{product.price.toLocaleString()}
+              €{minPrice.toLocaleString()}
             </span>
-            {product.originalPrice && (
+            {maxOriginalPrice && (
               <span className="text-sm text-gray-400 line-through">
-                €{product.originalPrice.toLocaleString()}
+                €{maxOriginalPrice.toLocaleString()}
               </span>
             )}
           </div>
           <button
             onClick={(e) => {
               e.preventDefault();
-              addToCart(product, product.color, product.storage[0] || "");
+              if (firstVariant) {
+                addToCart(product, firstVariant.color, firstVariant.storage);
+              }
             }}
             className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-900 text-white shadow-lg transition-all hover:bg-blue-600 hover:scale-110 active:scale-95"
           >

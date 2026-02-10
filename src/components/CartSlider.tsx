@@ -123,7 +123,7 @@ export default function CartSlider() {
                             </button>
                           </div>
                           <span className="text-sm font-semibold text-gray-900">
-                            ${(item.product.price * item.quantity).toLocaleString()}
+                            €{((item.product.variants.find(v => v.color === item.selectedColor && v.storage === item.selectedStorage)?.price ?? item.product.variants[0]?.price ?? 0) * item.quantity).toLocaleString()}
                           </span>
                         </div>
                       </div>
@@ -139,7 +139,7 @@ export default function CartSlider() {
                 <div className="flex items-center justify-between mb-4">
                   <span className="text-sm text-gray-500">{t("subtotal")}</span>
                   <span className="text-lg font-bold text-gray-900">
-                    ${totalPrice.toLocaleString()}
+                    €{totalPrice.toLocaleString()}
                   </span>
                 </div>
                 <p className="mb-4 text-xs text-gray-400">{t("shippingNote")}</p>
