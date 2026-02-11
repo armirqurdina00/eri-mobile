@@ -54,7 +54,7 @@ export default function ProductCard({
         <div className="flex items-start justify-between gap-1">
           <div className="min-w-0">
             <Link href={`/products/${product.id}?color=${encodeURIComponent(variant.color)}&storage=${encodeURIComponent(variant.storage)}`}>
-              <h3 className="truncate text-xs font-semibold text-gray-900 transition-colors hover:text-blue-600 sm:text-base">
+              <h3 className="truncate text-sm line-clamp-1 font-semibold text-gray-900 transition-colors hover:text-blue-600 sm:text-base">
                 {product.name}
               </h3>
             </Link>
@@ -100,7 +100,7 @@ export default function ProductCard({
         {/* Price & Add to Cart */}
         <div className="mt-auto flex items-center justify-between pt-1 sm:pt-4">
           <div className="flex flex-col sm:flex-row sm:items-baseline sm:gap-2">
-            <span className="font-bold text-sm border border-gray-300 px-2 sm:px-4 rounded-full text-gray-900 sm:text-xl">
+            <span className="font-bold text-sm rounded-full text-gray-900 sm:text-xl">
               €{variant.price.toLocaleString()}
             </span>
             {variant.originalPrice && (
