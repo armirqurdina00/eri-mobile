@@ -16,7 +16,7 @@ export default function Hero() {
         <div className="absolute -bottom-40 -left-40 h-[500px] w-[500px] rounded-full bg-gradient-to-tr from-violet-100 to-blue-50 opacity-40 blur-3xl" />
       </div>
 
-      <div className="relative mx-auto flex min-h-screen max-w-7xl flex-col-reverse items-center justify-center gap-12 px-4 pb-20 pt-32 sm:px-6 lg:flex-row lg:gap-16 lg:px-8 lg:pt-20">
+      <div className="relative mx-auto flex min-h-screen max-w-7xl flex-col-reverse items-center justify-center gap-8 px-4 pb-16 pt-24 sm:gap-12 sm:px-6 sm:pb-20 sm:pt-32 lg:flex-row lg:gap-16 lg:px-8 lg:pt-20">
         {/* Text Content */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
@@ -38,7 +38,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.7 }}
-            className="mt-6 text-5xl font-bold leading-[1.1] tracking-tight text-gray-900 sm:text-6xl lg:text-7xl"
+            className="mt-6 text-3xl font-bold leading-[1.1] tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-7xl"
           >
             {t("titlePart1")}{" "}
             <span className="bg-gradient-to-r from-blue-600 via-violet-600 to-purple-600 bg-clip-text text-transparent">
@@ -51,7 +51,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.7 }}
-            className="mt-6 text-lg leading-relaxed text-gray-500 sm:text-xl"
+            className="mt-4 text-base leading-relaxed text-gray-500 sm:mt-6 sm:text-lg md:text-xl"
           >
             {t("description")}
           </motion.p>
@@ -60,18 +60,18 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
-            className="mt-8 flex flex-wrap gap-4"
+            className="mt-6 flex flex-wrap justify-center gap-3 sm:mt-8 sm:gap-4"
           >
             <Link
               href="/products"
-              className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-blue-600 to-violet-600 px-8 py-4 text-sm font-semibold text-white shadow-xl shadow-blue-500/25 transition-all hover:shadow-2xl hover:shadow-blue-500/30 hover:brightness-110"
+              className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-blue-600 to-violet-600 px-6 py-3 text-sm font-semibold text-white shadow-xl shadow-blue-500/25 transition-all hover:shadow-2xl hover:shadow-blue-500/30 hover:brightness-110 sm:px-8 sm:py-4"
             >
               {t("shopNow")}
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Link>
             <Link
               href="/products"
-              className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white px-8 py-4 text-sm font-semibold text-gray-900 shadow-sm transition-all hover:border-gray-300 hover:shadow-md"
+              className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white px-6 py-3 text-sm font-semibold text-gray-900 shadow-sm transition-all hover:border-gray-300 hover:shadow-md sm:px-8 sm:py-4"
             >
               {t("viewAllModels")}
             </Link>
@@ -105,7 +105,7 @@ export default function Hero() {
           className="relative flex items-center justify-center"
         >
           <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-400/20 to-violet-400/20 blur-3xl" />
-          <div className="relative h-[250px] w-[500px] sm:h-[300px] sm:w-[580px] lg:h-[350px] lg:w-[640px]">
+          <div className="relative h-[180px] w-[320px] sm:h-[300px] sm:w-[580px] lg:h-[350px] lg:w-[640px]">
             <Image
               src="https://www.pngall.com/wp-content/uploads/20/iPhone-17-Pro-Max-Concept-PNG.png"
               alt="iPhone 17 Pro Max"
@@ -119,7 +119,7 @@ export default function Hero() {
           <motion.div
             animate={{ y: [0, -8, 0] }}
             transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
-            className="absolute -left-4 top-1/4 rounded-2xl bg-white/90 px-4 py-3 shadow-xl backdrop-blur-sm sm:left-0 lg:-left-8"
+            className="absolute left-0 top-1/4 rounded-xl px-2.5 py-2 text-[10px] bg-white/90 shadow-xl backdrop-blur-sm sm:rounded-2xl sm:px-4 sm:py-3 sm:left-0 lg:-left-8"
           >
             <p className="text-xs font-semibold text-gray-900">{t("a18ProChip")}</p>
             <p className="text-xs text-gray-500">{t("fastestEver")}</p>
@@ -128,7 +128,7 @@ export default function Hero() {
           <motion.div
             animate={{ y: [0, 8, 0] }}
             transition={{ repeat: Infinity, duration: 3.5, ease: "easeInOut" }}
-            className="absolute -right-4 bottom-1/3 rounded-2xl bg-white/90 px-4 py-3 shadow-xl backdrop-blur-sm sm:right-0 lg:-right-8"
+            className="absolute right-0 bottom-1/3 rounded-xl px-2.5 py-2 text-[10px] bg-white/90 shadow-xl backdrop-blur-sm sm:rounded-2xl sm:px-4 sm:py-3 sm:right-0 lg:-right-8"
           >
             <p className="text-xs font-semibold text-gray-900">48MP Camera</p>
             <p className="text-xs text-gray-500">Pro-level photos</p>
