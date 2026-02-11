@@ -17,6 +17,7 @@ import {
   Shield,
 } from "lucide-react";
 import { motion } from "framer-motion";
+import { useSearchParams } from "next/navigation";
 import ProductCard from "@/components/ProductCard";
 
 export default function ProductDetailContent({
@@ -27,12 +28,17 @@ export default function ProductDetailContent({
   allProducts: Product[];
 }) {
   const { addToCart } = useCart();
+  const searchParams = useSearchParams();
 
+  const colorParam = searchParams.get("color");
+  const storageParam = searchParams.get("storage");
   const firstVariant = product?.variants[0];
 
-  const [selectedColor, setSelectedColor] = useState(firstVariant?.color || "");
+  const [selectedColor, setSelectedColor] = useState(
+    colorParam || firstVariant?.color || ""
+  );
   const [selectedStorage, setSelectedStorage] = useState(
-    firstVariant?.storage || ""
+    storageParam || firstVariant?.storage || ""
   );
   const [added, setAdded] = useState(false);
 
@@ -371,7 +377,7 @@ export default function ProductDetailContent({
             </h2>
             <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
               {related.map((p, i) => (
-                <ProductCard key={p.id} product={p} index={i} />
+                <ProductCard key={p.id} item={{ product: p, variant: p.variants[0] }} index={i} />
               ))}
             </div>
           </div>

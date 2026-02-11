@@ -21,6 +21,12 @@ export interface Product {
   description: string;
   category: string;
   variants: ProductVariant[];
+  createdAt?: string;
+}
+
+export interface ProductWithVariant {
+  product: Product;
+  variant: ProductVariant;
 }
 
 export const products: Product[] = [

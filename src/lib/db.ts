@@ -52,7 +52,7 @@ export function createProduct(
     createdAt: now,
     updatedAt: now,
   };
-  products.push(newProduct);
+  products.unshift(newProduct);
   writeJSON("products.json", products);
   return newProduct;
 }

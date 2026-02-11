@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import { useTheme } from "./ThemeProvider";
 import { logoutAction } from "@/actions/auth";
+import Image from "next/image";
 
 const navItems = [
   { href: "/admin", label: "Dashboard", icon: LayoutDashboard },
@@ -51,16 +52,18 @@ export default function AdminSidebar({
       )}
 
       <aside
-        className={`fixed top-0 left-0 z-50 flex h-full w-64 flex-col border-r border-gray-200 bg-white transition-transform duration-300 dark:border-gray-800 dark:bg-gray-950 lg:translate-x-0 ${
-          open ? "translate-x-0" : "-translate-x-full"
-        }`}
+        className={`fixed top-0 left-0 z-50 flex h-full w-64 flex-col border-r border-gray-200 bg-white transition-transform duration-300 dark:border-gray-800 dark:bg-gray-950 lg:translate-x-0 ${open ? "translate-x-0" : "-translate-x-full"
+          }`}
       >
         {/* Logo */}
         <div className="flex h-16 items-center justify-between border-b border-gray-200 px-6 dark:border-gray-800">
           <Link href="/admin" className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-blue-600 to-violet-600">
-              <Smartphone className="h-4 w-4 text-white" />
-            </div>
+            <Image
+              src="/logo.png"
+              alt="Eri Mobile Shop"
+              width={32}
+              height={32}
+            />
             <span className="text-sm font-bold text-gray-900 dark:text-white">
               Eri Mobile <span className="font-normal text-gray-500 dark:text-gray-400">Admin</span>
             </span>
@@ -80,11 +83,10 @@ export default function AdminSidebar({
                 key={item.href}
                 href={item.href}
                 onClick={onClose}
-                className={`flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium transition-all ${
-                  active
-                    ? "bg-gradient-to-r from-blue-50 to-violet-50 text-blue-700 dark:from-blue-950/50 dark:to-violet-950/50 dark:text-blue-400"
-                    : "text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-900"
-                }`}
+                className={`flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium transition-all ${active
+                  ? "bg-gradient-to-r from-blue-50 to-violet-50 text-blue-700 dark:from-blue-950/50 dark:to-violet-950/50 dark:text-blue-400"
+                  : "text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-900"
+                  }`}
               >
                 <Icon className={`h-5 w-5 ${active ? "text-blue-600 dark:text-blue-400" : ""}`} />
                 {item.label}

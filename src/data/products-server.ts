@@ -29,6 +29,7 @@ export function getProductsFromDB(): Product[] {
         description: p.description as string,
         category: p.category as string,
         variants: p.variants as Product["variants"],
+        createdAt: p.createdAt as string,
       })
     );
   } catch {

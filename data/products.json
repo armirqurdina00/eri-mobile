@@ -1,252 +1,160 @@
 [
   {
-    "id": "iphone-17-pro-max",
-    "name": "iPhone 17 Pro Max",
-    "subtitle": "The ultimate iPhone.",
-    "image": "https://m.media-amazon.com/images/I/51fpWBn0ZQL._AC_UF894,1000_QL80_.jpg",
-    "badge": "New",
-    "rating": 4.9,
-    "reviews": 2847,
-    "specs": [
+    "id": "iphone-18-pro",
+    "name": "iPhone 18 Pro",
+    "subtitle": "The ultimate iPhone",
+    "image": "/uploads/73391f08-96a8-4056-8e47-0adc9e080c5d.png",
+    "rating": 4.5,
+    "reviews": 0,
+    "specs": [],
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "category": "Standard",
+    "variants": [
       {
-        "label": "Display",
-        "value": "6.9\" Super Retina XDR OLED"
+        "color": "Deep Purple",
+        "colorHex": "#543f69",
+        "image": "/uploads/5db0512b-1b77-4cc5-ab92-010494964b7f.png",
+        "storage": "256GB",
+        "price": 1499,
+        "stock": 0,
+        "inStock": true,
+        "originalPrice": 1699
       },
       {
-        "label": "Chip",
-        "value": "A18 Pro"
+        "color": "Cherry Red",
+        "colorHex": "#8c2626",
+        "image": "/uploads/6763958d-b5b2-4b02-b74a-481903b76727.png",
+        "storage": "256GB",
+        "price": 1699,
+        "stock": 0,
+        "inStock": true
       },
       {
-        "label": "Camera",
-        "value": "48MP Fusion + 48MP Ultra Wide + 12MP Telephoto (5x)"
+        "color": "Green",
+        "colorHex": "#2d7b6b",
+        "image": "/uploads/9201d16f-3dc8-4895-92f8-f461bf894967.png",
+        "storage": "256GB",
+        "price": 1699,
+        "stock": 0,
+        "inStock": true
       },
       {
-        "label": "Battery",
-        "value": "Up to 33 hours video playback"
-      },
-      {
-        "label": "Weight",
-        "value": "227 g"
+        "color": "Green",
+        "colorHex": "#2d7b6b",
+        "image": "/uploads/9201d16f-3dc8-4895-92f8-f461bf894967.png",
+        "storage": "512GB",
+        "price": 1899,
+        "stock": 0,
+        "inStock": true
       }
     ],
-    "description": "iPhone 17 Pro Max delivers the best iPhone experience with a massive 6.9-inch Super Retina XDR display, the ultra-fast A18 Pro chip, and the most advanced Pro camera system ever. Capture stunning detail with a 48MP Fusion camera, 5x optical zoom, and pro-level video features. With the longest battery life ever in an iPhone, it's built for users who want maximum performance, screen size, and endurance.",
+    "createdAt": "2026-02-11T13:58:04.805Z",
+    "updatedAt": "2026-02-11T14:10:07.170Z"
+  },
+  {
+    "id": "iphone-15-pro",
+    "name": "iPhone 15 Pro",
+    "subtitle": "iPhone 15 Pro",
+    "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6525/6525489_sd.jpg;maxHeight=640;maxWidth=250?format=webp",
+    "rating": 4.5,
+    "reviews": 0,
+    "specs": [],
+    "description": "The iPhone 15 Pro.",
     "category": "Pro",
     "variants": [
       {
-        "color": "Cosmic Orange",
-        "colorHex": "#FF6F00",
-        "image": "https://m.media-amazon.com/images/I/51fpWBn0ZQL._AC_UF894,1000_QL80_.jpg",
-        "storage": "256GB",
-        "price": 1499,
-        "stock": 25,
-        "inStock": true
+        "color": "Black Titanium",
+        "colorHex": "#3B3B3B",
+        "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6525/6525489_sd.jpg;maxHeight=640;maxWidth=250?format=webp",
+        "storage": "",
+        "price": 0,
+        "stock": 0,
+        "inStock": false
       },
       {
-        "color": "Cosmic Orange",
-        "colorHex": "#FF6F00",
-        "image": "https://m.media-amazon.com/images/I/51fpWBn0ZQL._AC_UF894,1000_QL80_.jpg",
-        "storage": "512GB",
-        "price": 1599,
-        "stock": 18,
-        "inStock": true
+        "color": "White Titanium",
+        "colorHex": "#E8E8E0",
+        "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6525/6525405_sd.jpg;maxHeight=640;maxWidth=250?format=webp",
+        "storage": "",
+        "price": 0,
+        "stock": 0,
+        "inStock": false
       },
       {
-        "color": "Cosmic Orange",
-        "colorHex": "#FF6F00",
-        "image": "https://m.media-amazon.com/images/I/51fpWBn0ZQL._AC_UF894,1000_QL80_.jpg",
-        "storage": "1TB",
-        "price": 1799,
-        "stock": 10,
-        "inStock": true
+        "color": "Blue Titanium",
+        "colorHex": "#888888",
+        "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/26887690-b991-4541-9759-2364b8317432.jpg",
+        "storage": "",
+        "price": 0,
+        "stock": 0,
+        "inStock": false
       },
       {
-        "color": "Deep Blue",
-        "colorHex": "#1F3B6F",
-        "image": "https://m.media-amazon.com/images/I/41exs-G+5BL._AC_UF894,1000_QL80_.jpg",
-        "storage": "256GB",
-        "price": 1499,
-        "stock": 20,
-        "inStock": true
-      },
-      {
-        "color": "Deep Blue",
-        "colorHex": "#1F3B6F",
-        "image": "https://m.media-amazon.com/images/I/41exs-G+5BL._AC_UF894,1000_QL80_.jpg",
-        "storage": "512GB",
-        "price": 1599,
-        "stock": 15,
-        "inStock": true
-      },
-      {
-        "color": "Deep Blue",
-        "colorHex": "#1F3B6F",
-        "image": "https://m.media-amazon.com/images/I/41exs-G+5BL._AC_UF894,1000_QL80_.jpg",
-        "storage": "1TB",
-        "price": 1799,
-        "stock": 8,
-        "inStock": true
-      },
-      {
-        "color": "Silver",
-        "colorHex": "#C0C0C0",
-        "image": "https://m.media-amazon.com/images/I/4110XkUp8fL._AC_UF894,1000_QL80_.jpg",
-        "storage": "256GB",
-        "price": 1499,
-        "stock": 22,
-        "inStock": true
-      },
-      {
-        "color": "Silver",
-        "colorHex": "#C0C0C0",
-        "image": "https://m.media-amazon.com/images/I/4110XkUp8fL._AC_UF894,1000_QL80_.jpg",
-        "storage": "512GB",
-        "price": 1599,
-        "stock": 12,
-        "inStock": true
-      },
-      {
-        "color": "Silver",
-        "colorHex": "#C0C0C0",
-        "image": "https://m.media-amazon.com/images/I/4110XkUp8fL._AC_UF894,1000_QL80_.jpg",
-        "storage": "1TB",
-        "price": 1799,
-        "stock": 6,
-        "inStock": true
+        "color": "Natural Titanium",
+        "colorHex": "#B8B8B0",
+        "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/bdb54644-1f68-453d-a183-b87c2f2e9f64.jpg",
+        "storage": "",
+        "price": 0,
+        "stock": 0,
+        "inStock": false
       }
     ],
-    "createdAt": "2026-02-10T08:59:09.094Z",
-    "updatedAt": "2026-02-10T08:59:09.094Z"
+    "createdAt": "2026-02-10T09:00:00.000Z",
+    "updatedAt": "2026-02-11T10:21:23.725Z"
   },
   {
-    "id": "iphone-17-pro",
-    "name": "iPhone 17 Pro",
-    "subtitle": "Pro performance. Perfect size.",
-    "image": "https://m.media-amazon.com/images/I/41UC+KWgE6L._AC_UF894,1000_QL80_.jpg",
-    "badge": "New",
-    "rating": 4.9,
-    "reviews": 2847,
+    "id": "airpods-pro-2",
+    "name": "AirPods Pro 2",
+    "subtitle": "Intelligent noise cancellation.",
+    "image": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/airpods-pro-2-hero-select-202409?wid=940&hei=1112&fmt=png-alpha",
+    "rating": 4.8,
+    "reviews": 15230,
     "specs": [
       {
-        "label": "Display",
-        "value": "6.3\" Super Retina XDR OLED"
-      },
-      {
         "label": "Chip",
-        "value": "A18 Pro"
+        "value": "H2"
       },
       {
-        "label": "Camera",
-        "value": "48MP Fusion + 48MP Ultra Wide + 12MP Telephoto (5x)"
+        "label": "ANC",
+        "value": "Active Noise Cancellation"
       },
       {
         "label": "Battery",
-        "value": "Up to 29 hours video playback"
+        "value": "Up to 6 hours listening"
       },
       {
-        "label": "Weight",
-        "value": "205 g"
+        "label": "Connectivity",
+        "value": "Bluetooth 5.3"
       }
     ],
-    "description": "iPhone 17 Pro packs uncompromising Pro performance into a more compact design. Powered by the A18 Pro chip, it delivers blazing-fast speed, console-level gaming, and exceptional efficiency. The advanced 48MP Pro camera system with 5x optical zoom enables stunning photos and cinematic video, while the Super Retina XDR display brings everything to life with incredible brightness and color accuracy.",
-    "category": "Pro",
+    "description": "AirPods Pro 2 feature the H2 chip for smarter noise cancellation, Adaptive Audio, Conversation Awareness, and up to 2x more Active Noise Cancellation than the previous generation.",
+    "category": "Accessories",
     "variants": [
       {
-        "color": "Cosmic Orange",
-        "colorHex": "#FF6F00",
-        "image": "https://m.media-amazon.com/images/I/51fpWBn0ZQL._AC_UF894,1000_QL80_.jpg",
-        "storage": "256GB",
-        "price": 1199,
-        "stock": 30,
-        "inStock": true
-      },
-      {
-        "color": "Cosmic Orange",
-        "colorHex": "#FF6F00",
-        "image": "https://m.media-amazon.com/images/I/51fpWBn0ZQL._AC_UF894,1000_QL80_.jpg",
-        "storage": "512GB",
-        "price": 1299,
-        "stock": 22,
-        "inStock": true
-      },
-      {
-        "color": "Cosmic Orange",
-        "colorHex": "#FF6F00",
-        "image": "https://m.media-amazon.com/images/I/51fpWBn0ZQL._AC_UF894,1000_QL80_.jpg",
-        "storage": "1TB",
-        "price": 1499,
-        "stock": 12,
-        "inStock": true
-      },
-      {
-        "color": "Deep Blue",
-        "colorHex": "#1F3B6F",
-        "image": "https://m.media-amazon.com/images/I/41UC+KWgE6L._AC_UF894,1000_QL80_.jpg",
-        "storage": "256GB",
-        "price": 1199,
-        "stock": 28,
-        "inStock": true
-      },
-      {
-        "color": "Deep Blue",
-        "colorHex": "#1F3B6F",
-        "image": "https://m.media-amazon.com/images/I/41UC+KWgE6L._AC_UF894,1000_QL80_.jpg",
-        "storage": "512GB",
-        "price": 1299,
-        "stock": 20,
-        "inStock": true
-      },
-      {
-        "color": "Deep Blue",
-        "colorHex": "#1F3B6F",
-        "image": "https://m.media-amazon.com/images/I/41UC+KWgE6L._AC_UF894,1000_QL80_.jpg",
-        "storage": "1TB",
-        "price": 1499,
-        "stock": 10,
-        "inStock": true
-      },
-      {
-        "color": "Silver",
-        "colorHex": "#C0C0C0",
-        "image": "https://m.media-amazon.com/images/I/6105TOJ-18L._AC_UF894,1000_QL80_.jpg",
-        "storage": "256GB",
-        "price": 1199,
-        "stock": 25,
-        "inStock": true
-      },
-      {
-        "color": "Silver",
-        "colorHex": "#C0C0C0",
-        "image": "https://m.media-amazon.com/images/I/6105TOJ-18L._AC_UF894,1000_QL80_.jpg",
-        "storage": "512GB",
-        "price": 1299,
-        "stock": 18,
-        "inStock": true
-      },
-      {
-        "color": "Silver",
-        "colorHex": "#C0C0C0",
-        "image": "https://m.media-amazon.com/images/I/6105TOJ-18L._AC_UF894,1000_QL80_.jpg",
-        "storage": "1TB",
-        "price": 1499,
-        "stock": 8,
+        "color": "White",
+        "colorHex": "#F5F5F0",
+        "image": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/airpods-pro-2-hero-select-202409?wid=940&hei=1112&fmt=png-alpha",
+        "storage": "",
+        "price": 249,
+        "stock": 50,
         "inStock": true
       }
     ],
-    "createdAt": "2026-02-10T09:00:09.094Z",
+    "createdAt": "2026-02-10T09:01:00.000Z",
     "updatedAt": "2026-02-10T08:59:09.094Z"
   },
   {
-    "id": "iphone-air",
-    "name": "iPhone Air",
-    "subtitle": "Light. Thin. Powerful.",
-    "image": "https://m.media-amazon.com/images/I/41EGPwPGQdL._AC_UF894,1000_QL80_.jpg",
+    "id": "iphone-16e",
+    "name": "iPhone 16e",
+    "subtitle": "Incredible value.",
+    "image": "https://m.media-amazon.com/images/I/51H8+zCj2cL._AC_UF894,1000_QL80_.jpg",
     "badge": "New",
-    "rating": 4.7,
-    "reviews": 1324,
+    "rating": 4.5,
+    "reviews": 1893,
     "specs": [
       {
         "label": "Display",
-        "value": "6.5\" Super Retina OLED"
+        "value": "6.1\" OLED"
       },
       {
         "label": "Chip",
@@ -254,7 +162,7 @@
       },
       {
         "label": "Camera",
-        "value": "48MP Main + 12MP Ultra Wide"
+        "value": "48MP Main"
       },
       {
         "label": "Battery",
@@ -262,920 +170,68 @@
       },
       {
         "label": "Weight",
-        "value": "172 g"
+        "value": "164 g"
       }
     ],
-    "description": "iPhone 17 Air is designed for users who want a beautifully thin and lightweight iPhone without sacrificing performance. Featuring the powerful A18 chip, a vibrant 6.5-inch OLED display, and an advanced 48MP camera, it delivers smooth everyday performance and stunning photos in an elegant, ultra-slim design. Perfect for those who value comfort, portability, and style.",
-    "category": "Pro",
-    "variants": [
-      {
-        "color": "Starlight",
-        "colorHex": "#F5F5F0",
-        "image": "https://m.media-amazon.com/images/I/41EGPwPGQdL._AC_UF894,1000_QL80_.jpg",
-        "storage": "128GB",
-        "price": 899,
-        "stock": 35,
-        "inStock": true
-      },
-      {
-        "color": "Starlight",
-        "colorHex": "#F5F5F0",
-        "image": "https://m.media-amazon.com/images/I/41EGPwPGQdL._AC_UF894,1000_QL80_.jpg",
-        "storage": "256GB",
-        "price": 999,
-        "stock": 28,
-        "inStock": true
-      },
-      {
-        "color": "Starlight",
-        "colorHex": "#F5F5F0",
-        "image": "https://m.media-amazon.com/images/I/41EGPwPGQdL._AC_UF894,1000_QL80_.jpg",
-        "storage": "512GB",
-        "price": 1199,
-        "stock": 15,
-        "inStock": true
-      },
-      {
-        "color": "Sky Blue",
-        "colorHex": "#7FB3D5",
-        "image": "https://m.media-amazon.com/images/I/41EGPwPGQdL._AC_UF894,1000_QL80_.jpg",
-        "storage": "128GB",
-        "price": 899,
-        "stock": 30,
-        "inStock": true
-      },
-      {
-        "color": "Sky Blue",
-        "colorHex": "#7FB3D5",
-        "image": "https://m.media-amazon.com/images/I/41EGPwPGQdL._AC_UF894,1000_QL80_.jpg",
-        "storage": "256GB",
-        "price": 999,
-        "stock": 22,
-        "inStock": true
-      },
-      {
-        "color": "Sky Blue",
-        "colorHex": "#7FB3D5",
-        "image": "https://m.media-amazon.com/images/I/41EGPwPGQdL._AC_UF894,1000_QL80_.jpg",
-        "storage": "512GB",
-        "price": 1199,
-        "stock": 10,
-        "inStock": true
-      },
-      {
-        "color": "Midnight",
-        "colorHex": "#1C1C1E",
-        "image": "https://m.media-amazon.com/images/I/41EGPwPGQdL._AC_UF894,1000_QL80_.jpg",
-        "storage": "128GB",
-        "price": 899,
-        "stock": 32,
-        "inStock": true
-      },
-      {
-        "color": "Midnight",
-        "colorHex": "#1C1C1E",
-        "image": "https://m.media-amazon.com/images/I/41EGPwPGQdL._AC_UF894,1000_QL80_.jpg",
-        "storage": "256GB",
-        "price": 999,
-        "stock": 25,
-        "inStock": true
-      },
-      {
-        "color": "Midnight",
-        "colorHex": "#1C1C1E",
-        "image": "https://m.media-amazon.com/images/I/41EGPwPGQdL._AC_UF894,1000_QL80_.jpg",
-        "storage": "512GB",
-        "price": 1199,
-        "stock": 12,
-        "inStock": true
-      }
-    ],
-    "createdAt": "2026-02-10T09:01:09.094Z",
-    "updatedAt": "2026-02-10T08:59:09.094Z"
-  },
-  {
-    "id": "iphone-16-pro-max",
-    "name": "iPhone 16 Pro Max",
-    "subtitle": "The ultimate iPhone.",
-    "image": "https://m.media-amazon.com/images/I/61zU0mI4EsL._AC_UF894,1000_QL80_.jpg",
-    "badge": "New",
-    "rating": 4.9,
-    "reviews": 2847,
-    "specs": [
-      {
-        "label": "Display",
-        "value": "6.9\" Super Retina XDR OLED"
-      },
-      {
-        "label": "Chip",
-        "value": "A18 Pro"
-      },
-      {
-        "label": "Camera",
-        "value": "48MP Fusion + 48MP Ultra Wide + 12MP Telephoto"
-      },
-      {
-        "label": "Battery",
-        "value": "Up to 33 hours video playback"
-      },
-      {
-        "label": "Weight",
-        "value": "227 g"
-      }
-    ],
-    "description": "iPhone 16 Pro Max features a stunning 6.9-inch display, the powerful A18 Pro chip, a pro-level 48MP camera system with 5x optical zoom, and the longest battery life ever in an iPhone.",
-    "category": "Pro",
-    "variants": [
-      {
-        "color": "Desert Titanium",
-        "colorHex": "#BFA48F",
-        "image": "https://m.media-amazon.com/images/I/61zU0mI4EsL._AC_UF894,1000_QL80_.jpg",
-        "storage": "256GB",
-        "price": 1199,
-        "stock": 20,
-        "inStock": true
-      },
-      {
-        "color": "Desert Titanium",
-        "colorHex": "#BFA48F",
-        "image": "https://m.media-amazon.com/images/I/61zU0mI4EsL._AC_UF894,1000_QL80_.jpg",
-        "storage": "512GB",
-        "price": 1399,
-        "stock": 15,
-        "inStock": true
-      },
-      {
-        "color": "Desert Titanium",
-        "colorHex": "#BFA48F",
-        "image": "https://m.media-amazon.com/images/I/61zU0mI4EsL._AC_UF894,1000_QL80_.jpg",
-        "storage": "1TB",
-        "price": 1599,
-        "stock": 8,
-        "inStock": true
-      },
-      {
-        "color": "Natural Titanium",
-        "colorHex": "#C2BCB2",
-        "image": "https://m.media-amazon.com/images/I/61zU0mI4EsL._AC_UF894,1000_QL80_.jpg",
-        "storage": "256GB",
-        "price": 1199,
-        "stock": 18,
-        "inStock": true
-      },
-      {
-        "color": "Natural Titanium",
-        "colorHex": "#C2BCB2",
-        "image": "https://m.media-amazon.com/images/I/61zU0mI4EsL._AC_UF894,1000_QL80_.jpg",
-        "storage": "512GB",
-        "price": 1399,
-        "stock": 12,
-        "inStock": true
-      },
-      {
-        "color": "Natural Titanium",
-        "colorHex": "#C2BCB2",
-        "image": "https://m.media-amazon.com/images/I/61zU0mI4EsL._AC_UF894,1000_QL80_.jpg",
-        "storage": "1TB",
-        "price": 1599,
-        "stock": 6,
-        "inStock": true
-      },
-      {
-        "color": "White Titanium",
-        "colorHex": "#F2F1ED",
-        "image": "https://m.media-amazon.com/images/I/61zU0mI4EsL._AC_UF894,1000_QL80_.jpg",
-        "storage": "256GB",
-        "price": 1199,
-        "stock": 16,
-        "inStock": true
-      },
-      {
-        "color": "White Titanium",
-        "colorHex": "#F2F1ED",
-        "image": "https://m.media-amazon.com/images/I/61zU0mI4EsL._AC_UF894,1000_QL80_.jpg",
-        "storage": "512GB",
-        "price": 1399,
-        "stock": 10,
-        "inStock": true
-      },
-      {
-        "color": "White Titanium",
-        "colorHex": "#F2F1ED",
-        "image": "https://m.media-amazon.com/images/I/61zU0mI4EsL._AC_UF894,1000_QL80_.jpg",
-        "storage": "1TB",
-        "price": 1599,
-        "stock": 5,
-        "inStock": true
-      },
-      {
-        "color": "Black Titanium",
-        "colorHex": "#3C3C3D",
-        "image": "https://m.media-amazon.com/images/I/61zU0mI4EsL._AC_UF894,1000_QL80_.jpg",
-        "storage": "256GB",
-        "price": 1199,
-        "stock": 22,
-        "inStock": true
-      },
-      {
-        "color": "Black Titanium",
-        "colorHex": "#3C3C3D",
-        "image": "https://m.media-amazon.com/images/I/61zU0mI4EsL._AC_UF894,1000_QL80_.jpg",
-        "storage": "512GB",
-        "price": 1399,
-        "stock": 14,
-        "inStock": true
-      },
-      {
-        "color": "Black Titanium",
-        "colorHex": "#3C3C3D",
-        "image": "https://m.media-amazon.com/images/I/61zU0mI4EsL._AC_UF894,1000_QL80_.jpg",
-        "storage": "1TB",
-        "price": 1599,
-        "stock": 7,
-        "inStock": true
-      }
-    ],
-    "createdAt": "2026-02-10T09:02:09.094Z",
-    "updatedAt": "2026-02-10T08:59:09.094Z"
-  },
-  {
-    "id": "iphone-16-pro",
-    "name": "iPhone 16 Pro",
-    "subtitle": "So much power. So pro.",
-    "image": "https://m.media-amazon.com/images/I/41HKrWQi3OL._AC_UF894,1000_QL80_.jpg",
-    "badge": "New",
-    "rating": 4.8,
-    "reviews": 3412,
-    "specs": [
-      {
-        "label": "Display",
-        "value": "6.3\" Super Retina XDR OLED"
-      },
-      {
-        "label": "Chip",
-        "value": "A18 Pro"
-      },
-      {
-        "label": "Camera",
-        "value": "48MP Fusion + 48MP Ultra Wide + 12MP Telephoto"
-      },
-      {
-        "label": "Battery",
-        "value": "Up to 27 hours video playback"
-      },
-      {
-        "label": "Weight",
-        "value": "199 g"
-      }
-    ],
-    "description": "iPhone 16 Pro packs the A18 Pro chip, a remarkable 48MP camera system with Camera Control, and Apple Intelligence — all in a beautiful, durable titanium design.",
-    "category": "Pro",
-    "variants": [
-      {
-        "color": "Desert Titanium",
-        "colorHex": "#BFA48F",
-        "image": "https://m.media-amazon.com/images/I/41HKrWQi3OL._AC_UF894,1000_QL80_.jpg",
-        "storage": "128GB",
-        "price": 999,
-        "stock": 25,
-        "inStock": true
-      },
-      {
-        "color": "Desert Titanium",
-        "colorHex": "#BFA48F",
-        "image": "https://m.media-amazon.com/images/I/41HKrWQi3OL._AC_UF894,1000_QL80_.jpg",
-        "storage": "256GB",
-        "price": 1099,
-        "stock": 20,
-        "inStock": true
-      },
-      {
-        "color": "Desert Titanium",
-        "colorHex": "#BFA48F",
-        "image": "https://m.media-amazon.com/images/I/41HKrWQi3OL._AC_UF894,1000_QL80_.jpg",
-        "storage": "512GB",
-        "price": 1299,
-        "stock": 12,
-        "inStock": true
-      },
-      {
-        "color": "Desert Titanium",
-        "colorHex": "#BFA48F",
-        "image": "https://m.media-amazon.com/images/I/41HKrWQi3OL._AC_UF894,1000_QL80_.jpg",
-        "storage": "1TB",
-        "price": 1499,
-        "stock": 6,
-        "inStock": true
-      },
-      {
-        "color": "Natural Titanium",
-        "colorHex": "#C2BCB2",
-        "image": "https://m.media-amazon.com/images/I/41HKrWQi3OL._AC_UF894,1000_QL80_.jpg",
-        "storage": "128GB",
-        "price": 999,
-        "stock": 22,
-        "inStock": true
-      },
-      {
-        "color": "Natural Titanium",
-        "colorHex": "#C2BCB2",
-        "image": "https://m.media-amazon.com/images/I/41HKrWQi3OL._AC_UF894,1000_QL80_.jpg",
-        "storage": "256GB",
-        "price": 1099,
-        "stock": 18,
-        "inStock": true
-      },
-      {
-        "color": "Natural Titanium",
-        "colorHex": "#C2BCB2",
-        "image": "https://m.media-amazon.com/images/I/41HKrWQi3OL._AC_UF894,1000_QL80_.jpg",
-        "storage": "512GB",
-        "price": 1299,
-        "stock": 10,
-        "inStock": true
-      },
-      {
-        "color": "Natural Titanium",
-        "colorHex": "#C2BCB2",
-        "image": "https://m.media-amazon.com/images/I/41HKrWQi3OL._AC_UF894,1000_QL80_.jpg",
-        "storage": "1TB",
-        "price": 1499,
-        "stock": 5,
-        "inStock": true
-      },
-      {
-        "color": "White Titanium",
-        "colorHex": "#F2F1ED",
-        "image": "https://m.media-amazon.com/images/I/41HKrWQi3OL._AC_UF894,1000_QL80_.jpg",
-        "storage": "128GB",
-        "price": 999,
-        "stock": 20,
-        "inStock": true
-      },
-      {
-        "color": "White Titanium",
-        "colorHex": "#F2F1ED",
-        "image": "https://m.media-amazon.com/images/I/41HKrWQi3OL._AC_UF894,1000_QL80_.jpg",
-        "storage": "256GB",
-        "price": 1099,
-        "stock": 16,
-        "inStock": true
-      },
-      {
-        "color": "White Titanium",
-        "colorHex": "#F2F1ED",
-        "image": "https://m.media-amazon.com/images/I/41HKrWQi3OL._AC_UF894,1000_QL80_.jpg",
-        "storage": "512GB",
-        "price": 1299,
-        "stock": 8,
-        "inStock": true
-      },
-      {
-        "color": "White Titanium",
-        "colorHex": "#F2F1ED",
-        "image": "https://m.media-amazon.com/images/I/41HKrWQi3OL._AC_UF894,1000_QL80_.jpg",
-        "storage": "1TB",
-        "price": 1499,
-        "stock": 4,
-        "inStock": true
-      },
-      {
-        "color": "Black Titanium",
-        "colorHex": "#3C3C3D",
-        "image": "https://m.media-amazon.com/images/I/41HKrWQi3OL._AC_UF894,1000_QL80_.jpg",
-        "storage": "128GB",
-        "price": 999,
-        "stock": 28,
-        "inStock": true
-      },
-      {
-        "color": "Black Titanium",
-        "colorHex": "#3C3C3D",
-        "image": "https://m.media-amazon.com/images/I/41HKrWQi3OL._AC_UF894,1000_QL80_.jpg",
-        "storage": "256GB",
-        "price": 1099,
-        "stock": 22,
-        "inStock": true
-      },
-      {
-        "color": "Black Titanium",
-        "colorHex": "#3C3C3D",
-        "image": "https://m.media-amazon.com/images/I/41HKrWQi3OL._AC_UF894,1000_QL80_.jpg",
-        "storage": "512GB",
-        "price": 1299,
-        "stock": 14,
-        "inStock": true
-      },
-      {
-        "color": "Black Titanium",
-        "colorHex": "#3C3C3D",
-        "image": "https://m.media-amazon.com/images/I/41HKrWQi3OL._AC_UF894,1000_QL80_.jpg",
-        "storage": "1TB",
-        "price": 1499,
-        "stock": 7,
-        "inStock": true
-      }
-    ],
-    "createdAt": "2026-02-10T09:03:09.094Z",
-    "updatedAt": "2026-02-10T08:59:09.094Z"
-  },
-  {
-    "id": "iphone-16",
-    "name": "iPhone 16",
-    "subtitle": "A total powerhouse.",
-    "image": "https://images-na.ssl-images-amazon.com/images/I/41qsyx+-ffL._AC_UL495_SR435,495_.jpg",
-    "rating": 4.7,
-    "reviews": 5621,
-    "specs": [
-      {
-        "label": "Display",
-        "value": "6.1\" Super Retina XDR OLED"
-      },
-      {
-        "label": "Chip",
-        "value": "A18"
-      },
-      {
-        "label": "Camera",
-        "value": "48MP Fusion + 12MP Ultra Wide"
-      },
-      {
-        "label": "Battery",
-        "value": "Up to 22 hours video playback"
-      },
-      {
-        "label": "Weight",
-        "value": "170 g"
-      }
-    ],
-    "description": "iPhone 16 delivers the powerful A18 chip, a 48MP camera with advanced computational photography, Camera Control, and Apple Intelligence.",
+    "description": "iPhone 16e brings Apple Intelligence, the A18 chip, and a stunning 48MP camera at an incredible price. The smartest choice for everyone.",
     "category": "Standard",
     "variants": [
       {
-        "color": "Ultramarine",
-        "colorHex": "#748DFF",
-        "image": "https://images-na.ssl-images-amazon.com/images/I/41qsyx+-ffL._AC_UL495_SR435,495_.jpg",
+        "color": "Midnight",
+        "colorHex": "#1D1D1F",
+        "image": "https://m.media-amazon.com/images/I/51H8+zCj2cL._AC_UF894,1000_QL80_.jpg",
         "storage": "128GB",
-        "price": 799,
+        "price": 599,
         "stock": 40,
         "inStock": true
       },
       {
-        "color": "Ultramarine",
-        "colorHex": "#748DFF",
-        "image": "https://images-na.ssl-images-amazon.com/images/I/41qsyx+-ffL._AC_UL495_SR435,495_.jpg",
+        "color": "Midnight",
+        "colorHex": "#1D1D1F",
+        "image": "https://m.media-amazon.com/images/I/51H8+zCj2cL._AC_UF894,1000_QL80_.jpg",
         "storage": "256GB",
-        "price": 899,
+        "price": 699,
         "stock": 35,
         "inStock": true
       },
       {
-        "color": "Ultramarine",
-        "colorHex": "#748DFF",
-        "image": "https://images-na.ssl-images-amazon.com/images/I/41qsyx+-ffL._AC_UL495_SR435,495_.jpg",
-        "storage": "512GB",
-        "price": 1099,
-        "stock": 20,
-        "inStock": true
-      },
-      {
-        "color": "Teal",
-        "colorHex": "#B0D4D1",
-        "image": "https://images-na.ssl-images-amazon.com/images/I/41qsyx+-ffL._AC_UL495_SR435,495_.jpg",
+        "color": "Starlight",
+        "colorHex": "#F5F5F0",
+        "image": "https://m.media-amazon.com/images/I/51H8+zCj2cL._AC_UF894,1000_QL80_.jpg",
         "storage": "128GB",
-        "price": 799,
+        "price": 599,
         "stock": 38,
         "inStock": true
       },
       {
-        "color": "Teal",
-        "colorHex": "#B0D4D1",
-        "image": "https://images-na.ssl-images-amazon.com/images/I/41qsyx+-ffL._AC_UL495_SR435,495_.jpg",
-        "storage": "256GB",
-        "price": 899,
-        "stock": 30,
-        "inStock": true
-      },
-      {
-        "color": "Teal",
-        "colorHex": "#B0D4D1",
-        "image": "https://images-na.ssl-images-amazon.com/images/I/41qsyx+-ffL._AC_UL495_SR435,495_.jpg",
-        "storage": "512GB",
-        "price": 1099,
-        "stock": 18,
-        "inStock": true
-      },
-      {
-        "color": "Pink",
-        "colorHex": "#F4C1D2",
-        "image": "https://images-na.ssl-images-amazon.com/images/I/41qsyx+-ffL._AC_UL495_SR435,495_.jpg",
-        "storage": "128GB",
-        "price": 799,
-        "stock": 30,
-        "inStock": true
-      },
-      {
-        "color": "Pink",
-        "colorHex": "#F4C1D2",
-        "image": "https://images-na.ssl-images-amazon.com/images/I/41qsyx+-ffL._AC_UL495_SR435,495_.jpg",
-        "storage": "256GB",
-        "price": 899,
-        "stock": 25,
-        "inStock": true
-      },
-      {
-        "color": "Pink",
-        "colorHex": "#F4C1D2",
-        "image": "https://images-na.ssl-images-amazon.com/images/I/41qsyx+-ffL._AC_UL495_SR435,495_.jpg",
-        "storage": "512GB",
-        "price": 1099,
-        "stock": 14,
-        "inStock": true
-      },
-      {
-        "color": "White",
+        "color": "Starlight",
         "colorHex": "#F5F5F0",
-        "image": "https://images-na.ssl-images-amazon.com/images/I/41qsyx+-ffL._AC_UL495_SR435,495_.jpg",
+        "image": "https://m.media-amazon.com/images/I/51H8+zCj2cL._AC_UF894,1000_QL80_.jpg",
+        "storage": "256GB",
+        "price": 699,
+        "stock": 30,
+        "inStock": true
+      },
+      {
+        "color": "Red",
+        "colorHex": "#BF0013",
+        "image": "https://m.media-amazon.com/images/I/51H8+zCj2cL._AC_UF894,1000_QL80_.jpg",
         "storage": "128GB",
-        "price": 799,
+        "price": 599,
         "stock": 32,
         "inStock": true
       },
       {
-        "color": "White",
-        "colorHex": "#F5F5F0",
-        "image": "https://images-na.ssl-images-amazon.com/images/I/41qsyx+-ffL._AC_UL495_SR435,495_.jpg",
+        "color": "Red",
+        "colorHex": "#BF0013",
+        "image": "https://m.media-amazon.com/images/I/51H8+zCj2cL._AC_UF894,1000_QL80_.jpg",
         "storage": "256GB",
-        "price": 899,
+        "price": 699,
         "stock": 28,
         "inStock": true
-      },
-      {
-        "color": "White",
-        "colorHex": "#F5F5F0",
-        "image": "https://images-na.ssl-images-amazon.com/images/I/41qsyx+-ffL._AC_UL495_SR435,495_.jpg",
-        "storage": "512GB",
-        "price": 1099,
-        "stock": 16,
-        "inStock": true
-      },
-      {
-        "color": "Black",
-        "colorHex": "#3C3C3D",
-        "image": "https://images-na.ssl-images-amazon.com/images/I/41qsyx+-ffL._AC_UL495_SR435,495_.jpg",
-        "storage": "128GB",
-        "price": 799,
-        "stock": 45,
-        "inStock": true
-      },
-      {
-        "color": "Black",
-        "colorHex": "#3C3C3D",
-        "image": "https://images-na.ssl-images-amazon.com/images/I/41qsyx+-ffL._AC_UL495_SR435,495_.jpg",
-        "storage": "256GB",
-        "price": 899,
-        "stock": 38,
-        "inStock": true
-      },
-      {
-        "color": "Black",
-        "colorHex": "#3C3C3D",
-        "image": "https://images-na.ssl-images-amazon.com/images/I/41qsyx+-ffL._AC_UL495_SR435,495_.jpg",
-        "storage": "512GB",
-        "price": 1099,
-        "stock": 22,
-        "inStock": true
       }
     ],
-    "createdAt": "2026-02-10T09:04:09.094Z",
-    "updatedAt": "2026-02-10T08:59:09.094Z"
-  },
-  {
-    "id": "iphone-16-plus",
-    "name": "iPhone 16 Plus",
-    "subtitle": "More screen. More power.",
-    "image": "https://m.media-amazon.com/images/I/41zqTe3hkML._AC_UF894,1000_QL80_.jpg",
-    "rating": 4.7,
-    "reviews": 2198,
-    "specs": [
-      {
-        "label": "Display",
-        "value": "6.7\" Super Retina XDR OLED"
-      },
-      {
-        "label": "Chip",
-        "value": "A18"
-      },
-      {
-        "label": "Camera",
-        "value": "48MP Fusion + 12MP Ultra Wide"
-      },
-      {
-        "label": "Battery",
-        "value": "Up to 27 hours video playback"
-      },
-      {
-        "label": "Weight",
-        "value": "199 g"
-      }
-    ],
-    "description": "iPhone 16 Plus brings the A18 chip, 48MP camera system, Camera Control, and Apple Intelligence to a large 6.7-inch display with incredible battery life.",
-    "category": "Standard",
-    "variants": [
-      {
-        "color": "Ultramarine",
-        "colorHex": "#748DFF",
-        "image": "https://m.media-amazon.com/images/I/41zqTe3hkML._AC_UF894,1000_QL80_.jpg",
-        "storage": "128GB",
-        "price": 899,
-        "stock": 20,
-        "inStock": true
-      },
-      {
-        "color": "Ultramarine",
-        "colorHex": "#748DFF",
-        "image": "https://m.media-amazon.com/images/I/41zqTe3hkML._AC_UF894,1000_QL80_.jpg",
-        "storage": "256GB",
-        "price": 999,
-        "stock": 18,
-        "inStock": true
-      },
-      {
-        "color": "Ultramarine",
-        "colorHex": "#748DFF",
-        "image": "https://m.media-amazon.com/images/I/41zqTe3hkML._AC_UF894,1000_QL80_.jpg",
-        "storage": "512GB",
-        "price": 1199,
-        "stock": 10,
-        "inStock": true
-      },
-      {
-        "color": "Teal",
-        "colorHex": "#B0D4D1",
-        "image": "https://m.media-amazon.com/images/I/41zqTe3hkML._AC_UF894,1000_QL80_.jpg",
-        "storage": "128GB",
-        "price": 899,
-        "stock": 18,
-        "inStock": true
-      },
-      {
-        "color": "Teal",
-        "colorHex": "#B0D4D1",
-        "image": "https://m.media-amazon.com/images/I/41zqTe3hkML._AC_UF894,1000_QL80_.jpg",
-        "storage": "256GB",
-        "price": 999,
-        "stock": 15,
-        "inStock": true
-      },
-      {
-        "color": "Teal",
-        "colorHex": "#B0D4D1",
-        "image": "https://m.media-amazon.com/images/I/41zqTe3hkML._AC_UF894,1000_QL80_.jpg",
-        "storage": "512GB",
-        "price": 1199,
-        "stock": 8,
-        "inStock": true
-      },
-      {
-        "color": "Pink",
-        "colorHex": "#F4C1D2",
-        "image": "https://m.media-amazon.com/images/I/41zqTe3hkML._AC_UF894,1000_QL80_.jpg",
-        "storage": "128GB",
-        "price": 899,
-        "stock": 15,
-        "inStock": true
-      },
-      {
-        "color": "Pink",
-        "colorHex": "#F4C1D2",
-        "image": "https://m.media-amazon.com/images/I/41zqTe3hkML._AC_UF894,1000_QL80_.jpg",
-        "storage": "256GB",
-        "price": 999,
-        "stock": 12,
-        "inStock": true
-      },
-      {
-        "color": "Pink",
-        "colorHex": "#F4C1D2",
-        "image": "https://m.media-amazon.com/images/I/41zqTe3hkML._AC_UF894,1000_QL80_.jpg",
-        "storage": "512GB",
-        "price": 1199,
-        "stock": 6,
-        "inStock": true
-      },
-      {
-        "color": "White",
-        "colorHex": "#F5F5F0",
-        "image": "https://m.media-amazon.com/images/I/41zqTe3hkML._AC_UF894,1000_QL80_.jpg",
-        "storage": "128GB",
-        "price": 899,
-        "stock": 16,
-        "inStock": true
-      },
-      {
-        "color": "White",
-        "colorHex": "#F5F5F0",
-        "image": "https://m.media-amazon.com/images/I/41zqTe3hkML._AC_UF894,1000_QL80_.jpg",
-        "storage": "256GB",
-        "price": 999,
-        "stock": 14,
-        "inStock": true
-      },
-      {
-        "color": "White",
-        "colorHex": "#F5F5F0",
-        "image": "https://m.media-amazon.com/images/I/41zqTe3hkML._AC_UF894,1000_QL80_.jpg",
-        "storage": "512GB",
-        "price": 1199,
-        "stock": 7,
-        "inStock": true
-      },
-      {
-        "color": "Black",
-        "colorHex": "#3C3C3D",
-        "image": "https://m.media-amazon.com/images/I/41zqTe3hkML._AC_UF894,1000_QL80_.jpg",
-        "storage": "128GB",
-        "price": 899,
-        "stock": 22,
-        "inStock": true
-      },
-      {
-        "color": "Black",
-        "colorHex": "#3C3C3D",
-        "image": "https://m.media-amazon.com/images/I/41zqTe3hkML._AC_UF894,1000_QL80_.jpg",
-        "storage": "256GB",
-        "price": 999,
-        "stock": 18,
-        "inStock": true
-      },
-      {
-        "color": "Black",
-        "colorHex": "#3C3C3D",
-        "image": "https://m.media-amazon.com/images/I/41zqTe3hkML._AC_UF894,1000_QL80_.jpg",
-        "storage": "512GB",
-        "price": 1199,
-        "stock": 10,
-        "inStock": true
-      }
-    ],
-    "createdAt": "2026-02-10T09:05:09.094Z",
-    "updatedAt": "2026-02-10T08:59:09.094Z"
-  },
-  {
-    "id": "iphone-15-pro-max",
-    "name": "iPhone 15 Pro Max",
-    "subtitle": "Titanium. So strong. So light.",
-    "image": "https://m.media-amazon.com/images/I/61v5Jay9F5L._AC_UF894,1000_QL80_.jpg",
-    "badge": "Sale",
-    "rating": 4.8,
-    "reviews": 8923,
-    "specs": [
-      {
-        "label": "Display",
-        "value": "6.7\" Super Retina XDR OLED"
-      },
-      {
-        "label": "Chip",
-        "value": "A17 Pro"
-      },
-      {
-        "label": "Camera",
-        "value": "48MP Main + 12MP Ultra Wide + 12MP Telephoto"
-      },
-      {
-        "label": "Battery",
-        "value": "Up to 29 hours video playback"
-      },
-      {
-        "label": "Weight",
-        "value": "221 g"
-      }
-    ],
-    "description": "iPhone 15 Pro Max features a strong and lightweight titanium design, the A17 Pro chip, a powerful 48MP camera system with 5x optical zoom, and a customizable Action button.",
-    "category": "Pro",
-    "variants": [
-      {
-        "color": "Blue Titanium",
-        "colorHex": "#394C6B",
-        "image": "https://m.media-amazon.com/images/I/61v5Jay9F5L._AC_UF894,1000_QL80_.jpg",
-        "storage": "256GB",
-        "price": 1099,
-        "originalPrice": 1199,
-        "stock": 15,
-        "inStock": true
-      },
-      {
-        "color": "Blue Titanium",
-        "colorHex": "#394C6B",
-        "image": "https://m.media-amazon.com/images/I/61v5Jay9F5L._AC_UF894,1000_QL80_.jpg",
-        "storage": "512GB",
-        "price": 1299,
-        "originalPrice": 1399,
-        "stock": 10,
-        "inStock": true
-      },
-      {
-        "color": "Blue Titanium",
-        "colorHex": "#394C6B",
-        "image": "https://m.media-amazon.com/images/I/61v5Jay9F5L._AC_UF894,1000_QL80_.jpg",
-        "storage": "1TB",
-        "price": 1499,
-        "originalPrice": 1599,
-        "stock": 5,
-        "inStock": true
-      },
-      {
-        "color": "Natural Titanium",
-        "colorHex": "#C2BCB2",
-        "image": "https://m.media-amazon.com/images/I/61v5Jay9F5L._AC_UF894,1000_QL80_.jpg",
-        "storage": "256GB",
-        "price": 1099,
-        "originalPrice": 1199,
-        "stock": 12,
-        "inStock": true
-      },
-      {
-        "color": "Natural Titanium",
-        "colorHex": "#C2BCB2",
-        "image": "https://m.media-amazon.com/images/I/61v5Jay9F5L._AC_UF894,1000_QL80_.jpg",
-        "storage": "512GB",
-        "price": 1299,
-        "originalPrice": 1399,
-        "stock": 8,
-        "inStock": true
-      },
-      {
-        "color": "Natural Titanium",
-        "colorHex": "#C2BCB2",
-        "image": "https://m.media-amazon.com/images/I/61v5Jay9F5L._AC_UF894,1000_QL80_.jpg",
-        "storage": "1TB",
-        "price": 1499,
-        "originalPrice": 1599,
-        "stock": 4,
-        "inStock": true
-      },
-      {
-        "color": "White Titanium",
-        "colorHex": "#F2F1ED",
-        "image": "https://m.media-amazon.com/images/I/61v5Jay9F5L._AC_UF894,1000_QL80_.jpg",
-        "storage": "256GB",
-        "price": 1099,
-        "originalPrice": 1199,
-        "stock": 10,
-        "inStock": true
-      },
-      {
-        "color": "White Titanium",
-        "colorHex": "#F2F1ED",
-        "image": "https://m.media-amazon.com/images/I/61v5Jay9F5L._AC_UF894,1000_QL80_.jpg",
-        "storage": "512GB",
-        "price": 1299,
-        "originalPrice": 1399,
-        "stock": 6,
-        "inStock": true
-      },
-      {
-        "color": "White Titanium",
-        "colorHex": "#F2F1ED",
-        "image": "https://m.media-amazon.com/images/I/61v5Jay9F5L._AC_UF894,1000_QL80_.jpg",
-        "storage": "1TB",
-        "price": 1499,
-        "originalPrice": 1599,
-        "stock": 3,
-        "inStock": true
-      },
-      {
-        "color": "Black Titanium",
-        "colorHex": "#3C3C3D",
-        "image": "https://m.media-amazon.com/images/I/61v5Jay9F5L._AC_UF894,1000_QL80_.jpg",
-        "storage": "256GB",
-        "price": 1099,
-        "originalPrice": 1199,
-        "stock": 18,
-        "inStock": true
-      },
-      {
-        "color": "Black Titanium",
-        "colorHex": "#3C3C3D",
-        "image": "https://m.media-amazon.com/images/I/61v5Jay9F5L._AC_UF894,1000_QL80_.jpg",
-        "storage": "512GB",
-        "price": 1299,
-        "originalPrice": 1399,
-        "stock": 12,
-        "inStock": true
-      },
-      {
-        "color": "Black Titanium",
-        "colorHex": "#3C3C3D",
-        "image": "https://m.media-amazon.com/images/I/61v5Jay9F5L._AC_UF894,1000_QL80_.jpg",
-        "storage": "1TB",
-        "price": 1499,
-        "originalPrice": 1599,
-        "stock": 6,
-        "inStock": true
-      }
-    ],
-    "createdAt": "2026-02-10T09:06:09.094Z",
+    "createdAt": "2026-02-10T09:02:00.000Z",
     "updatedAt": "2026-02-10T08:59:09.094Z"
   },
   {
@@ -1362,21 +418,177 @@
         "inStock": true
       }
     ],
-    "createdAt": "2026-02-10T09:07:09.094Z",
+    "createdAt": "2026-02-10T09:03:00.000Z",
     "updatedAt": "2026-02-10T08:59:09.094Z"
   },
   {
-    "id": "iphone-16e",
-    "name": "iPhone 16e",
-    "subtitle": "Incredible value.",
-    "image": "https://m.media-amazon.com/images/I/51H8+zCj2cL._AC_UF894,1000_QL80_.jpg",
-    "badge": "New",
-    "rating": 4.5,
-    "reviews": 1893,
+    "id": "iphone-15-pro-max",
+    "name": "iPhone 15 Pro Max",
+    "subtitle": "Titanium. So strong. So light.",
+    "image": "https://m.media-amazon.com/images/I/61v5Jay9F5L._AC_UF894,1000_QL80_.jpg",
+    "badge": "Sale",
+    "rating": 4.8,
+    "reviews": 8923,
     "specs": [
       {
         "label": "Display",
-        "value": "6.1\" OLED"
+        "value": "6.7\" Super Retina XDR OLED"
+      },
+      {
+        "label": "Chip",
+        "value": "A17 Pro"
+      },
+      {
+        "label": "Camera",
+        "value": "48MP Main + 12MP Ultra Wide + 12MP Telephoto"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 29 hours video playback"
+      },
+      {
+        "label": "Weight",
+        "value": "221 g"
+      }
+    ],
+    "description": "iPhone 15 Pro Max features a strong and lightweight titanium design, the A17 Pro chip, a powerful 48MP camera system with 5x optical zoom, and a customizable Action button.",
+    "category": "Pro",
+    "variants": [
+      {
+        "color": "Blue Titanium",
+        "colorHex": "#394C6B",
+        "image": "https://m.media-amazon.com/images/I/61v5Jay9F5L._AC_UF894,1000_QL80_.jpg",
+        "storage": "256GB",
+        "price": 1099,
+        "originalPrice": 1199,
+        "stock": 15,
+        "inStock": true
+      },
+      {
+        "color": "Blue Titanium",
+        "colorHex": "#394C6B",
+        "image": "https://m.media-amazon.com/images/I/61v5Jay9F5L._AC_UF894,1000_QL80_.jpg",
+        "storage": "512GB",
+        "price": 1299,
+        "originalPrice": 1399,
+        "stock": 10,
+        "inStock": true
+      },
+      {
+        "color": "Blue Titanium",
+        "colorHex": "#394C6B",
+        "image": "https://m.media-amazon.com/images/I/61v5Jay9F5L._AC_UF894,1000_QL80_.jpg",
+        "storage": "1TB",
+        "price": 1499,
+        "originalPrice": 1599,
+        "stock": 5,
+        "inStock": true
+      },
+      {
+        "color": "Natural Titanium",
+        "colorHex": "#C2BCB2",
+        "image": "https://m.media-amazon.com/images/I/61v5Jay9F5L._AC_UF894,1000_QL80_.jpg",
+        "storage": "256GB",
+        "price": 1099,
+        "originalPrice": 1199,
+        "stock": 12,
+        "inStock": true
+      },
+      {
+        "color": "Natural Titanium",
+        "colorHex": "#C2BCB2",
+        "image": "https://m.media-amazon.com/images/I/61v5Jay9F5L._AC_UF894,1000_QL80_.jpg",
+        "storage": "512GB",
+        "price": 1299,
+        "originalPrice": 1399,
+        "stock": 8,
+        "inStock": true
+      },
+      {
+        "color": "Natural Titanium",
+        "colorHex": "#C2BCB2",
+        "image": "https://m.media-amazon.com/images/I/61v5Jay9F5L._AC_UF894,1000_QL80_.jpg",
+        "storage": "1TB",
+        "price": 1499,
+        "originalPrice": 1599,
+        "stock": 4,
+        "inStock": true
+      },
+      {
+        "color": "White Titanium",
+        "colorHex": "#F2F1ED",
+        "image": "https://m.media-amazon.com/images/I/61v5Jay9F5L._AC_UF894,1000_QL80_.jpg",
+        "storage": "256GB",
+        "price": 1099,
+        "originalPrice": 1199,
+        "stock": 10,
+        "inStock": true
+      },
+      {
+        "color": "White Titanium",
+        "colorHex": "#F2F1ED",
+        "image": "https://m.media-amazon.com/images/I/61v5Jay9F5L._AC_UF894,1000_QL80_.jpg",
+        "storage": "512GB",
+        "price": 1299,
+        "originalPrice": 1399,
+        "stock": 6,
+        "inStock": true
+      },
+      {
+        "color": "White Titanium",
+        "colorHex": "#F2F1ED",
+        "image": "https://m.media-amazon.com/images/I/61v5Jay9F5L._AC_UF894,1000_QL80_.jpg",
+        "storage": "1TB",
+        "price": 1499,
+        "originalPrice": 1599,
+        "stock": 3,
+        "inStock": true
+      },
+      {
+        "color": "Black Titanium",
+        "colorHex": "#3C3C3D",
+        "image": "https://m.media-amazon.com/images/I/61v5Jay9F5L._AC_UF894,1000_QL80_.jpg",
+        "storage": "256GB",
+        "price": 1099,
+        "originalPrice": 1199,
+        "stock": 18,
+        "inStock": true
+      },
+      {
+        "color": "Black Titanium",
+        "colorHex": "#3C3C3D",
+        "image": "https://m.media-amazon.com/images/I/61v5Jay9F5L._AC_UF894,1000_QL80_.jpg",
+        "storage": "512GB",
+        "price": 1299,
+        "originalPrice": 1399,
+        "stock": 12,
+        "inStock": true
+      },
+      {
+        "color": "Black Titanium",
+        "colorHex": "#3C3C3D",
+        "image": "https://m.media-amazon.com/images/I/61v5Jay9F5L._AC_UF894,1000_QL80_.jpg",
+        "storage": "1TB",
+        "price": 1499,
+        "originalPrice": 1599,
+        "stock": 6,
+        "inStock": true
+      }
+    ],
+    "createdAt": "2026-02-10T09:04:00.000Z",
+    "updatedAt": "2026-02-10T08:59:09.094Z"
+  },
+  {
+    "id": "iphone-16-plus",
+    "name": "iPhone 16 Plus",
+    "subtitle": "More screen. More power.",
+    "image": "https://m.media-amazon.com/images/I/41zqTe3hkML._AC_UF894,1000_QL80_.jpg",
+    "rating": 4.7,
+    "reviews": 2198,
+    "specs": [
+      {
+        "label": "Display",
+        "value": "6.7\" Super Retina XDR OLED"
       },
       {
         "label": "Chip",
@@ -1384,7 +596,676 @@
       },
       {
         "label": "Camera",
-        "value": "48MP Main"
+        "value": "48MP Fusion + 12MP Ultra Wide"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 27 hours video playback"
+      },
+      {
+        "label": "Weight",
+        "value": "199 g"
+      }
+    ],
+    "description": "iPhone 16 Plus brings the A18 chip, 48MP camera system, Camera Control, and Apple Intelligence to a large 6.7-inch display with incredible battery life.",
+    "category": "Standard",
+    "variants": [
+      {
+        "color": "Ultramarine",
+        "colorHex": "#748DFF",
+        "image": "https://m.media-amazon.com/images/I/41zqTe3hkML._AC_UF894,1000_QL80_.jpg",
+        "storage": "128GB",
+        "price": 899,
+        "stock": 20,
+        "inStock": true
+      },
+      {
+        "color": "Ultramarine",
+        "colorHex": "#748DFF",
+        "image": "https://m.media-amazon.com/images/I/41zqTe3hkML._AC_UF894,1000_QL80_.jpg",
+        "storage": "256GB",
+        "price": 999,
+        "stock": 18,
+        "inStock": true
+      },
+      {
+        "color": "Ultramarine",
+        "colorHex": "#748DFF",
+        "image": "https://m.media-amazon.com/images/I/41zqTe3hkML._AC_UF894,1000_QL80_.jpg",
+        "storage": "512GB",
+        "price": 1199,
+        "stock": 10,
+        "inStock": true
+      },
+      {
+        "color": "Teal",
+        "colorHex": "#B0D4D1",
+        "image": "https://m.media-amazon.com/images/I/41zqTe3hkML._AC_UF894,1000_QL80_.jpg",
+        "storage": "128GB",
+        "price": 899,
+        "stock": 18,
+        "inStock": true
+      },
+      {
+        "color": "Teal",
+        "colorHex": "#B0D4D1",
+        "image": "https://m.media-amazon.com/images/I/41zqTe3hkML._AC_UF894,1000_QL80_.jpg",
+        "storage": "256GB",
+        "price": 999,
+        "stock": 15,
+        "inStock": true
+      },
+      {
+        "color": "Teal",
+        "colorHex": "#B0D4D1",
+        "image": "https://m.media-amazon.com/images/I/41zqTe3hkML._AC_UF894,1000_QL80_.jpg",
+        "storage": "512GB",
+        "price": 1199,
+        "stock": 8,
+        "inStock": true
+      },
+      {
+        "color": "Pink",
+        "colorHex": "#F4C1D2",
+        "image": "https://m.media-amazon.com/images/I/41zqTe3hkML._AC_UF894,1000_QL80_.jpg",
+        "storage": "128GB",
+        "price": 899,
+        "stock": 15,
+        "inStock": true
+      },
+      {
+        "color": "Pink",
+        "colorHex": "#F4C1D2",
+        "image": "https://m.media-amazon.com/images/I/41zqTe3hkML._AC_UF894,1000_QL80_.jpg",
+        "storage": "256GB",
+        "price": 999,
+        "stock": 12,
+        "inStock": true
+      },
+      {
+        "color": "Pink",
+        "colorHex": "#F4C1D2",
+        "image": "https://m.media-amazon.com/images/I/41zqTe3hkML._AC_UF894,1000_QL80_.jpg",
+        "storage": "512GB",
+        "price": 1199,
+        "stock": 6,
+        "inStock": true
+      },
+      {
+        "color": "White",
+        "colorHex": "#F5F5F0",
+        "image": "https://m.media-amazon.com/images/I/41zqTe3hkML._AC_UF894,1000_QL80_.jpg",
+        "storage": "128GB",
+        "price": 899,
+        "stock": 16,
+        "inStock": true
+      },
+      {
+        "color": "White",
+        "colorHex": "#F5F5F0",
+        "image": "https://m.media-amazon.com/images/I/41zqTe3hkML._AC_UF894,1000_QL80_.jpg",
+        "storage": "256GB",
+        "price": 999,
+        "stock": 14,
+        "inStock": true
+      },
+      {
+        "color": "White",
+        "colorHex": "#F5F5F0",
+        "image": "https://m.media-amazon.com/images/I/41zqTe3hkML._AC_UF894,1000_QL80_.jpg",
+        "storage": "512GB",
+        "price": 1199,
+        "stock": 7,
+        "inStock": true
+      },
+      {
+        "color": "Black",
+        "colorHex": "#3C3C3D",
+        "image": "https://m.media-amazon.com/images/I/41zqTe3hkML._AC_UF894,1000_QL80_.jpg",
+        "storage": "128GB",
+        "price": 899,
+        "stock": 22,
+        "inStock": true
+      },
+      {
+        "color": "Black",
+        "colorHex": "#3C3C3D",
+        "image": "https://m.media-amazon.com/images/I/41zqTe3hkML._AC_UF894,1000_QL80_.jpg",
+        "storage": "256GB",
+        "price": 999,
+        "stock": 18,
+        "inStock": true
+      },
+      {
+        "color": "Black",
+        "colorHex": "#3C3C3D",
+        "image": "https://m.media-amazon.com/images/I/41zqTe3hkML._AC_UF894,1000_QL80_.jpg",
+        "storage": "512GB",
+        "price": 1199,
+        "stock": 10,
+        "inStock": true
+      }
+    ],
+    "createdAt": "2026-02-10T09:05:00.000Z",
+    "updatedAt": "2026-02-10T08:59:09.094Z"
+  },
+  {
+    "id": "iphone-16",
+    "name": "iPhone 16",
+    "subtitle": "A total powerhouse.",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/41qsyx+-ffL._AC_UL495_SR435,495_.jpg",
+    "rating": 4.7,
+    "reviews": 5621,
+    "specs": [
+      {
+        "label": "Display",
+        "value": "6.1\" Super Retina XDR OLED"
+      },
+      {
+        "label": "Chip",
+        "value": "A18"
+      },
+      {
+        "label": "Camera",
+        "value": "48MP Fusion + 12MP Ultra Wide"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 22 hours video playback"
+      },
+      {
+        "label": "Weight",
+        "value": "170 g"
+      }
+    ],
+    "description": "iPhone 16 delivers the powerful A18 chip, a 48MP camera with advanced computational photography, Camera Control, and Apple Intelligence.",
+    "category": "Standard",
+    "variants": [
+      {
+        "color": "Ultramarine",
+        "colorHex": "#748DFF",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/41qsyx+-ffL._AC_UL495_SR435,495_.jpg",
+        "storage": "128GB",
+        "price": 799,
+        "stock": 40,
+        "inStock": true
+      },
+      {
+        "color": "Ultramarine",
+        "colorHex": "#748DFF",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/41qsyx+-ffL._AC_UL495_SR435,495_.jpg",
+        "storage": "256GB",
+        "price": 899,
+        "stock": 35,
+        "inStock": true
+      },
+      {
+        "color": "Ultramarine",
+        "colorHex": "#748DFF",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/41qsyx+-ffL._AC_UL495_SR435,495_.jpg",
+        "storage": "512GB",
+        "price": 1099,
+        "stock": 20,
+        "inStock": true
+      },
+      {
+        "color": "Teal",
+        "colorHex": "#B0D4D1",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/41qsyx+-ffL._AC_UL495_SR435,495_.jpg",
+        "storage": "128GB",
+        "price": 799,
+        "stock": 38,
+        "inStock": true
+      },
+      {
+        "color": "Teal",
+        "colorHex": "#B0D4D1",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/41qsyx+-ffL._AC_UL495_SR435,495_.jpg",
+        "storage": "256GB",
+        "price": 899,
+        "stock": 30,
+        "inStock": true
+      },
+      {
+        "color": "Teal",
+        "colorHex": "#B0D4D1",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/41qsyx+-ffL._AC_UL495_SR435,495_.jpg",
+        "storage": "512GB",
+        "price": 1099,
+        "stock": 18,
+        "inStock": true
+      },
+      {
+        "color": "Pink",
+        "colorHex": "#F4C1D2",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/41qsyx+-ffL._AC_UL495_SR435,495_.jpg",
+        "storage": "128GB",
+        "price": 799,
+        "stock": 30,
+        "inStock": true
+      },
+      {
+        "color": "Pink",
+        "colorHex": "#F4C1D2",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/41qsyx+-ffL._AC_UL495_SR435,495_.jpg",
+        "storage": "256GB",
+        "price": 899,
+        "stock": 25,
+        "inStock": true
+      },
+      {
+        "color": "Pink",
+        "colorHex": "#F4C1D2",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/41qsyx+-ffL._AC_UL495_SR435,495_.jpg",
+        "storage": "512GB",
+        "price": 1099,
+        "stock": 14,
+        "inStock": true
+      },
+      {
+        "color": "White",
+        "colorHex": "#F5F5F0",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/41qsyx+-ffL._AC_UL495_SR435,495_.jpg",
+        "storage": "128GB",
+        "price": 799,
+        "stock": 32,
+        "inStock": true
+      },
+      {
+        "color": "White",
+        "colorHex": "#F5F5F0",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/41qsyx+-ffL._AC_UL495_SR435,495_.jpg",
+        "storage": "256GB",
+        "price": 899,
+        "stock": 28,
+        "inStock": true
+      },
+      {
+        "color": "White",
+        "colorHex": "#F5F5F0",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/41qsyx+-ffL._AC_UL495_SR435,495_.jpg",
+        "storage": "512GB",
+        "price": 1099,
+        "stock": 16,
+        "inStock": true
+      },
+      {
+        "color": "Black",
+        "colorHex": "#3C3C3D",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/41qsyx+-ffL._AC_UL495_SR435,495_.jpg",
+        "storage": "128GB",
+        "price": 799,
+        "stock": 45,
+        "inStock": true
+      },
+      {
+        "color": "Black",
+        "colorHex": "#3C3C3D",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/41qsyx+-ffL._AC_UL495_SR435,495_.jpg",
+        "storage": "256GB",
+        "price": 899,
+        "stock": 38,
+        "inStock": true
+      },
+      {
+        "color": "Black",
+        "colorHex": "#3C3C3D",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/41qsyx+-ffL._AC_UL495_SR435,495_.jpg",
+        "storage": "512GB",
+        "price": 1099,
+        "stock": 22,
+        "inStock": true
+      }
+    ],
+    "createdAt": "2026-02-10T09:06:00.000Z",
+    "updatedAt": "2026-02-10T08:59:09.094Z"
+  },
+  {
+    "id": "iphone-16-pro",
+    "name": "iPhone 16 Pro",
+    "subtitle": "So much power. So pro.",
+    "image": "https://m.media-amazon.com/images/I/41HKrWQi3OL._AC_UF894,1000_QL80_.jpg",
+    "badge": "New",
+    "rating": 4.8,
+    "reviews": 3412,
+    "specs": [
+      {
+        "label": "Display",
+        "value": "6.3\" Super Retina XDR OLED"
+      },
+      {
+        "label": "Chip",
+        "value": "A18 Pro"
+      },
+      {
+        "label": "Camera",
+        "value": "48MP Fusion + 48MP Ultra Wide + 12MP Telephoto"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 27 hours video playback"
+      },
+      {
+        "label": "Weight",
+        "value": "199 g"
+      }
+    ],
+    "description": "iPhone 16 Pro packs the A18 Pro chip, a remarkable 48MP camera system with Camera Control, and Apple Intelligence — all in a beautiful, durable titanium design.",
+    "category": "Pro",
+    "variants": [
+      {
+        "color": "Desert Titanium",
+        "colorHex": "#BFA48F",
+        "image": "https://m.media-amazon.com/images/I/41HKrWQi3OL._AC_UF894,1000_QL80_.jpg",
+        "storage": "128GB",
+        "price": 999,
+        "stock": 25,
+        "inStock": true
+      },
+      {
+        "color": "Desert Titanium",
+        "colorHex": "#BFA48F",
+        "image": "https://m.media-amazon.com/images/I/41HKrWQi3OL._AC_UF894,1000_QL80_.jpg",
+        "storage": "256GB",
+        "price": 1099,
+        "stock": 20,
+        "inStock": true
+      },
+      {
+        "color": "Desert Titanium",
+        "colorHex": "#BFA48F",
+        "image": "https://m.media-amazon.com/images/I/41HKrWQi3OL._AC_UF894,1000_QL80_.jpg",
+        "storage": "512GB",
+        "price": 1299,
+        "stock": 12,
+        "inStock": true
+      },
+      {
+        "color": "Desert Titanium",
+        "colorHex": "#BFA48F",
+        "image": "https://m.media-amazon.com/images/I/41HKrWQi3OL._AC_UF894,1000_QL80_.jpg",
+        "storage": "1TB",
+        "price": 1499,
+        "stock": 6,
+        "inStock": true
+      },
+      {
+        "color": "Natural Titanium",
+        "colorHex": "#C2BCB2",
+        "image": "https://m.media-amazon.com/images/I/41HKrWQi3OL._AC_UF894,1000_QL80_.jpg",
+        "storage": "128GB",
+        "price": 999,
+        "stock": 22,
+        "inStock": true
+      },
+      {
+        "color": "Natural Titanium",
+        "colorHex": "#C2BCB2",
+        "image": "https://m.media-amazon.com/images/I/41HKrWQi3OL._AC_UF894,1000_QL80_.jpg",
+        "storage": "256GB",
+        "price": 1099,
+        "stock": 18,
+        "inStock": true
+      },
+      {
+        "color": "Natural Titanium",
+        "colorHex": "#C2BCB2",
+        "image": "https://m.media-amazon.com/images/I/41HKrWQi3OL._AC_UF894,1000_QL80_.jpg",
+        "storage": "512GB",
+        "price": 1299,
+        "stock": 10,
+        "inStock": true
+      },
+      {
+        "color": "Natural Titanium",
+        "colorHex": "#C2BCB2",
+        "image": "https://m.media-amazon.com/images/I/41HKrWQi3OL._AC_UF894,1000_QL80_.jpg",
+        "storage": "1TB",
+        "price": 1499,
+        "stock": 5,
+        "inStock": true
+      },
+      {
+        "color": "White Titanium",
+        "colorHex": "#F2F1ED",
+        "image": "https://m.media-amazon.com/images/I/41HKrWQi3OL._AC_UF894,1000_QL80_.jpg",
+        "storage": "128GB",
+        "price": 999,
+        "stock": 20,
+        "inStock": true
+      },
+      {
+        "color": "White Titanium",
+        "colorHex": "#F2F1ED",
+        "image": "https://m.media-amazon.com/images/I/41HKrWQi3OL._AC_UF894,1000_QL80_.jpg",
+        "storage": "256GB",
+        "price": 1099,
+        "stock": 16,
+        "inStock": true
+      },
+      {
+        "color": "White Titanium",
+        "colorHex": "#F2F1ED",
+        "image": "https://m.media-amazon.com/images/I/41HKrWQi3OL._AC_UF894,1000_QL80_.jpg",
+        "storage": "512GB",
+        "price": 1299,
+        "stock": 8,
+        "inStock": true
+      },
+      {
+        "color": "White Titanium",
+        "colorHex": "#F2F1ED",
+        "image": "https://m.media-amazon.com/images/I/41HKrWQi3OL._AC_UF894,1000_QL80_.jpg",
+        "storage": "1TB",
+        "price": 1499,
+        "stock": 4,
+        "inStock": true
+      },
+      {
+        "color": "Black Titanium",
+        "colorHex": "#3C3C3D",
+        "image": "https://m.media-amazon.com/images/I/41HKrWQi3OL._AC_UF894,1000_QL80_.jpg",
+        "storage": "128GB",
+        "price": 999,
+        "stock": 28,
+        "inStock": true
+      },
+      {
+        "color": "Black Titanium",
+        "colorHex": "#3C3C3D",
+        "image": "https://m.media-amazon.com/images/I/41HKrWQi3OL._AC_UF894,1000_QL80_.jpg",
+        "storage": "256GB",
+        "price": 1099,
+        "stock": 22,
+        "inStock": true
+      },
+      {
+        "color": "Black Titanium",
+        "colorHex": "#3C3C3D",
+        "image": "https://m.media-amazon.com/images/I/41HKrWQi3OL._AC_UF894,1000_QL80_.jpg",
+        "storage": "512GB",
+        "price": 1299,
+        "stock": 14,
+        "inStock": true
+      },
+      {
+        "color": "Black Titanium",
+        "colorHex": "#3C3C3D",
+        "image": "https://m.media-amazon.com/images/I/41HKrWQi3OL._AC_UF894,1000_QL80_.jpg",
+        "storage": "1TB",
+        "price": 1499,
+        "stock": 7,
+        "inStock": true
+      }
+    ],
+    "createdAt": "2026-02-10T09:07:00.000Z",
+    "updatedAt": "2026-02-10T08:59:09.094Z"
+  },
+  {
+    "id": "iphone-16-pro-max",
+    "name": "iPhone 16 Pro Max",
+    "subtitle": "The ultimate iPhone.",
+    "image": "https://m.media-amazon.com/images/I/61zU0mI4EsL._AC_UF894,1000_QL80_.jpg",
+    "badge": "New",
+    "rating": 4.9,
+    "reviews": 2847,
+    "specs": [
+      {
+        "label": "Display",
+        "value": "6.9\" Super Retina XDR OLED"
+      },
+      {
+        "label": "Chip",
+        "value": "A18 Pro"
+      },
+      {
+        "label": "Camera",
+        "value": "48MP Fusion + 48MP Ultra Wide + 12MP Telephoto"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 33 hours video playback"
+      },
+      {
+        "label": "Weight",
+        "value": "227 g"
+      }
+    ],
+    "description": "iPhone 16 Pro Max features a stunning 6.9-inch display, the powerful A18 Pro chip, a pro-level 48MP camera system with 5x optical zoom, and the longest battery life ever in an iPhone.",
+    "category": "Pro",
+    "variants": [
+      {
+        "color": "Desert Titanium",
+        "colorHex": "#BFA48F",
+        "image": "https://m.media-amazon.com/images/I/61zU0mI4EsL._AC_UF894,1000_QL80_.jpg",
+        "storage": "256GB",
+        "price": 1199,
+        "stock": 20,
+        "inStock": true
+      },
+      {
+        "color": "Desert Titanium",
+        "colorHex": "#BFA48F",
+        "image": "https://m.media-amazon.com/images/I/61zU0mI4EsL._AC_UF894,1000_QL80_.jpg",
+        "storage": "512GB",
+        "price": 1399,
+        "stock": 15,
+        "inStock": true
+      },
+      {
+        "color": "Desert Titanium",
+        "colorHex": "#BFA48F",
+        "image": "https://m.media-amazon.com/images/I/61zU0mI4EsL._AC_UF894,1000_QL80_.jpg",
+        "storage": "1TB",
+        "price": 1599,
+        "stock": 8,
+        "inStock": true
+      },
+      {
+        "color": "Natural Titanium",
+        "colorHex": "#C2BCB2",
+        "image": "https://m.media-amazon.com/images/I/61zU0mI4EsL._AC_UF894,1000_QL80_.jpg",
+        "storage": "256GB",
+        "price": 1199,
+        "stock": 18,
+        "inStock": true
+      },
+      {
+        "color": "Natural Titanium",
+        "colorHex": "#C2BCB2",
+        "image": "https://m.media-amazon.com/images/I/61zU0mI4EsL._AC_UF894,1000_QL80_.jpg",
+        "storage": "512GB",
+        "price": 1399,
+        "stock": 12,
+        "inStock": true
+      },
+      {
+        "color": "Natural Titanium",
+        "colorHex": "#C2BCB2",
+        "image": "https://m.media-amazon.com/images/I/61zU0mI4EsL._AC_UF894,1000_QL80_.jpg",
+        "storage": "1TB",
+        "price": 1599,
+        "stock": 6,
+        "inStock": true
+      },
+      {
+        "color": "White Titanium",
+        "colorHex": "#F2F1ED",
+        "image": "https://m.media-amazon.com/images/I/61zU0mI4EsL._AC_UF894,1000_QL80_.jpg",
+        "storage": "256GB",
+        "price": 1199,
+        "stock": 16,
+        "inStock": true
+      },
+      {
+        "color": "White Titanium",
+        "colorHex": "#F2F1ED",
+        "image": "https://m.media-amazon.com/images/I/61zU0mI4EsL._AC_UF894,1000_QL80_.jpg",
+        "storage": "512GB",
+        "price": 1399,
+        "stock": 10,
+        "inStock": true
+      },
+      {
+        "color": "White Titanium",
+        "colorHex": "#F2F1ED",
+        "image": "https://m.media-amazon.com/images/I/61zU0mI4EsL._AC_UF894,1000_QL80_.jpg",
+        "storage": "1TB",
+        "price": 1599,
+        "stock": 5,
+        "inStock": true
+      },
+      {
+        "color": "Black Titanium",
+        "colorHex": "#3C3C3D",
+        "image": "https://m.media-amazon.com/images/I/61zU0mI4EsL._AC_UF894,1000_QL80_.jpg",
+        "storage": "256GB",
+        "price": 1199,
+        "stock": 22,
+        "inStock": true
+      },
+      {
+        "color": "Black Titanium",
+        "colorHex": "#3C3C3D",
+        "image": "https://m.media-amazon.com/images/I/61zU0mI4EsL._AC_UF894,1000_QL80_.jpg",
+        "storage": "512GB",
+        "price": 1399,
+        "stock": 14,
+        "inStock": true
+      },
+      {
+        "color": "Black Titanium",
+        "colorHex": "#3C3C3D",
+        "image": "https://m.media-amazon.com/images/I/61zU0mI4EsL._AC_UF894,1000_QL80_.jpg",
+        "storage": "1TB",
+        "price": 1599,
+        "stock": 7,
+        "inStock": true
+      }
+    ],
+    "createdAt": "2026-02-10T09:08:00.000Z",
+    "updatedAt": "2026-02-10T08:59:09.094Z"
+  },
+  {
+    "id": "iphone-air",
+    "name": "iPhone Air",
+    "subtitle": "Light. Thin. Powerful.",
+    "image": "https://m.media-amazon.com/images/I/61lyNhjY4RL._AC_UF894,1000_QL80_.jpg",
+    "badge": "New",
+    "rating": 4.7,
+    "reviews": 1324,
+    "specs": [
+      {
+        "label": "Display",
+        "value": "6.5\" Super Retina OLED"
+      },
+      {
+        "label": "Chip",
+        "value": "A18"
+      },
+      {
+        "label": "Camera",
+        "value": "48MP Main + 12MP Ultra Wide"
       },
       {
         "label": "Battery",
@@ -1392,109 +1273,331 @@
       },
       {
         "label": "Weight",
-        "value": "164 g"
+        "value": "172 g"
       }
     ],
-    "description": "iPhone 16e brings Apple Intelligence, the A18 chip, and a stunning 48MP camera at an incredible price. The smartest choice for everyone.",
-    "category": "Standard",
+    "description": "iPhone 17 Air is designed for users who want a beautifully thin and lightweight iPhone without sacrificing performance. Featuring the powerful A18 chip, a vibrant 6.5-inch OLED display, and an advanced 48MP camera, it delivers smooth everyday performance and stunning photos in an elegant, ultra-slim design. Perfect for those who value comfort, portability, and style.",
+    "category": "Pro",
     "variants": [
       {
-        "color": "Midnight",
-        "colorHex": "#1D1D1F",
-        "image": "https://m.media-amazon.com/images/I/51H8+zCj2cL._AC_UF894,1000_QL80_.jpg",
+        "color": "Light Gold",
+        "colorHex": "#F5F5F0",
+        "image": "https://m.media-amazon.com/images/I/41QHKZ10pEL._AC_UF894,1000_QL80_.jpg",
         "storage": "128GB",
-        "price": 599,
-        "stock": 40,
-        "inStock": true
-      },
-      {
-        "color": "Midnight",
-        "colorHex": "#1D1D1F",
-        "image": "https://m.media-amazon.com/images/I/51H8+zCj2cL._AC_UF894,1000_QL80_.jpg",
-        "storage": "256GB",
-        "price": 699,
+        "price": 899,
         "stock": 35,
         "inStock": true
       },
       {
-        "color": "Starlight",
+        "color": "Light Gold",
         "colorHex": "#F5F5F0",
-        "image": "https://m.media-amazon.com/images/I/51H8+zCj2cL._AC_UF894,1000_QL80_.jpg",
-        "storage": "128GB",
-        "price": 599,
-        "stock": 38,
+        "image": "https://m.media-amazon.com/images/I/41QHKZ10pEL._AC_UF894,1000_QL80_.jpg",
+        "storage": "256GB",
+        "price": 999,
+        "stock": 28,
         "inStock": true
       },
       {
-        "color": "Starlight",
+        "color": "Light Gold",
         "colorHex": "#F5F5F0",
-        "image": "https://m.media-amazon.com/images/I/51H8+zCj2cL._AC_UF894,1000_QL80_.jpg",
-        "storage": "256GB",
-        "price": 699,
+        "image": "https://m.media-amazon.com/images/I/41QHKZ10pEL._AC_UF894,1000_QL80_.jpg",
+        "storage": "512GB",
+        "price": 1199,
+        "stock": 15,
+        "inStock": true
+      },
+      {
+        "color": "Sky Blue",
+        "colorHex": "#7FB3D5",
+        "image": "https://m.media-amazon.com/images/I/41YB4GIqgZL._AC_UF894,1000_QL80_.jpg",
+        "storage": "128GB",
+        "price": 899,
         "stock": 30,
         "inStock": true
       },
       {
-        "color": "Red",
-        "colorHex": "#BF0013",
-        "image": "https://m.media-amazon.com/images/I/51H8+zCj2cL._AC_UF894,1000_QL80_.jpg",
+        "color": "Sky Blue",
+        "colorHex": "#7FB3D5",
+        "image": "https://m.media-amazon.com/images/I/41YB4GIqgZL._AC_UF894,1000_QL80_.jpg",
+        "storage": "256GB",
+        "price": 999,
+        "stock": 22,
+        "inStock": true
+      },
+      {
+        "color": "Sky Blue",
+        "colorHex": "#7FB3D5",
+        "image": "https://m.media-amazon.com/images/I/41YB4GIqgZL._AC_UF894,1000_QL80_.jpg",
+        "storage": "512GB",
+        "price": 1199,
+        "stock": 10,
+        "inStock": true
+      },
+      {
+        "color": "Space Black",
+        "colorHex": "#1C1C1E",
+        "image": "https://m.media-amazon.com/images/I/61lyNhjY4RL._AC_UF894,1000_QL80_.jpg",
         "storage": "128GB",
-        "price": 599,
+        "price": 899,
         "stock": 32,
         "inStock": true
       },
       {
-        "color": "Red",
-        "colorHex": "#BF0013",
-        "image": "https://m.media-amazon.com/images/I/51H8+zCj2cL._AC_UF894,1000_QL80_.jpg",
+        "color": "Space Black",
+        "colorHex": "#1C1C1E",
+        "image": "https://m.media-amazon.com/images/I/61lyNhjY4RL._AC_UF894,1000_QL80_.jpg",
         "storage": "256GB",
-        "price": 699,
-        "stock": 28,
+        "price": 999,
+        "stock": 25,
+        "inStock": true
+      },
+      {
+        "color": "Space Black",
+        "colorHex": "#1C1C1E",
+        "image": "https://m.media-amazon.com/images/I/61lyNhjY4RL._AC_UF894,1000_QL80_.jpg",
+        "storage": "512GB",
+        "price": 1199,
+        "stock": 12,
         "inStock": true
       }
     ],
-    "createdAt": "2026-02-10T09:08:09.094Z",
-    "updatedAt": "2026-02-10T08:59:09.094Z"
+    "createdAt": "2026-02-10T09:09:00.000Z",
+    "updatedAt": "2026-02-10T11:58:36.737Z"
   },
   {
-    "id": "airpods-pro-2",
-    "name": "AirPods Pro 2",
-    "subtitle": "Intelligent noise cancellation.",
-    "image": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/airpods-pro-2-hero-select-202409?wid=940&hei=1112&fmt=png-alpha",
-    "rating": 4.8,
-    "reviews": 15230,
+    "id": "iphone-17-pro",
+    "name": "iPhone 17 Pro",
+    "subtitle": "Pro performance. Perfect size.",
+    "image": "https://m.media-amazon.com/images/I/41UC+KWgE6L._AC_UF894,1000_QL80_.jpg",
+    "badge": "New",
+    "rating": 4.9,
+    "reviews": 2847,
     "specs": [
       {
-        "label": "Chip",
-        "value": "H2"
+        "label": "Display",
+        "value": "6.3\" Super Retina XDR OLED"
       },
       {
-        "label": "ANC",
-        "value": "Active Noise Cancellation"
+        "label": "Chip",
+        "value": "A18 Pro"
+      },
+      {
+        "label": "Camera",
+        "value": "48MP Fusion + 48MP Ultra Wide + 12MP Telephoto (5x)"
       },
       {
         "label": "Battery",
-        "value": "Up to 6 hours listening"
+        "value": "Up to 29 hours video playback"
       },
       {
-        "label": "Connectivity",
-        "value": "Bluetooth 5.3"
+        "label": "Weight",
+        "value": "205 g"
       }
     ],
-    "description": "AirPods Pro 2 feature the H2 chip for smarter noise cancellation, Adaptive Audio, Conversation Awareness, and up to 2x more Active Noise Cancellation than the previous generation.",
-    "category": "Accessories",
+    "description": "iPhone 17 Pro packs uncompromising Pro performance into a more compact design. Powered by the A18 Pro chip, it delivers blazing-fast speed, console-level gaming, and exceptional efficiency. The advanced 48MP Pro camera system with 5x optical zoom enables stunning photos and cinematic video, while the Super Retina XDR display brings everything to life with incredible brightness and color accuracy.",
+    "category": "Pro",
     "variants": [
       {
-        "color": "White",
-        "colorHex": "#F5F5F0",
-        "image": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/airpods-pro-2-hero-select-202409?wid=940&hei=1112&fmt=png-alpha",
-        "storage": "",
-        "price": 249,
-        "stock": 50,
+        "color": "Cosmic Orange",
+        "colorHex": "#FF6F00",
+        "image": "https://m.media-amazon.com/images/I/51fpWBn0ZQL._AC_UF894,1000_QL80_.jpg",
+        "storage": "256GB",
+        "price": 1199,
+        "stock": 30,
+        "inStock": true
+      },
+      {
+        "color": "Cosmic Orange",
+        "colorHex": "#FF6F00",
+        "image": "https://m.media-amazon.com/images/I/51fpWBn0ZQL._AC_UF894,1000_QL80_.jpg",
+        "storage": "512GB",
+        "price": 1299,
+        "stock": 22,
+        "inStock": true
+      },
+      {
+        "color": "Cosmic Orange",
+        "colorHex": "#FF6F00",
+        "image": "https://m.media-amazon.com/images/I/51fpWBn0ZQL._AC_UF894,1000_QL80_.jpg",
+        "storage": "1TB",
+        "price": 1499,
+        "stock": 12,
+        "inStock": true
+      },
+      {
+        "color": "Deep Blue",
+        "colorHex": "#1F3B6F",
+        "image": "https://m.media-amazon.com/images/I/41UC+KWgE6L._AC_UF894,1000_QL80_.jpg",
+        "storage": "256GB",
+        "price": 1199,
+        "stock": 28,
+        "inStock": true
+      },
+      {
+        "color": "Deep Blue",
+        "colorHex": "#1F3B6F",
+        "image": "https://m.media-amazon.com/images/I/41UC+KWgE6L._AC_UF894,1000_QL80_.jpg",
+        "storage": "512GB",
+        "price": 1299,
+        "stock": 20,
+        "inStock": true
+      },
+      {
+        "color": "Deep Blue",
+        "colorHex": "#1F3B6F",
+        "image": "https://m.media-amazon.com/images/I/41UC+KWgE6L._AC_UF894,1000_QL80_.jpg",
+        "storage": "1TB",
+        "price": 1499,
+        "stock": 10,
+        "inStock": true
+      },
+      {
+        "color": "Silver",
+        "colorHex": "#C0C0C0",
+        "image": "https://m.media-amazon.com/images/I/6105TOJ-18L._AC_UF894,1000_QL80_.jpg",
+        "storage": "256GB",
+        "price": 1199,
+        "stock": 25,
+        "inStock": true
+      },
+      {
+        "color": "Silver",
+        "colorHex": "#C0C0C0",
+        "image": "https://m.media-amazon.com/images/I/6105TOJ-18L._AC_UF894,1000_QL80_.jpg",
+        "storage": "512GB",
+        "price": 1299,
+        "stock": 18,
+        "inStock": true
+      },
+      {
+        "color": "Silver",
+        "colorHex": "#C0C0C0",
+        "image": "https://m.media-amazon.com/images/I/6105TOJ-18L._AC_UF894,1000_QL80_.jpg",
+        "storage": "1TB",
+        "price": 1499,
+        "stock": 8,
         "inStock": true
       }
     ],
-    "createdAt": "2026-02-10T09:09:09.094Z",
+    "createdAt": "2026-02-10T09:10:00.000Z",
+    "updatedAt": "2026-02-10T08:59:09.094Z"
+  },
+  {
+    "id": "iphone-17-pro-max",
+    "name": "iPhone 17 Pro Max",
+    "subtitle": "The ultimate iPhone.",
+    "image": "https://m.media-amazon.com/images/I/51fpWBn0ZQL._AC_UF894,1000_QL80_.jpg",
+    "badge": "New",
+    "rating": 4.9,
+    "reviews": 2847,
+    "specs": [
+      {
+        "label": "Display",
+        "value": "6.9\" Super Retina XDR OLED"
+      },
+      {
+        "label": "Chip",
+        "value": "A18 Pro"
+      },
+      {
+        "label": "Camera",
+        "value": "48MP Fusion + 48MP Ultra Wide + 12MP Telephoto (5x)"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 33 hours video playback"
+      },
+      {
+        "label": "Weight",
+        "value": "227 g"
+      }
+    ],
+    "description": "iPhone 17 Pro Max delivers the best iPhone experience with a massive 6.9-inch Super Retina XDR display, the ultra-fast A18 Pro chip, and the most advanced Pro camera system ever. Capture stunning detail with a 48MP Fusion camera, 5x optical zoom, and pro-level video features. With the longest battery life ever in an iPhone, it's built for users who want maximum performance, screen size, and endurance.",
+    "category": "Pro",
+    "variants": [
+      {
+        "color": "Cosmic Orange",
+        "colorHex": "#FF6F00",
+        "image": "https://m.media-amazon.com/images/I/51fpWBn0ZQL._AC_UF894,1000_QL80_.jpg",
+        "storage": "256GB",
+        "price": 1499,
+        "stock": 25,
+        "inStock": true
+      },
+      {
+        "color": "Cosmic Orange",
+        "colorHex": "#FF6F00",
+        "image": "https://m.media-amazon.com/images/I/51fpWBn0ZQL._AC_UF894,1000_QL80_.jpg",
+        "storage": "512GB",
+        "price": 1599,
+        "stock": 18,
+        "inStock": true
+      },
+      {
+        "color": "Cosmic Orange",
+        "colorHex": "#FF6F00",
+        "image": "https://m.media-amazon.com/images/I/51fpWBn0ZQL._AC_UF894,1000_QL80_.jpg",
+        "storage": "1TB",
+        "price": 1799,
+        "stock": 10,
+        "inStock": true
+      },
+      {
+        "color": "Deep Blue",
+        "colorHex": "#1F3B6F",
+        "image": "https://m.media-amazon.com/images/I/41exs-G+5BL._AC_UF894,1000_QL80_.jpg",
+        "storage": "256GB",
+        "price": 1499,
+        "stock": 20,
+        "inStock": true
+      },
+      {
+        "color": "Deep Blue",
+        "colorHex": "#1F3B6F",
+        "image": "https://m.media-amazon.com/images/I/41exs-G+5BL._AC_UF894,1000_QL80_.jpg",
+        "storage": "512GB",
+        "price": 1599,
+        "stock": 15,
+        "inStock": true
+      },
+      {
+        "color": "Deep Blue",
+        "colorHex": "#1F3B6F",
+        "image": "https://m.media-amazon.com/images/I/41exs-G+5BL._AC_UF894,1000_QL80_.jpg",
+        "storage": "1TB",
+        "price": 1799,
+        "stock": 8,
+        "inStock": true
+      },
+      {
+        "color": "Silver",
+        "colorHex": "#C0C0C0",
+        "image": "https://m.media-amazon.com/images/I/4110XkUp8fL._AC_UF894,1000_QL80_.jpg",
+        "storage": "256GB",
+        "price": 1499,
+        "stock": 22,
+        "inStock": true
+      },
+      {
+        "color": "Silver",
+        "colorHex": "#C0C0C0",
+        "image": "https://m.media-amazon.com/images/I/4110XkUp8fL._AC_UF894,1000_QL80_.jpg",
+        "storage": "512GB",
+        "price": 1599,
+        "stock": 12,
+        "inStock": true
+      },
+      {
+        "color": "Silver",
+        "colorHex": "#C0C0C0",
+        "image": "https://m.media-amazon.com/images/I/4110XkUp8fL._AC_UF894,1000_QL80_.jpg",
+        "storage": "1TB",
+        "price": 1799,
+        "stock": 6,
+        "inStock": true
+      }
+    ],
+    "createdAt": "2026-02-10T09:11:00.000Z",
     "updatedAt": "2026-02-10T08:59:09.094Z"
   }
 ]

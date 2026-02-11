@@ -1,14 +1,14 @@
 "use client";
 
 import { useState, useMemo, useRef, useEffect } from "react";
-import type { Product } from "@/data/products";
+import type { ProductWithVariant } from "@/data/products";
 import ProductCard from "@/components/ProductCard";
-import { ChevronDown, Check } from "lucide-react";
+import { ChevronDown, ChevronLeft, ChevronRight, Check } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 
-export default function ProductsContent({ products }: { products: Product[] }) {
+export default function ProductsContent({ items }: { items: ProductWithVariant[] }) {
   const t = useTranslations("Products");
   const searchParams = useSearchParams();
   const categoryParam = searchParams.get("category");
@@ -18,7 +18,9 @@ export default function ProductsContent({ products }: { products: Product[] }) {
   );
   const [sortBy, setSortBy] = useState<string>("featured");
   const [sortOpen, setSortOpen] = useState(false);
+  const [page, setPage] = useState(1);
   const sortRef = useRef<HTMLDivElement>(null);
+  const ITEMS_PER_PAGE = 16;
 
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
@@ -40,33 +42,37 @@ export default function ProductsContent({ products }: { products: Product[] }) {
   const filtered = useMemo(() => {
     let result =
       selectedCategory === "All"
-        ? products
-        : products.filter((p) => p.category === selectedCategory);
+        ? items
+        : items.filter((item) => item.product.category === selectedCategory);
 
     switch (sortBy) {
       case "price-low":
-        result = [...result].sort(
-          (a, b) =>
-            Math.min(...a.variants.map((v) => v.price)) -
-            Math.min(...b.variants.map((v) => v.price))
-        );
+        result = [...result].sort((a, b) => a.variant.price - b.variant.price);
         break;
       case "price-high":
-        result = [...result].sort(
-          (a, b) =>
-            Math.min(...b.variants.map((v) => v.price)) -
-            Math.min(...a.variants.map((v) => v.price))
-        );
+        result = [...result].sort((a, b) => b.variant.price - a.variant.price);
         break;
       case "rating":
-        result = [...result].sort((a, b) => b.rating - a.rating);
+        result = [...result].sort((a, b) => b.product.rating - a.product.rating);
         break;
       default:
         break;
     }
 
     return result;
-  }, [selectedCategory, sortBy, products]);
+  }, [selectedCategory, sortBy, items]);
+
+  const totalPages = Math.max(1, Math.ceil(filtered.length / ITEMS_PER_PAGE));
+  const currentPage = Math.min(page, totalPages);
+  const paginated = filtered.slice(
+    (currentPage - 1) * ITEMS_PER_PAGE,
+    currentPage * ITEMS_PER_PAGE
+  );
+
+  // Reset to page 1 when filters/sort change
+  useEffect(() => {
+    setPage(1);
+  }, [selectedCategory, sortBy]);
 
   return (
     <div className="min-h-screen bg-white pt-24">
@@ -175,10 +181,49 @@ export default function ProductsContent({ products }: { products: Product[] }) {
 
         {/* Product Grid */}
         <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {filtered.map((product, i) => (
-            <ProductCard key={product.id} product={product} index={i} />
+          {paginated.map((item, i) => (
+            <ProductCard
+              key={`${item.product.id}-${item.variant.color}-${item.variant.storage}`}
+              item={item}
+              index={i}
+            />
           ))}
         </div>
+
+        {/* Pagination */}
+        {totalPages > 1 && (
+          <div className="mt-12 flex items-center justify-center gap-2">
+            <button
+              onClick={() => { setPage((p) => Math.max(1, p - 1)); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+              disabled={currentPage === 1}
+              className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-200 text-gray-500 transition-all hover:border-gray-300 hover:bg-gray-50 disabled:opacity-30 disabled:pointer-events-none"
+            >
+              <ChevronLeft className="h-4 w-4" />
+            </button>
+
+            {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
+              <button
+                key={p}
+                onClick={() => { setPage(p); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                className={`flex h-10 w-10 items-center justify-center rounded-full text-sm font-medium transition-all ${
+                  p === currentPage
+                    ? "bg-gray-900 text-white shadow-lg"
+                    : "border border-gray-200 text-gray-600 hover:border-gray-300 hover:bg-gray-50"
+                }`}
+              >
+                {p}
+              </button>
+            ))}
+
+            <button
+              onClick={() => { setPage((p) => Math.min(totalPages, p + 1)); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+              disabled={currentPage === totalPages}
+              className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-200 text-gray-500 transition-all hover:border-gray-300 hover:bg-gray-50 disabled:opacity-30 disabled:pointer-events-none"
+            >
+              <ChevronRight className="h-4 w-4" />
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );

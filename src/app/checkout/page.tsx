@@ -217,7 +217,7 @@ export default function CheckoutPage() {
                       name="address"
                       required
                       className="mt-1 w-full rounded-xl border border-gray-200 px-4 py-3 text-sm outline-none transition-colors focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
-                      placeholder="123 Main St"
+                      placeholder="Adresa"
                     />
                   </div>
                   <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
@@ -230,7 +230,7 @@ export default function CheckoutPage() {
                         name="city"
                         required
                         className="mt-1 w-full rounded-xl border border-gray-200 px-4 py-3 text-sm outline-none transition-colors focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
-                        placeholder="New York"
+                        placeholder="Gjakove"
                       />
                     </div>
                     <div>
@@ -242,7 +242,7 @@ export default function CheckoutPage() {
                         name="state"
                         required
                         className="mt-1 w-full rounded-xl border border-gray-200 px-4 py-3 text-sm outline-none transition-colors focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
-                        placeholder="NY"
+                        placeholder="Kosove"
                       />
                     </div>
                     <div>
@@ -254,7 +254,7 @@ export default function CheckoutPage() {
                         name="zipCode"
                         required
                         className="mt-1 w-full rounded-xl border border-gray-200 px-4 py-3 text-sm outline-none transition-colors focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
-                        placeholder="10001"
+                        placeholder="50000"
                       />
                     </div>
                   </div>

@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { createProductAction, updateProductAction } from "@/actions/products";
 import SpecEditor from "./SpecEditor";
-import { Save, Loader2, ArrowLeft, Plus, Trash2 } from "lucide-react";
+import { Save, Loader2, ArrowLeft, Plus, Trash2, Upload } from "lucide-react";
 import Link from "next/link";
 import type { AdminProduct, ProductVariant } from "@/types/admin";
 import Image from "next/image";
@@ -34,6 +34,8 @@ export default function ProductForm({ product, mode }: ProductFormProps) {
     product?.variants || [{ ...emptyVariant }]
   );
   const [imagePreview, setImagePreview] = useState(product?.image || "");
+  const [uploadingVariant, setUploadingVariant] = useState<number | null>(null);
+  const [uploadingDefault, setUploadingDefault] = useState(false);
 
   const addVariant = () => {
     // Clone the last variant for convenience
@@ -60,6 +62,44 @@ export default function ProductForm({ product, mode }: ProductFormProps) {
     updated[index] = { ...updated[index], [field]: value };
     setVariants(updated);
   };
+
+  async function handleDefaultImageUpload(file: File) {
+    setUploadingDefault(true);
+    try {
+      const formData = new FormData();
+      formData.append("file", file);
+      const res = await fetch("/api/upload", { method: "POST", body: formData });
+      const data = await res.json();
+      if (data.url) {
+        setImagePreview(data.url);
+      } else {
+        setError(data.error || "Upload failed");
+      }
+    } catch {
+      setError("Image upload failed");
+    } finally {
+      setUploadingDefault(false);
+    }
+  }
+
+  async function handleVariantImageUpload(index: number, file: File) {
+    setUploadingVariant(index);
+    try {
+      const formData = new FormData();
+      formData.append("file", file);
+      const res = await fetch("/api/upload", { method: "POST", body: formData });
+      const data = await res.json();
+      if (data.url) {
+        updateVariant(index, "image", data.url);
+      } else {
+        setError(data.error || "Upload failed");
+      }
+    } catch {
+      setError("Image upload failed");
+    } finally {
+      setUploadingVariant(null);
+    }
+  }
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -293,6 +333,61 @@ export default function ProductForm({ product, mode }: ProductFormProps) {
                       </button>
                     )}
                   </div>
+                  <div className="flex gap-4">
+                    {/* Image preview / upload area */}
+                    <label className="group relative flex h-24 w-24 shrink-0 cursor-pointer items-center justify-center overflow-hidden rounded-xl border-2 border-dashed border-gray-200 bg-gray-50 transition-colors hover:border-blue-400 dark:border-gray-700 dark:bg-gray-800 dark:hover:border-blue-500">
+                      {v.image ? (
+                        <>
+                          <Image
+                            src={v.image}
+                            alt="Variant"
+                            width={96}
+                            height={96}
+                            className="h-full w-full object-contain"
+                            unoptimized
+                          />
+                          <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 transition-opacity group-hover:opacity-100">
+                            {uploadingVariant === i ? (
+                              <Loader2 className="h-5 w-5 animate-spin text-white" />
+                            ) : (
+                              <Upload className="h-5 w-5 text-white" />
+                            )}
+                          </div>
+                        </>
+                      ) : (
+                        <div className="flex flex-col items-center gap-1 text-gray-400">
+                          {uploadingVariant === i ? (
+                            <Loader2 className="h-5 w-5 animate-spin" />
+                          ) : (
+                            <Upload className="h-5 w-5" />
+                          )}
+                          <span className="text-[10px]">Upload</span>
+                        </div>
+                      )}
+                      <input
+                        type="file"
+                        accept="image/jpeg,image/png,image/webp,image/avif"
+                        className="hidden"
+                        onChange={(e) => {
+                          const file = e.target.files?.[0];
+                          if (file) handleVariantImageUpload(i, file);
+                          e.target.value = "";
+                        }}
+                      />
+                    </label>
+
+                    {/* Fields */}
+                    <div className="min-w-0 flex-1">
+                      <div className="mb-2">
+                        <input
+                          value={v.image}
+                          onChange={(e) =>
+                            updateVariant(i, "image", e.target.value)
+                          }
+                          placeholder="Image URL or upload"
+                          className="w-full rounded-lg border border-gray-200 px-3 py-1.5 text-xs outline-none focus:border-blue-500 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
+                        />
+                      </div>
                   <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
                     <div>
                       <label className="block text-xs font-medium text-gray-600 dark:text-gray-400">
@@ -339,19 +434,6 @@ export default function ProductForm({ product, mode }: ProductFormProps) {
                           updateVariant(i, "storage", e.target.value)
                         }
                         placeholder="256GB"
-                        className="mt-1 w-full rounded-lg border border-gray-200 px-3 py-2 text-xs outline-none focus:border-blue-500 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-xs font-medium text-gray-600 dark:text-gray-400">
-                        Image URL
-                      </label>
-                      <input
-                        value={v.image}
-                        onChange={(e) =>
-                          updateVariant(i, "image", e.target.value)
-                        }
-                        placeholder="https://..."
                         className="mt-1 w-full rounded-lg border border-gray-200 px-3 py-2 text-xs outline-none focus:border-blue-500 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
                       />
                     </div>
@@ -429,6 +511,8 @@ export default function ProductForm({ product, mode }: ProductFormProps) {
                       </select>
                     </div>
                   </div>
+                    </div>
+                  </div>
                 </div>
               ))}
             </div>
@@ -447,26 +531,55 @@ export default function ProductForm({ product, mode }: ProductFormProps) {
             <h3 className="mb-4 text-sm font-semibold text-gray-900 dark:text-white">
               Default Image
             </h3>
-            <input
-              name="image"
-              defaultValue={product?.image}
-              required
-              placeholder="Image URL"
-              onChange={(e) => setImagePreview(e.target.value)}
-              className="w-full rounded-xl border border-gray-200 px-4 py-2.5 text-sm outline-none transition-colors focus:border-blue-500 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
-            />
-            {imagePreview && (
-              <div className="mt-4 flex justify-center rounded-xl bg-gray-50 p-4 dark:bg-gray-800">
-                <Image
-                  src={imagePreview}
-                  alt="Preview"
-                  width={200}
-                  height={200}
-                  className="h-48 w-auto object-contain"
-                  unoptimized
-                />
-              </div>
-            )}
+            <input type="hidden" name="image" value={imagePreview} />
+            <label className="group relative flex h-48 w-full cursor-pointer items-center justify-center overflow-hidden rounded-xl border-2 border-dashed border-gray-200 bg-gray-50 transition-colors hover:border-blue-400 dark:border-gray-700 dark:bg-gray-800 dark:hover:border-blue-500">
+              {imagePreview ? (
+                <>
+                  <Image
+                    src={imagePreview}
+                    alt="Preview"
+                    width={200}
+                    height={200}
+                    className="h-full w-auto object-contain"
+                    unoptimized
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 transition-opacity group-hover:opacity-100">
+                    {uploadingDefault ? (
+                      <Loader2 className="h-6 w-6 animate-spin text-white" />
+                    ) : (
+                      <Upload className="h-6 w-6 text-white" />
+                    )}
+                  </div>
+                </>
+              ) : (
+                <div className="flex flex-col items-center gap-2 text-gray-400">
+                  {uploadingDefault ? (
+                    <Loader2 className="h-8 w-8 animate-spin" />
+                  ) : (
+                    <Upload className="h-8 w-8" />
+                  )}
+                  <span className="text-xs">Click to upload</span>
+                </div>
+              )}
+              <input
+                type="file"
+                accept="image/jpeg,image/png,image/webp,image/avif"
+                className="hidden"
+                onChange={(e) => {
+                  const file = e.target.files?.[0];
+                  if (file) handleDefaultImageUpload(file);
+                  e.target.value = "";
+                }}
+              />
+            </label>
+            <div className="mt-3 flex items-center gap-2">
+              <input
+                value={imagePreview}
+                onChange={(e) => setImagePreview(e.target.value)}
+                placeholder="Or paste image URL"
+                className="w-full rounded-xl border border-gray-200 px-4 py-2.5 text-sm outline-none transition-colors focus:border-blue-500 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
+              />
+            </div>
           </div>
 
           {/* Summary */}

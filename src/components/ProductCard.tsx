@@ -3,49 +3,26 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Star, ShoppingBag } from "lucide-react";
-import { Product } from "@/data/products";
+import type { ProductWithVariant } from "@/data/products";
 import { useCart } from "@/context/CartContext";
 import { motion } from "framer-motion";
-import { useMemo } from "react";
 
 export default function ProductCard({
-  product,
+  item,
   index = 0,
 }: {
-  product: Product;
+  item: ProductWithVariant;
   index?: number;
 }) {
   const { addToCart } = useCart();
-
-  const firstVariant = product.variants[0];
-  const minPrice = useMemo(
-    () => Math.min(...product.variants.map((v) => v.price)),
-    [product.variants]
-  );
-  const maxOriginalPrice = useMemo(() => {
-    const originals = product.variants
-      .filter((v) => v.originalPrice)
-      .map((v) => v.originalPrice!);
-    return originals.length > 0 ? Math.max(...originals) : undefined;
-  }, [product.variants]);
-
-  // Unique colors for color dots
-  const uniqueColors = useMemo(() => {
-    const seen = new Map<string, { color: string; colorHex: string }>();
-    product.variants.forEach((v) => {
-      if (!seen.has(v.color)) {
-        seen.set(v.color, { color: v.color, colorHex: v.colorHex });
-      }
-    });
-    return [...seen.values()];
-  }, [product.variants]);
+  const { product, variant } = item;
 
   return (
     <motion.div
-      initial={{ opacity: 0}}
+      initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.5, delay: index * 0.05 }}
+      transition={{ duration: 0.5 }}
       className="group relative flex flex-col overflow-hidden rounded-3xl bg-white border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-xl hover:shadow-gray-200/50 hover:-translate-y-1"
     >
       {/* Badge */}
@@ -62,10 +39,10 @@ export default function ProductCard({
       )}
 
       {/* Image */}
-      <Link href={`/products/${product.id}`} className="relative mx-auto flex h-64 w-full items-center justify-center bg-gradient-to-b from-gray-50 to-white p-6">
+      <Link href={`/products/${product.id}?color=${encodeURIComponent(variant.color)}&storage=${encodeURIComponent(variant.storage)}`} className="relative mx-auto flex h-64 w-full items-center justify-center bg-gradient-to-b from-gray-50 to-white p-6">
         <Image
-          src={product.image}
-          alt={product.name}
+          src={variant.image}
+          alt={`${product.name} - ${variant.color}`}
           width={200}
           height={200}
           className="h-full w-auto max-w-[180px] object-contain transition-transform duration-500 group-hover:scale-105"
@@ -76,7 +53,7 @@ export default function ProductCard({
       <div className="flex flex-1 flex-col p-5 pt-3">
         <div className="flex items-start justify-between gap-2">
           <div>
-            <Link href={`/products/${product.id}`}>
+            <Link href={`/products/${product.id}?color=${encodeURIComponent(variant.color)}&storage=${encodeURIComponent(variant.storage)}`}>
               <h3 className="text-base font-semibold text-gray-900 transition-colors hover:text-blue-600">
                 {product.name}
               </h3>
@@ -85,18 +62,19 @@ export default function ProductCard({
           </div>
         </div>
 
-        {/* Colors */}
-        <div className="mt-3 flex items-center gap-1.5">
-          {uniqueColors.slice(0, 4).map((c) => (
+        {/* Color & Storage */}
+        <div className="mt-3 flex flex-wrap items-center gap-2">
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-gray-100 px-2.5 py-1 text-xs font-medium text-gray-700">
             <span
-              key={c.color}
-              className="h-4 w-4 rounded-full border border-gray-200 shadow-sm"
-              style={{ backgroundColor: c.colorHex }}
-              title={c.color}
+              className="h-3 w-3 rounded-full border border-gray-200 shadow-sm"
+              style={{ backgroundColor: variant.colorHex }}
             />
-          ))}
-          {uniqueColors.length > 4 && (
-            <span className="text-xs text-gray-400">+{uniqueColors.length - 4}</span>
+            {variant.color}
+          </span>
+          {variant.storage && (
+            <span className="inline-flex items-center rounded-full bg-gray-100 px-2.5 py-1 text-xs font-medium text-gray-700">
+              {variant.storage}
+            </span>
           )}
         </div>
 
@@ -123,20 +101,18 @@ export default function ProductCard({
         <div className="mt-auto flex items-end justify-between pt-4">
           <div className="flex items-baseline gap-2">
             <span className="text-xl font-bold text-gray-900">
-              €{minPrice.toLocaleString()}
+              €{variant.price.toLocaleString()}
             </span>
-            {maxOriginalPrice && (
+            {variant.originalPrice && (
               <span className="text-sm text-gray-400 line-through">
-                €{maxOriginalPrice.toLocaleString()}
+                €{variant.originalPrice.toLocaleString()}
               </span>
             )}
           </div>
           <button
             onClick={(e) => {
               e.preventDefault();
-              if (firstVariant) {
-                addToCart(product, firstVariant.color, firstVariant.storage);
-              }
+              addToCart(product, variant.color, variant.storage);
             }}
             className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-900 text-white shadow-lg transition-all hover:bg-blue-600 hover:scale-110 active:scale-95"
           >

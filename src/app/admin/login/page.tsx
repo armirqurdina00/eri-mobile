@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { loginAction } from "@/actions/auth";
 import { Smartphone, Eye, EyeOff, Loader2 } from "lucide-react";
+import Image from "next/image";
 
 export default function AdminLoginPage() {
   const [error, setError] = useState("");
@@ -28,13 +29,21 @@ export default function AdminLoginPage() {
   }
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-slate-900 via-blue-950 to-violet-950 p-4">
+    <div className="flex min-h-screen items-center justify-center bg-gradient-to-br p-4">
       <div className="w-full max-w-md">
         <div className="mb-8 text-center">
-          <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-600 shadow-lg shadow-blue-500/30">
-            <Smartphone className="h-7 w-7 text-white" />
+          <div className="flex justify-center">
+            <Image
+              src="/logo.png"
+              alt="Eri Mobile Shop"
+              width={64}
+              height={64}
+            />
           </div>
-          <h1 className="mt-4 text-2xl font-bold text-white">Eri Mobile Admin</h1>
+          {/* <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-600 shadow-lg shadow-blue-500/30">
+            <Smartphone className="h-7 w-7 text-white" />
+          </div> */}
+          <h1 className="mt-4 text-2xl font-bold">Eri Mobile Admin</h1>
           <p className="mt-1 text-sm text-slate-400">
             Sign in to manage your store
           </p>
@@ -52,20 +61,20 @@ export default function AdminLoginPage() {
 
           <div className="space-y-4">
             <div>
-              <label className="block text-sm font-medium text-slate-300">
+              <label className="block text-sm font-medium text-slate-500">
                 Email
               </label>
               <input
                 type="email"
                 name="email"
                 required
-                className="mt-1 w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder-slate-500 outline-none transition-colors focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
+                className="mt-1 w-full rounded-xl border border-black/5 bg-white/5 px-4 py-3 text-sm placeholder-slate-300 outline-none transition-colors focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
                 placeholder="admin@erimobile.com"
               />
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-slate-300">
+              <label className="block text-sm font-medium text-slate-500">
                 Password
               </label>
               <div className="relative mt-1">
@@ -73,7 +82,7 @@ export default function AdminLoginPage() {
                   type={showPassword ? "text" : "password"}
                   name="password"
                   required
-                  className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 pr-10 text-sm text-white placeholder-slate-500 outline-none transition-colors focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
+                  className="w-full rounded-xl border border-black/5 bg-white/5 px-4 py-3 pr-10 text-sm placeholder-slate-300 outline-none transition-colors focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
                   placeholder="Enter your password"
                 />
                 <button

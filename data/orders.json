@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "items": [
+      {
+        "productId": "iphone-air",
+        "productName": "iPhone Air",
+        "price": 1199,
+        "quantity": 2,
+        "selectedColor": "Space Black",
+        "selectedStorage": "512GB",
+        "image": "https://m.media-amazon.com/images/I/61lyNhjY4RL._AC_UF894,1000_QL80_.jpg"
+      }
+    ],
+    "customer": {
+      "firstName": "Armir",
+      "lastName": "Qurdina",
+      "email": "armirqurdina@gmailcom",
+      "address": "Adresa",
+      "city": "Gjakove",
+      "state": "Kosove",
+      "zipCode": "50000"
+    },
+    "subtotal": 2398,
+    "shipping": 0,
+    "tax": 192,
+    "total": 2590,
+    "status": "processing",
+    "id": "ORD-MLGJTWNG",
+    "createdAt": "2026-02-10T12:00:06.028Z",
+    "updatedAt": "2026-02-10T12:00:35.515Z"
+  }
+]
