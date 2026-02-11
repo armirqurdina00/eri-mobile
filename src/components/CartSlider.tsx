@@ -71,7 +71,7 @@ export default function CartSlider() {
                 <div className="space-y-4">
                   {items.map((item) => (
                     <motion.div
-                      key={item.product.id}
+                      key={`${item.product.id}-${item.selectedColor}-${item.selectedStorage}`}
                       layout
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
@@ -80,8 +80,8 @@ export default function CartSlider() {
                     >
                       <div className="relative h-20 w-20 flex-shrink-0 rounded-xl bg-white p-1">
                         <Image
-                          src={item.product.image}
-                          alt={item.product.name}
+                          src={item.image}
+                          alt={`${item.product.name} - ${item.selectedColor}`}
                           fill
                           className="object-contain"
                         />
@@ -98,7 +98,7 @@ export default function CartSlider() {
                             </p>
                           </div>
                           <button
-                            onClick={() => removeFromCart(item.product.id)}
+                            onClick={() => removeFromCart(item.product.id, item.selectedColor, item.selectedStorage)}
                             className="h-6 w-6 flex items-center justify-center rounded-full text-gray-400 hover:bg-gray-200 hover:text-gray-600"
                           >
                             <X className="h-3.5 w-3.5" />
@@ -107,7 +107,7 @@ export default function CartSlider() {
                         <div className="mt-auto flex items-center justify-between pt-2">
                           <div className="flex items-center gap-2 rounded-full bg-white border border-gray-200 px-1">
                             <button
-                              onClick={() => updateQuantity(item.product.id, item.quantity - 1)}
+                              onClick={() => updateQuantity(item.product.id, item.selectedColor, item.selectedStorage, item.quantity - 1)}
                               className="flex h-7 w-7 items-center justify-center rounded-full text-gray-500 hover:text-gray-900"
                             >
                               <Minus className="h-3 w-3" />
@@ -116,14 +116,14 @@ export default function CartSlider() {
                               {item.quantity}
                             </span>
                             <button
-                              onClick={() => updateQuantity(item.product.id, item.quantity + 1)}
+                              onClick={() => updateQuantity(item.product.id, item.selectedColor, item.selectedStorage, item.quantity + 1)}
                               className="flex h-7 w-7 items-center justify-center rounded-full text-gray-500 hover:text-gray-900"
                             >
                               <Plus className="h-3 w-3" />
                             </button>
                           </div>
                           <span className="text-sm font-semibold text-gray-900">
-                            €{((item.product.variants.find(v => v.color === item.selectedColor && v.storage === item.selectedStorage)?.price ?? item.product.variants[0]?.price ?? 0) * item.quantity).toLocaleString()}
+                            €{(item.price * item.quantity).toLocaleString()}
                           </span>
                         </div>
                       </div>

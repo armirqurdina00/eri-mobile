@@ -1,11 +1,12 @@
 "use client";
 
-import type { Product } from "@/data/products";
+import type { Product, ProductWithVariant } from "@/data/products";
 import ProductCard from "./ProductCard";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
+import { useMemo } from "react";
 
 export default function FeaturedProducts({
   products,
@@ -14,11 +15,21 @@ export default function FeaturedProducts({
 }) {
   const t = useTranslations("FeaturedProducts");
 
-  // Use passed products or empty array (will be passed from server component)
   const allProducts = products || [];
-  const featured = allProducts
-    .filter((p) => p.category !== "Accessories")
-    .slice(0, 4);
+  const featured: ProductWithVariant[] = useMemo(() => {
+    const sorted = [...allProducts]
+      .filter((p) => p.category !== "Accessories")
+      .sort(
+        (a, b) =>
+          new Date(b.createdAt ?? 0).getTime() -
+          new Date(a.createdAt ?? 0).getTime()
+      );
+    return sorted
+      .flatMap((product) =>
+        product.variants.map((variant) => ({ product, variant }))
+      )
+      .slice(0, 4);
+  }, [allProducts]);
 
   return (
     <section className="bg-white py-24">
@@ -47,8 +58,8 @@ export default function FeaturedProducts({
         </motion.div>
 
         <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {featured.map((product, i) => (
-            <ProductCard key={product.id} item={{ product, variant: product.variants[0] }} index={i} />
+          {featured.map((item, i) => (
+            <ProductCard key={`${item.product.id}-${item.variant.color}-${item.variant.storage}`} item={item} index={i} />
           ))}
         </div>
 

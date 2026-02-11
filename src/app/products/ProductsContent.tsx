@@ -13,6 +13,8 @@ export default function ProductsContent({ items }: { items: ProductWithVariant[]
   const searchParams = useSearchParams();
   const categoryParam = searchParams.get("category");
 
+  console.log({ items })
+
   const [selectedCategory, setSelectedCategory] = useState<string>(
     categoryParam || "All"
   );
@@ -180,7 +182,7 @@ export default function ProductsContent({ items }: { items: ProductWithVariant[]
         </p>
 
         {/* Product Grid */}
-        <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="mt-6 grid grid-cols-2 gap-3 sm:gap-6 lg:grid-cols-3 xl:grid-cols-4">
           {paginated.map((item, i) => (
             <ProductCard
               key={`${item.product.id}-${item.variant.color}-${item.variant.storage}`}

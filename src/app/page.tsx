@@ -7,10 +7,14 @@ import { getProductsFromDB } from "@/data/products-server";
 export default async function Home() {
   const products = getProductsFromDB();
 
+  const sorted = [...products].sort(
+    (a, b) => new Date(b.createdAt ?? 0).getTime() - new Date(a.createdAt ?? 0).getTime()
+  );
+
   return (
     <>
       <Hero />
-      <FeaturedProducts products={products} />
+      <FeaturedProducts products={sorted} />
       <Categories />
       <PromoBar />
     </>

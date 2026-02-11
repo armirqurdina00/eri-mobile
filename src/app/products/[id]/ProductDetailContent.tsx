@@ -102,7 +102,10 @@ export default function ProductDetailContent({
   }
 
   const handleAddToCart = () => {
-    addToCart(product, selectedColor, selectedStorage);
+    const variantImage =
+      uniqueColors.find((c) => c.color === selectedColor)?.image ||
+      product.image;
+    addToCart(product, selectedColor, selectedStorage, displayPrice, variantImage);
     setAdded(true);
     setTimeout(() => setAdded(false), 2000);
   };

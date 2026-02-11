@@ -103,11 +103,11 @@ export default function CheckoutPage() {
         items: items.map((item) => ({
           productId: item.product.id,
           productName: item.product.name,
-          price: item.product.variants.find(v => v.color === item.selectedColor && v.storage === item.selectedStorage)?.price ?? item.product.variants[0]?.price ?? 0,
+          price: item.price,
           quantity: item.quantity,
           selectedColor: item.selectedColor,
           selectedStorage: item.selectedStorage,
-          image: item.product.image,
+          image: item.image,
         })),
         customer: { firstName, lastName, email, address, city, state, zipCode },
         subtotal: totalPrice,
@@ -323,11 +323,11 @@ export default function CheckoutPage() {
 
                 <div className="mt-4 space-y-4">
                   {items.map((item) => (
-                    <div key={item.product.id} className="flex gap-4">
+                    <div key={`${item.product.id}-${item.selectedColor}-${item.selectedStorage}`} className="flex gap-4">
                       <div className="relative h-16 w-16 flex-shrink-0 rounded-xl bg-gray-50 p-1">
                         <Image
-                          src={item.product.image}
-                          alt={item.product.name}
+                          src={item.image}
+                          alt={`${item.product.name} - ${item.selectedColor}`}
                           fill
                           className="object-contain"
                         />
@@ -338,11 +338,11 @@ export default function CheckoutPage() {
                             {item.product.name}
                           </p>
                           <p className="text-xs text-gray-500">
-                            {t("qty", { quantity: item.quantity })}
+                            {item.selectedColor}{item.selectedStorage && ` · ${item.selectedStorage}`} · {t("qty", { quantity: item.quantity })}
                           </p>
                         </div>
                         <span className="text-sm font-medium text-gray-900">
-                          €{((item.product.variants.find(v => v.color === item.selectedColor && v.storage === item.selectedStorage)?.price ?? item.product.variants[0]?.price ?? 0) * item.quantity).toLocaleString()}
+                          €{(item.price * item.quantity).toLocaleString()}
                         </span>
                       </div>
                     </div>
