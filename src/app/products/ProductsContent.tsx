@@ -141,7 +141,7 @@ export default function ProductsContent({ items }: { items: ProductWithVariant[]
                   animate={{ opacity: 1, y: 0, scale: 1 }}
                   exit={{ opacity: 0, y: 6, scale: 0.97 }}
                   transition={{ duration: 0.15 }}
-                  className="absolute right-0 z-30 mt-2 w-48 overflow-hidden rounded-xl border border-gray-200 bg-white py-1 shadow-lg"
+                  className="absolute sm:right-0 left-0 z-30 mt-2 w-48 overflow-hidden rounded-xl border border-gray-200 bg-white py-1 shadow-lg"
                 >
                   {[
                     { value: "featured", label: t("featured") },
