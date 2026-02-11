@@ -147,9 +147,8 @@ export default function ProductDetailContent({
           >
             {product.badge && (
               <span
-                className={`absolute left-6 top-6 rounded-full px-3 py-1 text-xs font-semibold text-white ${
-                  product.badge === "New" ? "bg-blue-600" : "bg-red-500"
-                }`}
+                className={`absolute left-6 top-6 rounded-full px-3 py-1 text-xs font-semibold text-white ${product.badge === "New" ? "bg-blue-600" : "bg-red-500"
+                  }`}
               >
                 {product.badge}
               </span>
@@ -193,11 +192,10 @@ export default function ProductDetailContent({
                 {Array.from({ length: 5 }).map((_, i) => (
                   <Star
                     key={i}
-                    className={`h-4 w-4 ${
-                      i < Math.floor(product.rating)
-                        ? "fill-amber-400 text-amber-400"
-                        : "fill-gray-200 text-gray-200"
-                    }`}
+                    className={`h-4 w-4 ${i < Math.floor(product.rating)
+                      ? "fill-amber-400 text-amber-400"
+                      : "fill-gray-200 text-gray-200"
+                      }`}
                   />
                 ))}
               </div>
@@ -241,7 +239,7 @@ export default function ProductDetailContent({
             )}
 
             {/* Description */}
-            <p className="mt-6 text-base leading-relaxed text-gray-600">
+            <p className="mt-6 hidden lg:block text-base leading-relaxed text-gray-600">
               {product.description}
             </p>
 
@@ -259,23 +257,21 @@ export default function ProductDetailContent({
                     <button
                       key={c.color}
                       onClick={() => setSelectedColor(c.color)}
-                      className={`relative h-9 w-9 rounded-full border-2 transition-all ${
-                        selectedColor === c.color
-                          ? "border-blue-600 ring-2 ring-blue-100"
-                          : "border-gray-200 hover:border-gray-300"
-                      }`}
+                      className={`relative h-9 w-9 rounded-full border-2 transition-all ${selectedColor === c.color
+                        ? "border-blue-600 ring-2 ring-blue-100"
+                        : "border-gray-200 hover:border-gray-300"
+                        }`}
                       style={{ backgroundColor: c.colorHex }}
                       title={c.color}
                     >
                       {selectedColor === c.color && (
                         <Check
-                          className={`absolute inset-0 m-auto h-4 w-4 ${
-                            c.colorHex === "#F5F5F0" ||
+                          className={`absolute inset-0 m-auto h-4 w-4 ${c.colorHex === "#F5F5F0" ||
                             c.colorHex === "#F2F1ED" ||
                             c.colorHex === "#C2BCB2"
-                              ? "text-gray-900"
-                              : "text-white"
-                          }`}
+                            ? "text-gray-900"
+                            : "text-white"
+                            }`}
                         />
                       )}
                     </button>
@@ -293,11 +289,10 @@ export default function ProductDetailContent({
                     <button
                       key={s}
                       onClick={() => setSelectedStorage(s)}
-                      className={`rounded-xl border px-5 py-2.5 text-sm font-medium transition-all ${
-                        selectedStorage === s
-                          ? "border-blue-600 bg-blue-50 text-blue-700"
-                          : "border-gray-200 text-gray-700 hover:border-gray-300"
-                      }`}
+                      className={`rounded-xl border px-5 py-2.5 text-sm font-medium transition-all ${selectedStorage === s
+                        ? "border-blue-600 bg-blue-50 text-blue-700"
+                        : "border-gray-200 text-gray-700 hover:border-gray-300"
+                        }`}
                     >
                       {s}
                     </button>
@@ -311,11 +306,10 @@ export default function ProductDetailContent({
               <button
                 onClick={handleAddToCart}
                 disabled={activeVariant ? !activeVariant.inStock : false}
-                className={`flex flex-1 items-center justify-center gap-2 rounded-full px-8 py-4 text-sm font-semibold text-white shadow-xl transition-all ${
-                  added
-                    ? "bg-green-600 shadow-green-500/25"
-                    : "bg-gradient-to-r from-blue-600 to-violet-600 shadow-blue-500/25 hover:shadow-2xl hover:shadow-blue-500/30 hover:brightness-110"
-                } disabled:opacity-50 disabled:cursor-not-allowed`}
+                className={`flex flex-1 items-center justify-center gap-2 rounded-full px-8 py-4 text-sm font-semibold text-white shadow-xl transition-all ${added
+                  ? "bg-green-600 shadow-green-500/25"
+                  : "bg-gradient-to-r from-blue-600 to-violet-600 shadow-blue-500/25 hover:shadow-2xl hover:shadow-blue-500/30 hover:brightness-110"
+                  } disabled:opacity-50 disabled:cursor-not-allowed`}
               >
                 {added ? (
                   <>
@@ -359,15 +353,25 @@ export default function ProductDetailContent({
                 {product.specs.map((spec) => (
                   <div
                     key={spec.label}
-                    className="flex items-center justify-between px-4 py-3"
+                    className="flex items-center justify-between px-4 py-3 gap-8"
                   >
                     <span className="text-sm text-gray-500">{spec.label}</span>
-                    <span className="text-sm font-medium text-gray-900">
+                    <span className="text-sm font-medium text-gray-900 text-right">
                       {spec.value}
                     </span>
                   </div>
                 ))}
               </div>
+            </div>
+
+            <div className="lg:hidden mt-8">
+              <h3 className="text-sm font-semibold text-gray-900">
+                Description
+              </h3>
+              {/* Description */}
+              <p className="mt-6 text-base leading-relaxed text-gray-600">
+                {product.description}
+              </p>
             </div>
           </motion.div>
         </div>
