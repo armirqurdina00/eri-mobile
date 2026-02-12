@@ -11,22 +11,22 @@ import {
 import type { AdminProduct, ProductVariant } from "@/types/admin";
 
 export async function getProductsAction() {
-  return getProducts();
+  return await getProducts();
 }
 
 export async function getProductAction(id: string) {
-  return getProductById(id) || null;
+  return (await getProductById(id)) || null;
 }
 
 export async function createProductAction(formData: FormData) {
   const data = parseProductFormData(formData);
 
-  const existing = getProductById(data.id);
+  const existing = await getProductById(data.id);
   if (existing) {
     return { error: "A product with this ID already exists" };
   }
 
-  createProduct(data);
+  await createProduct(data);
   revalidatePath("/admin/products");
   revalidatePath("/products");
   revalidatePath("/");
@@ -36,7 +36,7 @@ export async function createProductAction(formData: FormData) {
 export async function updateProductAction(id: string, formData: FormData) {
   const data = parseProductFormData(formData);
 
-  const updated = updateProduct(id, data);
+  const updated = await updateProduct(id, data);
   if (!updated) {
     return { error: "Product not found" };
   }
@@ -51,7 +51,7 @@ export async function updateProductAction(id: string, formData: FormData) {
 }
 
 export async function deleteProductAction(id: string) {
-  const deleted = deleteProduct(id);
+  const deleted = await deleteProduct(id);
   if (!deleted) {
     return { error: "Product not found" };
   }

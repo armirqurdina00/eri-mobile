@@ -4,7 +4,7 @@ import { Suspense } from "react";
 import type { ProductWithVariant } from "@/data/products";
 
 export default async function ProductsPage() {
-  const products = getProductsFromDB();
+  const products = await getProductsFromDB();
 
   const sorted = [...products].sort(
     (a, b) => new Date(b.createdAt ?? 0).getTime() - new Date(a.createdAt ?? 0).getTime()

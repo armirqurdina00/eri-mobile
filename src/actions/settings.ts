@@ -5,7 +5,7 @@ import { getStoreSettings, updateStoreSettings } from "@/lib/db";
 import type { StoreSettings } from "@/types/admin";
 
 export async function getSettingsAction(): Promise<StoreSettings> {
-  return getStoreSettings();
+  return await getStoreSettings();
 }
 
 export async function updateSettingsAction(formData: FormData) {
@@ -27,7 +27,7 @@ export async function updateSettingsAction(formData: FormData) {
     }
   });
 
-  updateStoreSettings(updates);
+  await updateStoreSettings(updates);
   revalidatePath("/admin/settings");
   return { success: true };
 }

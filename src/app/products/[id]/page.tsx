@@ -7,7 +7,7 @@ export default async function ProductDetailPage({
   params: Promise<{ id: string }>;
 }) {
   const { id } = await params;
-  const products = getProductsFromDB();
+  const products = await getProductsFromDB();
   const product = products.find((p) => p.id === id);
 
   return <ProductDetailContent product={product} allProducts={products} />;

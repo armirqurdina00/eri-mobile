@@ -19,7 +19,7 @@ export async function loginAction(formData: FormData) {
     return { error: "Email and password are required" };
   }
 
-  const user = getAdminUser(email);
+  const user = await getAdminUser(email);
   if (!user) {
     return { error: "Invalid email or password" };
   }
@@ -61,7 +61,7 @@ export async function changePasswordAction(formData: FormData) {
     return { error: "Not authenticated" };
   }
 
-  const user = getAdminUser(auth.email);
+  const user = await getAdminUser(auth.email);
   if (!user) {
     return { error: "User not found" };
   }
@@ -72,7 +72,7 @@ export async function changePasswordAction(formData: FormData) {
   }
 
   const newHash = await hashPassword(newPassword);
-  updateAdminUser(auth.email, { passwordHash: newHash });
+  await updateAdminUser(auth.email, { passwordHash: newHash });
 
   return { success: true };
 }

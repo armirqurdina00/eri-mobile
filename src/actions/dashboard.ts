@@ -4,8 +4,8 @@ import { getProducts, getOrders } from "@/lib/db";
 import type { DashboardStats, OrderStatus } from "@/types/admin";
 
 export async function getDashboardStats(): Promise<DashboardStats> {
-  const products = getProducts();
-  const orders = getOrders();
+  const products = await getProducts();
+  const orders = await getOrders();
 
   const totalRevenue = orders
     .filter((o) => o.status !== "cancelled")

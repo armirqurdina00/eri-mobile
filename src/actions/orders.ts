@@ -5,15 +5,15 @@ import { getOrders, getOrderById, createOrder, updateOrder, deleteOrder } from "
 import type { Order, OrderStatus } from "@/types/admin";
 
 export async function getOrdersAction() {
-  return getOrders();
+  return await getOrders();
 }
 
 export async function getOrderAction(id: string) {
-  return getOrderById(id) || null;
+  return (await getOrderById(id)) || null;
 }
 
 export async function updateOrderStatusAction(id: string, status: OrderStatus) {
-  const updated = updateOrder(id, { status });
+  const updated = await updateOrder(id, { status });
   if (!updated) {
     return { error: "Order not found" };
   }
@@ -24,7 +24,7 @@ export async function updateOrderStatusAction(id: string, status: OrderStatus) {
 }
 
 export async function deleteOrderAction(id: string) {
-  const deleted = deleteOrder(id);
+  const deleted = await deleteOrder(id);
   if (!deleted) {
     return { error: "Order not found" };
   }
@@ -41,7 +41,7 @@ export async function placeOrderAction(orderData: {
   tax: number;
   total: number;
 }) {
-  const order = createOrder({
+  const order = await createOrder({
     ...orderData,
     status: "pending",
   });

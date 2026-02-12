@@ -1,38 +1,21 @@
 import type { Product } from "@/data/products";
-import { products as hardcodedProducts } from "@/data/products";
+import { getProducts } from "@/lib/db";
 
-export function getProductsFromDB(): Product[] {
-  try {
-    // Dynamic require to read the JSON file at runtime
-    const fs = require("fs");
-    const path = require("path");
-    const filePath = path.join(process.cwd(), "data", "products.json");
+export async function getProductsFromDB(): Promise<Product[]> {
+  const dbProducts = await getProducts();
 
-    if (!fs.existsSync(filePath)) {
-      return hardcodedProducts;
-    }
-
-    const raw = fs.readFileSync(filePath, "utf-8");
-    const dbProducts = JSON.parse(raw);
-
-    // Map AdminProduct back to Product shape (strip admin-only fields)
-    return dbProducts.map(
-      (p: Record<string, unknown>): Product => ({
-        id: p.id as string,
-        name: p.name as string,
-        subtitle: p.subtitle as string,
-        image: p.image as string,
-        badge: p.badge as string | undefined,
-        rating: p.rating as number,
-        reviews: p.reviews as number,
-        specs: p.specs as Product["specs"],
-        description: p.description as string,
-        category: p.category as string,
-        variants: p.variants as Product["variants"],
-        createdAt: p.createdAt as string,
-      })
-    );
-  } catch {
-    return hardcodedProducts;
-  }
+  return dbProducts.map((p) => ({
+    id: p.id,
+    name: p.name,
+    subtitle: p.subtitle,
+    image: p.image,
+    badge: p.badge,
+    rating: p.rating,
+    reviews: p.reviews,
+    specs: p.specs,
+    description: p.description,
+    category: p.category,
+    variants: p.variants,
+    createdAt: p.createdAt,
+  }));
 }
