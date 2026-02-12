@@ -2,6 +2,171 @@
   {
     "items": [
       {
+        "productId": "iphone-18-pro",
+        "productName": "iPhone 18 Pro",
+        "price": 1699,
+        "quantity": 1,
+        "selectedColor": "Green",
+        "selectedStorage": "256GB",
+        "image": "/uploads/9201d16f-3dc8-4895-92f8-f461bf894967.png"
+      },
+      {
+        "productId": "airpods-pro-2",
+        "productName": "AirPods Pro 2",
+        "price": 249,
+        "quantity": 1,
+        "selectedColor": "White",
+        "selectedStorage": "",
+        "image": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/airpods-pro-2-hero-select-202409?wid=940&hei=1112&fmt=png-alpha"
+      }
+    ],
+    "customer": {
+      "firstName": "Armir",
+      "lastName": "Qurdina",
+      "email": "armirqurdina@gmail.com",
+      "address": "Sadik Stavileci 149",
+      "city": "Gjakove",
+      "state": "Kosove",
+      "zipCode": "50000"
+    },
+    "subtotal": 1948,
+    "shipping": 0,
+    "tax": 0,
+    "total": 1948,
+    "status": "delivered",
+    "id": "ORD-MLJD6YTS",
+    "createdAt": "2026-02-12T11:17:36.592Z",
+    "updatedAt": "2026-02-12T11:17:57.058Z"
+  },
+  {
+    "items": [
+      {
+        "productId": "iphone-18-pro",
+        "productName": "iPhone 18 Pro",
+        "price": 1699,
+        "quantity": 1,
+        "selectedColor": "Cherry Red",
+        "selectedStorage": "256GB",
+        "image": "/uploads/6763958d-b5b2-4b02-b74a-481903b76727.png"
+      },
+      {
+        "productId": "airpods-pro-2",
+        "productName": "AirPods Pro 2",
+        "price": 249,
+        "quantity": 1,
+        "selectedColor": "White",
+        "selectedStorage": "",
+        "image": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/airpods-pro-2-hero-select-202409?wid=940&hei=1112&fmt=png-alpha"
+      }
+    ],
+    "customer": {
+      "firstName": "Armir",
+      "lastName": "Qurdina",
+      "email": "armirqurdina@gmail.com",
+      "address": "Sadik Stavileci 149",
+      "city": "Gjakove",
+      "state": "Kosove",
+      "zipCode": "50000"
+    },
+    "subtotal": 1948,
+    "shipping": 0,
+    "tax": 0,
+    "total": 1948,
+    "status": "pending",
+    "id": "ORD-MLJD3LZH",
+    "createdAt": "2026-02-12T11:14:59.981Z",
+    "updatedAt": "2026-02-12T11:14:59.981Z"
+  },
+  {
+    "items": [
+      {
+        "productId": "iphone-17-pro",
+        "productName": "iPhone 17 Pro",
+        "price": 1299,
+        "quantity": 1,
+        "selectedColor": "Cosmic Orange",
+        "selectedStorage": "512GB",
+        "image": "https://m.media-amazon.com/images/I/51fpWBn0ZQL._AC_UF894,1000_QL80_.jpg"
+      },
+      {
+        "productId": "iphone-16-pro",
+        "productName": "iPhone 16 Pro",
+        "price": 999,
+        "quantity": 1,
+        "selectedColor": "Desert Titanium",
+        "selectedStorage": "128GB",
+        "image": "https://m.media-amazon.com/images/I/41HKrWQi3OL._AC_UF894,1000_QL80_.jpg"
+      },
+      {
+        "productId": "iphone-18-pro",
+        "productName": "iPhone 18 Pro",
+        "price": 1499,
+        "quantity": 1,
+        "selectedColor": "Deep Purple",
+        "selectedStorage": "256GB",
+        "image": "/uploads/5db0512b-1b77-4cc5-ab92-010494964b7f.png"
+      }
+    ],
+    "customer": {
+      "firstName": "Armir",
+      "lastName": "Qurdina",
+      "email": "armirqurdina@gmail.com",
+      "address": "Sadik Stavileci 149",
+      "city": "Gjakove",
+      "state": "Kosove",
+      "zipCode": "50000"
+    },
+    "subtotal": 3797,
+    "shipping": 0,
+    "tax": 304,
+    "total": 4101,
+    "status": "delivered",
+    "id": "ORD-MLJCUP8E",
+    "createdAt": "2026-02-12T11:08:04.286Z",
+    "updatedAt": "2026-02-12T11:18:02.320Z"
+  },
+  {
+    "items": [
+      {
+        "productId": "iphone-18-pro",
+        "productName": "iPhone 18 Pro",
+        "price": 1499,
+        "quantity": 1,
+        "selectedColor": "Deep Purple",
+        "selectedStorage": "256GB",
+        "image": "/uploads/5db0512b-1b77-4cc5-ab92-010494964b7f.png"
+      },
+      {
+        "productId": "iphone-18-pro",
+        "productName": "iPhone 18 Pro",
+        "price": 1699,
+        "quantity": 1,
+        "selectedColor": "Cherry Red",
+        "selectedStorage": "256GB",
+        "image": "/uploads/6763958d-b5b2-4b02-b74a-481903b76727.png"
+      }
+    ],
+    "customer": {
+      "firstName": "Armir",
+      "lastName": "Qurdina",
+      "email": "armirqurdina@gmail.com",
+      "address": "Sadik Stavileci 149",
+      "city": "Gjakove",
+      "state": "Kosove",
+      "zipCode": "50000"
+    },
+    "subtotal": 3198,
+    "shipping": 0,
+    "tax": 256,
+    "total": 3454,
+    "status": "processing",
+    "id": "ORD-MLJCRQ7Z",
+    "createdAt": "2026-02-12T11:05:45.599Z",
+    "updatedAt": "2026-02-12T11:06:49.634Z"
+  },
+  {
+    "items": [
+      {
         "productId": "iphone-air",
         "productName": "iPhone Air",
         "price": 1199,
@@ -24,9 +189,9 @@
     "shipping": 0,
     "tax": 192,
     "total": 2590,
-    "status": "processing",
+    "status": "confirmed",
     "id": "ORD-MLGJTWNG",
     "createdAt": "2026-02-10T12:00:06.028Z",
-    "updatedAt": "2026-02-10T12:00:35.515Z"
+    "updatedAt": "2026-02-12T11:06:54.615Z"
   }
 ]

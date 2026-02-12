@@ -142,6 +142,10 @@
     "state": "State",
     "zipCode": "ZIP Code",
     "payment": "Payment",
+    "cashOnDelivery": "Cash on Delivery",
+    "cashOnDeliveryDesc": "Pay when you receive",
+    "creditCard": "Credit Card",
+    "creditCardDesc": "Pay now",
     "cardNumber": "Card Number",
     "expiry": "Expiry",
     "cvc": "CVC",
@@ -153,7 +157,13 @@
     "tax": "Tax",
     "total": "Total",
     "placeOrder": "Place Order — ${amount}",
-    "secureCheckout": "Secure checkout powered by Stripe"
+    "secureCheckout": "Secure checkout powered by Stripe",
+    "orderSuccess": "Order Placed Successfully!",
+    "orderReceived": "Your order {orderId} has been received.",
+    "continueShopping2": "Continue Shopping",
+    "fillAllFields": "Please fill in all required fields.",
+    "somethingWentWrong": "Something went wrong. Please try again.",
+    "processing": "Processing..."
   },
   "Deals": {
     "title": "Hot Deals",

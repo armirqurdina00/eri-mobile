@@ -142,6 +142,10 @@
     "state": "Shteti",
     "zipCode": "Kodi Postar",
     "payment": "Pagesa",
+    "cashOnDelivery": "Para në dorë",
+    "cashOnDeliveryDesc": "Paguani kur ta merrni",
+    "creditCard": "Kartë Krediti",
+    "creditCardDesc": "Paguani tani",
     "cardNumber": "Numri i Kartës",
     "expiry": "Skadimi",
     "cvc": "CVC",
@@ -153,12 +157,18 @@
     "tax": "Taksa",
     "total": "Totali",
     "placeOrder": "Vendos Porosinë — ${amount}",
-    "secureCheckout": "Arkë e sigurt mundësuar nga Stripe"
+    "secureCheckout": "Arkë e sigurt mundësuar nga Stripe",
+    "orderSuccess": "Porosia u Vendos me Sukses!",
+    "orderReceived": "Porosia juaj {orderId} është pranuar.",
+    "continueShopping2": "Vazhdo Blerjet",
+    "fillAllFields": "Ju lutem plotësoni të gjitha fushat e detyrueshme.",
+    "somethingWentWrong": "Diçka shkoi keq. Ju lutem provoni përsëri.",
+    "processing": "Duke procesuar..."
   },
   "Deals": {
     "title": "Oferta speciale",
     "subtitle": "Oferta me kohë të kufizuar për pajisje premium",
-    "urgency": "Oferta përfundon së shpejti — derisa ka në dispozicion",
+    "urgency": "Oferta përfundon së shpejti — deri në përfundim të stokut",
     "tradeInTitle": "Këmbeni & Kurseni Më Shumë",
     "tradeInDescription": "Merrni deri në 600$ zbritje kur këmbeni pajisjen tuaj të vjetër. Plus transport falas për të gjitha porositë."
   }

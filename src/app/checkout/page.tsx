@@ -5,7 +5,6 @@ import { useCart } from "@/context/CartContext";
 import { placeOrderAction } from "@/actions/orders";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import {
   ChevronLeft,
@@ -20,11 +19,11 @@ import { useTranslations } from "next-intl";
 
 export default function CheckoutPage() {
   const t = useTranslations("Checkout");
-  const router = useRouter();
   const { items, totalPrice, clearCart } = useCart();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [orderId, setOrderId] = useState("");
+  const [paymentMethod, setPaymentMethod] = useState<"cash" | "card">("cash");
 
   if (orderId) {
     return (
@@ -37,16 +36,16 @@ export default function CheckoutPage() {
           <CheckCircle2 className="h-10 w-10 text-green-500" />
         </motion.div>
         <h1 className="mt-4 text-xl font-semibold text-gray-900">
-          Order Placed Successfully!
+          {t("orderSuccess")}
         </h1>
         <p className="mt-2 text-sm text-gray-500">
-          Your order <span className="font-medium text-gray-900">{orderId}</span> has been received.
+          {t("orderReceived", { orderId })}
         </p>
         <Link
           href="/products"
           className="mt-6 rounded-full bg-gray-900 px-6 py-2.5 text-sm font-medium text-white transition-colors hover:bg-gray-800"
         >
-          Continue Shopping
+          {t("continueShopping2")}
         </Link>
       </div>
     );
@@ -75,7 +74,7 @@ export default function CheckoutPage() {
   }
 
   const shipping = 0;
-  const tax = Math.round(totalPrice * 0.08);
+  const tax = 0;
   const total = totalPrice + shipping + tax;
 
   async function handlePlaceOrder(e: React.FormEvent<HTMLFormElement>) {
@@ -93,7 +92,7 @@ export default function CheckoutPage() {
     const zipCode = (form.get("zipCode") as string).trim();
 
     if (!firstName || !lastName || !email || !address || !city || !state || !zipCode) {
-      setError("Please fill in all required fields.");
+      setError(t("fillAllFields"));
       setLoading(false);
       return;
     }
@@ -119,8 +118,9 @@ export default function CheckoutPage() {
       if (result.success && result.orderId) {
         clearCart();
         setOrderId(result.orderId);
+        window.scrollTo({ top: 0, behavior: "smooth" });
       } else {
-        setError("Something went wrong. Please try again.");
+        setError(t("somethingWentWrong"));
       }
     } catch {
       setError("Something went wrong. Please try again.");
@@ -263,50 +263,87 @@ export default function CheckoutPage() {
 
               {/* Payment */}
               <div className="rounded-2xl bg-white p-6 shadow-sm">
-                <h2 className="flex items-center gap-2 text-lg font-semibold text-gray-900">
-                  <CreditCard className="h-5 w-5" />
+                <h2 className="text-lg font-semibold text-gray-900">
                   {t("payment")}
                 </h2>
-                <div className="mt-4 space-y-4">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700">
-                      {t("cardNumber")}
-                    </label>
-                    <input
-                      type="text"
-                      name="cardNumber"
-                      required
-                      className="mt-1 w-full rounded-xl border border-gray-200 px-4 py-3 text-sm outline-none transition-colors focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
-                      placeholder="4242 4242 4242 4242"
-                    />
-                  </div>
-                  <div className="grid grid-cols-2 gap-4">
+
+                {/* Payment method selector */}
+                <div className="mt-4 grid grid-cols-2 gap-3">
+                  <button
+                    type="button"
+                    onClick={() => setPaymentMethod("cash")}
+                    className={`flex items-center gap-3 rounded-xl border-2 px-4 py-3.5 text-left transition-all ${
+                      paymentMethod === "cash"
+                        ? "border-blue-600 bg-blue-50 ring-2 ring-blue-100"
+                        : "border-gray-200 hover:border-gray-300"
+                    }`}
+                  >
+                    <Truck className="h-5 w-5 flex-shrink-0 text-gray-600" />
                     <div>
-                      <label className="block text-sm font-medium text-gray-700">
-                        {t("expiry")}
-                      </label>
-                      <input
-                        type="text"
-                        name="expiry"
-                        required
-                        className="mt-1 w-full rounded-xl border border-gray-200 px-4 py-3 text-sm outline-none transition-colors focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
-                        placeholder="MM/YY"
-                      />
+                      <p className="text-sm font-semibold text-gray-900">{t("cashOnDelivery")}</p>
+                      <p className="text-xs text-gray-500">{t("cashOnDeliveryDesc")}</p>
                     </div>
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setPaymentMethod("card")}
+                    className={`flex items-center gap-3 rounded-xl border-2 px-4 py-3.5 text-left transition-all ${
+                      paymentMethod === "card"
+                        ? "border-blue-600 bg-blue-50 ring-2 ring-blue-100"
+                        : "border-gray-200 hover:border-gray-300"
+                    }`}
+                  >
+                    <CreditCard className="h-5 w-5 flex-shrink-0 text-gray-600" />
                     <div>
-                      <label className="block text-sm font-medium text-gray-700">
-                        {t("cvc")}
-                      </label>
-                      <input
-                        type="text"
-                        name="cvc"
-                        required
-                        className="mt-1 w-full rounded-xl border border-gray-200 px-4 py-3 text-sm outline-none transition-colors focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
-                        placeholder="123"
-                      />
+                      <p className="text-sm font-semibold text-gray-900">{t("creditCard")}</p>
+                      <p className="text-xs text-gray-500">{t("creditCardDesc")}</p>
                     </div>
-                  </div>
+                  </button>
                 </div>
+
+                {/* Card fields (only shown when card is selected) */}
+                {paymentMethod === "card" && (
+                  <div className="mt-4 space-y-4">
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700">
+                        {t("cardNumber")}
+                      </label>
+                      <input
+                        type="text"
+                        name="cardNumber"
+                        required
+                        className="mt-1 w-full rounded-xl border border-gray-200 px-4 py-3 text-sm outline-none transition-colors focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+                        placeholder="4242 4242 4242 4242"
+                      />
+                    </div>
+                    <div className="grid grid-cols-2 gap-4">
+                      <div>
+                        <label className="block text-sm font-medium text-gray-700">
+                          {t("expiry")}
+                        </label>
+                        <input
+                          type="text"
+                          name="expiry"
+                          required
+                          className="mt-1 w-full rounded-xl border border-gray-200 px-4 py-3 text-sm outline-none transition-colors focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+                          placeholder="MM/YY"
+                        />
+                      </div>
+                      <div>
+                        <label className="block text-sm font-medium text-gray-700">
+                          {t("cvc")}
+                        </label>
+                        <input
+                          type="text"
+                          name="cvc"
+                          required
+                          className="mt-1 w-full rounded-xl border border-gray-200 px-4 py-3 text-sm outline-none transition-colors focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+                          placeholder="123"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                )}
               </div>
             </motion.div>
 
@@ -382,7 +419,7 @@ export default function CheckoutPage() {
                   {loading ? (
                     <>
                       <Loader2 className="h-4 w-4 animate-spin" />
-                      Processing...
+                      {t("processing")}
                     </>
                   ) : (
                     <>
