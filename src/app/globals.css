@@ -42,3 +42,13 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #9ca3af;
 }
+
+/* Hero marquee */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
