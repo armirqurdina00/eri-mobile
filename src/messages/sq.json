@@ -43,14 +43,19 @@
   "Categories": {
     "subtitle": "Shfleto",
     "title": "Bli sipas Kategorisë",
-    "iphone17ProMax": "iPhone 17 Pro Max",
-    "iphone17ProMaxDesc": "Përvoja përfundimtare e iPhone",
-    "iphone17Pro": "iPhone 17 Pro",
-    "iphone17ProDesc": "Fuqi totale",
+    "proSeries": "Seria Pro",
+    "proSeriesDesc": "Pro Max, Pro & Air — dizajn titaniumi, çip A18 Pro, kamerë 48MP",
+    "proSeriesTag": "6 modele",
+    "standardSeries": "Seria Standard",
+    "standardSeriesDesc": "iPhone 16, 15 & SE — performancë e shkëlqyer në çdo çmim",
+    "standardSeriesTag": "4 modele",
     "accessories": "Aksesorë",
-    "accessoriesDesc": "Kompletoni pajisjen tuaj",
-    "deals": "Oferta",
-    "dealsDesc": "Oferta me kohë të kufizuar"
+    "accessoriesDesc": "AirPods, mbrojtëse & karikues për pajisjen tuaj",
+    "accessoriesTag": "E re",
+    "deals": "Oferta & Zbritje",
+    "dealsDesc": "Çmime të kufizuara për iPhone dhe aksesorë të zgjedhur",
+    "dealsTag": "Kurse tani",
+    "explore": "Eksploro"
   },
   "PromoBar": {
     "badge": "Ofertë me Kohë të Kufizuar",

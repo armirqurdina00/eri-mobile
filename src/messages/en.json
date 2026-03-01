@@ -43,14 +43,19 @@
   "Categories": {
     "subtitle": "Browse",
     "title": "Shop by Category",
-    "iphone17ProMax": "iPhone 17 Pro Max",
-    "iphone17ProMaxDesc": "The ultimate iPhone experience",
-    "iphone17Pro": "iPhone 17 Pro",
-    "iphone17ProDesc": "A total powerhouse",
+    "proSeries": "Pro Series",
+    "proSeriesDesc": "Pro Max, Pro & Air — titanium design, A18 Pro chip, 48MP camera",
+    "proSeriesTag": "6 models",
+    "standardSeries": "Standard Series",
+    "standardSeriesDesc": "iPhone 16, 15 & SE — great performance at every price",
+    "standardSeriesTag": "4 models",
     "accessories": "Accessories",
-    "accessoriesDesc": "Complete your setup",
-    "deals": "Deals",
-    "dealsDesc": "Limited-time offers"
+    "accessoriesDesc": "AirPods, cases & chargers to complete your setup",
+    "accessoriesTag": "New",
+    "deals": "Deals & Offers",
+    "dealsDesc": "Limited-time prices on select iPhones and accessories",
+    "dealsTag": "Save now",
+    "explore": "Explore"
   },
   "PromoBar": {
     "badge": "Limited Time Offer",
