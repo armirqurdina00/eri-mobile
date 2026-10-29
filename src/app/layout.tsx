@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { cookies } from "next/headers";
 import "./globals.css";
-import { CartProvider } from "@/context/CartContext";
 import LocaleProvider from "@/components/LocaleProvider";
-import StorefrontShell from "@/components/StorefrontShell";
+import { resolveLocale } from "@/i18n";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,29 +16,32 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Eri Mobile Shop | Premium iPhones & Accessories",
+  title: {
+    default: "Eri Mobile | iPhone në Gjakovë",
+    template: "%s | Eri Mobile",
+  },
   description:
-    "Your trusted destination for the latest iPhones and Apple accessories. Premium devices, competitive prices, and exceptional service.",
+    "Original iPhones and Apple accessories, delivered across Kosovo. Pay in cash on delivery.",
   icons: {
     icon: "/logo_bg.jpg",
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = resolveLocale((await cookies()).get("locale")?.value);
+
   return (
-    <html lang="en" suppressHydrationWarning>
+    // data-scroll-behavior lets Next.js turn smooth scrolling off during route changes,
+    // so a new page starts at the top instead of gliding there and stopping short.
+    <html lang={locale} data-scroll-behavior="smooth" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
       >
-        <LocaleProvider>
-          <CartProvider>
-            <StorefrontShell>{children}</StorefrontShell>
-          </CartProvider>
-        </LocaleProvider>
+        <LocaleProvider initialLocale={locale}>{children}</LocaleProvider>
       </body>
     </html>
   );
