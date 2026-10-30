@@ -1,19 +1,8 @@
 "use client";
 
 import { NextIntlClientProvider } from "next-intl";
-import {
-  createContext,
-  useContext,
-  useState,
-  useCallback,
-  useEffect,
-} from "react";
-import {
-  type Locale,
-  getMessages,
-  getLocaleFromCookie,
-  setLocaleCookie,
-} from "@/i18n";
+import { createContext, useContext, useState, useCallback } from "react";
+import { type Locale, getMessages, setLocaleCookie } from "@/i18n";
 
 type LocaleContextType = {
   locale: Locale;
@@ -21,7 +10,7 @@ type LocaleContextType = {
 };
 
 const LocaleContext = createContext<LocaleContextType>({
-  locale: "en",
+  locale: "sq",
   setLocale: () => {},
 });
 
@@ -30,24 +19,23 @@ export function useLocale() {
 }
 
 export default function LocaleProvider({
+  initialLocale,
   children,
 }: {
+  initialLocale: Locale;
   children: React.ReactNode;
 }) {
-  const [locale, setLocaleState] = useState<Locale>("en");
-
-  useEffect(() => {
-    setLocaleState(getLocaleFromCookie());
-  }, []);
+  const [locale, setLocaleState] = useState<Locale>(initialLocale);
 
   const setLocale = useCallback((newLocale: Locale) => {
     setLocaleCookie(newLocale);
+    document.documentElement.lang = newLocale;
     setLocaleState(newLocale);
   }, []);
 
   return (
     <LocaleContext.Provider value={{ locale, setLocale }}>
-      <NextIntlClientProvider locale={locale} messages={getMessages(locale)}>
+      <NextIntlClientProvider locale={locale} messages={getMessages(locale)} timeZone="Europe/Belgrade">
         {children}
       </NextIntlClientProvider>
     </LocaleContext.Provider>

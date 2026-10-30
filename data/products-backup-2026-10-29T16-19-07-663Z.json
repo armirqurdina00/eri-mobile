@@ -1,0 +1,2390 @@
+[
+  {
+    "id": "iphone-17-pro-max",
+    "name": "iPhone 17 Pro Max",
+    "subtitle": "Three 48MP cameras and up to 37 hours of video.",
+    "image": "/catalog/iphone-17-pro-finish-select-202509-6-9inch-cosmicorange.webp",
+    "badge": null,
+    "rating": 0,
+    "reviews": 0,
+    "specs": [
+      {
+        "label": "Display",
+        "value": "6.9\" Super Retina XDR, ProMotion 120Hz, Always-On"
+      },
+      {
+        "label": "Chip",
+        "value": "A19 Pro"
+      },
+      {
+        "label": "Camera",
+        "value": "48MP Fusion Main + 48MP Ultra Wide + 48MP 4x Telephoto, up to 8x optical-quality"
+      },
+      {
+        "label": "Front camera",
+        "value": "18MP Center Stage"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 37 hours video playback"
+      },
+      {
+        "label": "Weight",
+        "value": "231 g"
+      },
+      {
+        "label": "Build",
+        "value": "Aluminium unibody, Ceramic Shield 2, IP68"
+      }
+    ],
+    "description": "Last year's largest Pro: a 6.9-inch ProMotion display, the A19 Pro chip and three 48MP Fusion cameras with a 4x Telephoto that reaches 8x optical quality. Aluminium unibody, up to 37 hours of video playback.",
+    "category": "Pro",
+    "variants": [
+      {
+        "color": "Cosmic Orange",
+        "image": "/catalog/iphone-17-pro-finish-select-202509-6-9inch-cosmicorange.webp",
+        "price": 1299,
+        "stock": 25,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#E86A2B",
+        "originalPrice": 1499
+      },
+      {
+        "color": "Cosmic Orange",
+        "image": "/catalog/iphone-17-pro-finish-select-202509-6-9inch-cosmicorange.webp",
+        "price": 1599,
+        "stock": 18,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#E86A2B"
+      },
+      {
+        "color": "Cosmic Orange",
+        "image": "/catalog/iphone-17-pro-finish-select-202509-6-9inch-cosmicorange.webp",
+        "price": 1799,
+        "stock": 10,
+        "inStock": true,
+        "storage": "1TB",
+        "colorHex": "#E86A2B"
+      },
+      {
+        "color": "Deep Blue",
+        "image": "/catalog/iphone-17-pro-finish-select-202509-6-9inch-deepblue.webp",
+        "price": 1499,
+        "stock": 20,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#2E3A4F"
+      },
+      {
+        "color": "Deep Blue",
+        "image": "/catalog/iphone-17-pro-finish-select-202509-6-9inch-deepblue.webp",
+        "price": 1599,
+        "stock": 15,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#2E3A4F"
+      },
+      {
+        "color": "Deep Blue",
+        "image": "/catalog/iphone-17-pro-finish-select-202509-6-9inch-deepblue.webp",
+        "price": 1799,
+        "stock": 8,
+        "inStock": true,
+        "storage": "1TB",
+        "colorHex": "#2E3A4F"
+      },
+      {
+        "color": "Silver",
+        "image": "/catalog/iphone-17-pro-finish-select-202509-6-9inch-silver.webp",
+        "price": 1499,
+        "stock": 22,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#E3E4E5"
+      },
+      {
+        "color": "Silver",
+        "image": "/catalog/iphone-17-pro-finish-select-202509-6-9inch-silver.webp",
+        "price": 1599,
+        "stock": 12,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#E3E4E5"
+      },
+      {
+        "color": "Silver",
+        "image": "/catalog/iphone-17-pro-finish-select-202509-6-9inch-silver.webp",
+        "price": 1799,
+        "stock": 6,
+        "inStock": true,
+        "storage": "1TB",
+        "colorHex": "#E3E4E5"
+      }
+    ],
+    "created_at": "2025-09-19T12:04:00.000Z",
+    "updated_at": "2026-10-29T16:12:59.553Z"
+  },
+  {
+    "id": "iphone-17-pro",
+    "name": "iPhone 17 Pro",
+    "subtitle": "Three 48MP cameras in a 6.3-inch size.",
+    "image": "/catalog/iphone-17-pro-finish-select-202509-6-3inch-cosmicorange.webp",
+    "badge": null,
+    "rating": 0,
+    "reviews": 0,
+    "specs": [
+      {
+        "label": "Display",
+        "value": "6.3\" Super Retina XDR, ProMotion 120Hz, Always-On"
+      },
+      {
+        "label": "Chip",
+        "value": "A19 Pro"
+      },
+      {
+        "label": "Camera",
+        "value": "48MP Fusion Main + 48MP Ultra Wide + 48MP 4x Telephoto, up to 8x optical-quality"
+      },
+      {
+        "label": "Front camera",
+        "value": "18MP Center Stage"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 31 hours video playback"
+      },
+      {
+        "label": "Weight",
+        "value": "204 g"
+      },
+      {
+        "label": "Build",
+        "value": "Aluminium unibody, Ceramic Shield 2, IP68"
+      }
+    ],
+    "description": "A 6.3-inch Pro with the A19 Pro chip, an aluminium unibody and three 48MP Fusion cameras, including a 4x Telephoto that reaches 8x optical quality. 18MP Center Stage front camera and up to 31 hours of video playback.",
+    "category": "Pro",
+    "variants": [
+      {
+        "color": "Cosmic Orange",
+        "image": "/catalog/iphone-17-pro-finish-select-202509-6-3inch-cosmicorange.webp",
+        "price": 1199,
+        "stock": 30,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#E86A2B"
+      },
+      {
+        "color": "Cosmic Orange",
+        "image": "/catalog/iphone-17-pro-finish-select-202509-6-3inch-cosmicorange.webp",
+        "price": 1299,
+        "stock": 22,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#E86A2B"
+      },
+      {
+        "color": "Cosmic Orange",
+        "image": "/catalog/iphone-17-pro-finish-select-202509-6-3inch-cosmicorange.webp",
+        "price": 1499,
+        "stock": 12,
+        "inStock": true,
+        "storage": "1TB",
+        "colorHex": "#E86A2B"
+      },
+      {
+        "color": "Deep Blue",
+        "image": "/catalog/iphone-17-pro-finish-select-202509-6-3inch-deepblue.webp",
+        "price": 1199,
+        "stock": 28,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#2E3A4F"
+      },
+      {
+        "color": "Deep Blue",
+        "image": "/catalog/iphone-17-pro-finish-select-202509-6-3inch-deepblue.webp",
+        "price": 1299,
+        "stock": 20,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#2E3A4F"
+      },
+      {
+        "color": "Deep Blue",
+        "image": "/catalog/iphone-17-pro-finish-select-202509-6-3inch-deepblue.webp",
+        "price": 1499,
+        "stock": 10,
+        "inStock": true,
+        "storage": "1TB",
+        "colorHex": "#2E3A4F"
+      },
+      {
+        "color": "Silver",
+        "image": "/catalog/iphone-17-pro-finish-select-202509-6-3inch-silver.webp",
+        "price": 1199,
+        "stock": 25,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#E3E4E5"
+      },
+      {
+        "color": "Silver",
+        "image": "/catalog/iphone-17-pro-finish-select-202509-6-3inch-silver.webp",
+        "price": 1299,
+        "stock": 18,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#E3E4E5"
+      },
+      {
+        "color": "Silver",
+        "image": "/catalog/iphone-17-pro-finish-select-202509-6-3inch-silver.webp",
+        "price": 1499,
+        "stock": 8,
+        "inStock": true,
+        "storage": "1TB",
+        "colorHex": "#E3E4E5"
+      }
+    ],
+    "created_at": "2025-09-19T12:03:00.000Z",
+    "updated_at": "2026-10-29T16:12:59.683Z"
+  },
+  {
+    "id": "iphone-16-pro-max",
+    "name": "iPhone 16 Pro Max",
+    "subtitle": "Titanium, 6.9 inches, up to 33 hours of video.",
+    "image": "/catalog/iphone-16-pro-finish-select-202409-6-9inch-deserttitanium.webp",
+    "badge": null,
+    "rating": 0,
+    "reviews": 0,
+    "specs": [
+      {
+        "label": "Display",
+        "value": "6.9\" Super Retina XDR, ProMotion 120Hz, Always-On"
+      },
+      {
+        "label": "Chip",
+        "value": "A18 Pro"
+      },
+      {
+        "label": "Camera",
+        "value": "48MP Fusion + 48MP Ultra Wide + 12MP 5x Telephoto"
+      },
+      {
+        "label": "Front camera",
+        "value": "12MP TrueDepth"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 33 hours video playback"
+      },
+      {
+        "label": "Weight",
+        "value": "227 g"
+      },
+      {
+        "label": "Build",
+        "value": "Titanium, IP68"
+      }
+    ],
+    "description": "A titanium iPhone with a 6.9-inch ProMotion display, the A18 Pro chip, Camera Control and a 48MP Fusion camera with a 5x Telephoto. Up to 33 hours of video playback.",
+    "category": "Pro",
+    "variants": [
+      {
+        "color": "Desert Titanium",
+        "image": "/catalog/iphone-16-pro-finish-select-202409-6-9inch-deserttitanium.webp",
+        "price": 1199,
+        "stock": 20,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#BFA48F"
+      },
+      {
+        "color": "Desert Titanium",
+        "image": "/catalog/iphone-16-pro-finish-select-202409-6-9inch-deserttitanium.webp",
+        "price": 1399,
+        "stock": 15,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#BFA48F"
+      },
+      {
+        "color": "Desert Titanium",
+        "image": "/catalog/iphone-16-pro-finish-select-202409-6-9inch-deserttitanium.webp",
+        "price": 1599,
+        "stock": 8,
+        "inStock": true,
+        "storage": "1TB",
+        "colorHex": "#BFA48F"
+      },
+      {
+        "color": "Natural Titanium",
+        "image": "/catalog/iphone-16-pro-finish-select-202409-6-9inch-naturaltitanium.webp",
+        "price": 1199,
+        "stock": 18,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#C2BCB2"
+      },
+      {
+        "color": "Natural Titanium",
+        "image": "/catalog/iphone-16-pro-finish-select-202409-6-9inch-naturaltitanium.webp",
+        "price": 1399,
+        "stock": 12,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#C2BCB2"
+      },
+      {
+        "color": "Natural Titanium",
+        "image": "/catalog/iphone-16-pro-finish-select-202409-6-9inch-naturaltitanium.webp",
+        "price": 1599,
+        "stock": 6,
+        "inStock": true,
+        "storage": "1TB",
+        "colorHex": "#C2BCB2"
+      },
+      {
+        "color": "White Titanium",
+        "image": "/catalog/iphone-16-pro-finish-select-202409-6-9inch-whitetitanium.webp",
+        "price": 1199,
+        "stock": 16,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#F2F1ED"
+      },
+      {
+        "color": "White Titanium",
+        "image": "/catalog/iphone-16-pro-finish-select-202409-6-9inch-whitetitanium.webp",
+        "price": 1399,
+        "stock": 10,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#F2F1ED"
+      },
+      {
+        "color": "White Titanium",
+        "image": "/catalog/iphone-16-pro-finish-select-202409-6-9inch-whitetitanium.webp",
+        "price": 1599,
+        "stock": 5,
+        "inStock": true,
+        "storage": "1TB",
+        "colorHex": "#F2F1ED"
+      },
+      {
+        "color": "Black Titanium",
+        "image": "/catalog/iphone-16-pro-finish-select-202409-6-9inch-blacktitanium.webp",
+        "price": 1199,
+        "stock": 22,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#3C3C3D"
+      },
+      {
+        "color": "Black Titanium",
+        "image": "/catalog/iphone-16-pro-finish-select-202409-6-9inch-blacktitanium.webp",
+        "price": 1399,
+        "stock": 14,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#3C3C3D"
+      },
+      {
+        "color": "Black Titanium",
+        "image": "/catalog/iphone-16-pro-finish-select-202409-6-9inch-blacktitanium.webp",
+        "price": 1599,
+        "stock": 7,
+        "inStock": true,
+        "storage": "1TB",
+        "colorHex": "#3C3C3D"
+      }
+    ],
+    "created_at": "2024-09-20T12:03:00.000Z",
+    "updated_at": "2026-10-29T16:12:59.944Z"
+  },
+  {
+    "id": "iphone-16-plus",
+    "name": "iPhone 16 Plus",
+    "subtitle": "A 6.7-inch screen and up to 27 hours of video.",
+    "image": "/catalog/iphone-16-finish-select-202409-6-7inch-ultramarine.webp",
+    "badge": null,
+    "rating": 0,
+    "reviews": 0,
+    "specs": [
+      {
+        "label": "Display",
+        "value": "6.7\" Super Retina XDR OLED"
+      },
+      {
+        "label": "Chip",
+        "value": "A18"
+      },
+      {
+        "label": "Camera",
+        "value": "48MP Fusion (2x optical-quality) + 12MP Ultra Wide"
+      },
+      {
+        "label": "Front camera",
+        "value": "12MP TrueDepth"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 27 hours video playback"
+      },
+      {
+        "label": "Weight",
+        "value": "199 g"
+      },
+      {
+        "label": "Build",
+        "value": "Aluminium, colour-infused glass back"
+      }
+    ],
+    "description": "The iPhone 16 with a larger 6.7-inch display and longer battery life: the A18 chip, Camera Control, a 48MP Fusion camera and up to 27 hours of video playback.",
+    "category": "Standard",
+    "variants": [
+      {
+        "color": "Ultramarine",
+        "image": "/catalog/iphone-16-finish-select-202409-6-7inch-ultramarine.webp",
+        "price": 899,
+        "stock": 20,
+        "inStock": true,
+        "storage": "128GB",
+        "colorHex": "#748DFF"
+      },
+      {
+        "color": "Ultramarine",
+        "image": "/catalog/iphone-16-finish-select-202409-6-7inch-ultramarine.webp",
+        "price": 999,
+        "stock": 18,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#748DFF"
+      },
+      {
+        "color": "Ultramarine",
+        "image": "/catalog/iphone-16-finish-select-202409-6-7inch-ultramarine.webp",
+        "price": 1199,
+        "stock": 10,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#748DFF"
+      },
+      {
+        "color": "Teal",
+        "image": "/catalog/iphone-16-finish-select-202409-6-7inch-teal.webp",
+        "price": 899,
+        "stock": 18,
+        "inStock": true,
+        "storage": "128GB",
+        "colorHex": "#B0D4D1"
+      },
+      {
+        "color": "Teal",
+        "image": "/catalog/iphone-16-finish-select-202409-6-7inch-teal.webp",
+        "price": 999,
+        "stock": 15,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#B0D4D1"
+      },
+      {
+        "color": "Teal",
+        "image": "/catalog/iphone-16-finish-select-202409-6-7inch-teal.webp",
+        "price": 1199,
+        "stock": 8,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#B0D4D1"
+      },
+      {
+        "color": "Pink",
+        "image": "/catalog/iphone-16-finish-select-202409-6-7inch-pink.webp",
+        "price": 899,
+        "stock": 15,
+        "inStock": true,
+        "storage": "128GB",
+        "colorHex": "#F4C1D2"
+      },
+      {
+        "color": "Pink",
+        "image": "/catalog/iphone-16-finish-select-202409-6-7inch-pink.webp",
+        "price": 999,
+        "stock": 12,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#F4C1D2"
+      },
+      {
+        "color": "Pink",
+        "image": "/catalog/iphone-16-finish-select-202409-6-7inch-pink.webp",
+        "price": 1199,
+        "stock": 6,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#F4C1D2"
+      },
+      {
+        "color": "White",
+        "image": "/catalog/iphone-16-finish-select-202409-6-7inch-white.webp",
+        "price": 899,
+        "stock": 16,
+        "inStock": true,
+        "storage": "128GB",
+        "colorHex": "#F5F5F0"
+      },
+      {
+        "color": "White",
+        "image": "/catalog/iphone-16-finish-select-202409-6-7inch-white.webp",
+        "price": 999,
+        "stock": 14,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#F5F5F0"
+      },
+      {
+        "color": "White",
+        "image": "/catalog/iphone-16-finish-select-202409-6-7inch-white.webp",
+        "price": 1199,
+        "stock": 7,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#F5F5F0"
+      },
+      {
+        "color": "Black",
+        "image": "/catalog/iphone-16-finish-select-202409-6-7inch-black.webp",
+        "price": 899,
+        "stock": 22,
+        "inStock": true,
+        "storage": "128GB",
+        "colorHex": "#3C3C3D"
+      },
+      {
+        "color": "Black",
+        "image": "/catalog/iphone-16-finish-select-202409-6-7inch-black.webp",
+        "price": 999,
+        "stock": 18,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#3C3C3D"
+      },
+      {
+        "color": "Black",
+        "image": "/catalog/iphone-16-finish-select-202409-6-7inch-black.webp",
+        "price": 1199,
+        "stock": 10,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#3C3C3D"
+      }
+    ],
+    "created_at": "2024-09-20T12:00:00.000Z",
+    "updated_at": "2026-10-29T16:13:00.203Z"
+  },
+  {
+    "id": "airpods-pro-2",
+    "name": "AirPods Pro 2",
+    "subtitle": "Noise cancellation with the H2 chip.",
+    "image": "/catalog/airpods-pro-2-hero-select-202409.webp",
+    "badge": null,
+    "rating": 0,
+    "reviews": 0,
+    "specs": [
+      {
+        "label": "Chip",
+        "value": "H2"
+      },
+      {
+        "label": "Noise control",
+        "value": "Active Noise Cancellation, Transparency, Adaptive Audio"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 6 hours with ANC, up to 30 hours with case"
+      },
+      {
+        "label": "Case",
+        "value": "MagSafe Charging Case (USB-C)"
+      }
+    ],
+    "description": "The previous AirPods Pro, with the H2 chip, Active Noise Cancellation, Adaptive Audio and Conversation Awareness. Up to 6 hours of listening with ANC and a USB-C MagSafe charging case.",
+    "category": "Accessories",
+    "variants": [
+      {
+        "color": "White",
+        "image": "/catalog/airpods-pro-2-hero-select-202409.webp",
+        "price": 249,
+        "stock": 50,
+        "inStock": true,
+        "storage": "",
+        "colorHex": "#F5F5F0"
+      }
+    ],
+    "created_at": "2023-09-22T11:00:00.000Z",
+    "updated_at": "2026-10-29T16:13:00.597Z"
+  },
+  {
+    "id": "airpods-5",
+    "name": "AirPods 5",
+    "subtitle": "Active Noise Cancellation in an open-ear design.",
+    "image": "/catalog/airpods-5-select-202609_FV1.webp",
+    "badge": "New",
+    "rating": 0,
+    "reviews": 0,
+    "specs": [
+      {
+        "label": "Chip",
+        "value": "H2"
+      },
+      {
+        "label": "Noise control",
+        "value": "Active Noise Cancellation, Transparency, Adaptive Audio"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 4 hours with ANC (6 hours off), up to 20 hours with case"
+      },
+      {
+        "label": "Case",
+        "value": "USB-C Charging Case"
+      }
+    ],
+    "description": "Open-ear AirPods with Active Noise Cancellation on every model, Adaptive Audio, Conversation Awareness and Personalized Spatial Audio. Up to 4 hours of listening with ANC on, and up to 20 hours with the USB-C charging case.",
+    "category": "Accessories",
+    "variants": [
+      {
+        "color": "White",
+        "image": "/catalog/airpods-5-select-202609_FV1.webp",
+        "price": 149,
+        "stock": 10,
+        "inStock": true,
+        "storage": "",
+        "colorHex": "#F5F5F0"
+      }
+    ],
+    "created_at": "2026-09-18T11:00:00.000Z",
+    "updated_at": "2026-10-29T16:12:59.158Z"
+  },
+  {
+    "id": "iphone-15-pro-max",
+    "name": "iPhone 15 Pro Max",
+    "subtitle": "Titanium and a 5x Telephoto.",
+    "image": "/catalog/iphone-15-pro-finish-select-202309-6-7inch-bluetitanium.webp",
+    "badge": null,
+    "rating": 0,
+    "reviews": 0,
+    "specs": [
+      {
+        "label": "Display",
+        "value": "6.7\" Super Retina XDR, ProMotion 120Hz, Always-On"
+      },
+      {
+        "label": "Chip",
+        "value": "A17 Pro"
+      },
+      {
+        "label": "Camera",
+        "value": "48MP Main + 12MP Ultra Wide + 12MP 5x Telephoto"
+      },
+      {
+        "label": "Front camera",
+        "value": "12MP TrueDepth"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 29 hours video playback"
+      },
+      {
+        "label": "Weight",
+        "value": "221 g"
+      },
+      {
+        "label": "Build",
+        "value": "Titanium, IP68"
+      }
+    ],
+    "description": "A titanium iPhone with a 6.7-inch ProMotion display, the A17 Pro chip, the Action button, USB-C and a 48MP camera system with a 5x Telephoto. Up to 29 hours of video playback.",
+    "category": "Pro",
+    "variants": [
+      {
+        "color": "Blue Titanium",
+        "image": "/catalog/iphone-15-pro-finish-select-202309-6-7inch-bluetitanium.webp",
+        "price": 1099,
+        "stock": 15,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#394C6B",
+        "originalPrice": 1199
+      },
+      {
+        "color": "Blue Titanium",
+        "image": "/catalog/iphone-15-pro-finish-select-202309-6-7inch-bluetitanium.webp",
+        "price": 1299,
+        "stock": 10,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#394C6B",
+        "originalPrice": 1399
+      },
+      {
+        "color": "Blue Titanium",
+        "image": "/catalog/iphone-15-pro-finish-select-202309-6-7inch-bluetitanium.webp",
+        "price": 1499,
+        "stock": 5,
+        "inStock": true,
+        "storage": "1TB",
+        "colorHex": "#394C6B",
+        "originalPrice": 1599
+      },
+      {
+        "color": "Natural Titanium",
+        "image": "/catalog/iphone-15-pro-finish-select-202309-6-7inch-naturaltitanium.webp",
+        "price": 1099,
+        "stock": 12,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#C2BCB2",
+        "originalPrice": 1199
+      },
+      {
+        "color": "Natural Titanium",
+        "image": "/catalog/iphone-15-pro-finish-select-202309-6-7inch-naturaltitanium.webp",
+        "price": 1299,
+        "stock": 8,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#C2BCB2",
+        "originalPrice": 1399
+      },
+      {
+        "color": "Natural Titanium",
+        "image": "/catalog/iphone-15-pro-finish-select-202309-6-7inch-naturaltitanium.webp",
+        "price": 1499,
+        "stock": 4,
+        "inStock": true,
+        "storage": "1TB",
+        "colorHex": "#C2BCB2",
+        "originalPrice": 1599
+      },
+      {
+        "color": "White Titanium",
+        "image": "/catalog/iphone-15-pro-finish-select-202309-6-7inch-whitetitanium.webp",
+        "price": 1099,
+        "stock": 10,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#F2F1ED",
+        "originalPrice": 1199
+      },
+      {
+        "color": "White Titanium",
+        "image": "/catalog/iphone-15-pro-finish-select-202309-6-7inch-whitetitanium.webp",
+        "price": 1299,
+        "stock": 6,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#F2F1ED",
+        "originalPrice": 1399
+      },
+      {
+        "color": "White Titanium",
+        "image": "/catalog/iphone-15-pro-finish-select-202309-6-7inch-whitetitanium.webp",
+        "price": 1499,
+        "stock": 3,
+        "inStock": true,
+        "storage": "1TB",
+        "colorHex": "#F2F1ED",
+        "originalPrice": 1599
+      },
+      {
+        "color": "Black Titanium",
+        "image": "/catalog/iphone-15-pro-finish-select-202309-6-7inch-blacktitanium.webp",
+        "price": 1099,
+        "stock": 18,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#3C3C3D",
+        "originalPrice": 1199
+      },
+      {
+        "color": "Black Titanium",
+        "image": "/catalog/iphone-15-pro-finish-select-202309-6-7inch-blacktitanium.webp",
+        "price": 1299,
+        "stock": 12,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#3C3C3D",
+        "originalPrice": 1399
+      },
+      {
+        "color": "Black Titanium",
+        "image": "/catalog/iphone-15-pro-finish-select-202309-6-7inch-blacktitanium.webp",
+        "price": 1499,
+        "stock": 6,
+        "inStock": true,
+        "storage": "1TB",
+        "colorHex": "#3C3C3D",
+        "originalPrice": 1599
+      }
+    ],
+    "created_at": "2023-09-22T12:01:00.000Z",
+    "updated_at": "2026-10-29T16:13:00.333Z"
+  },
+  {
+    "id": "iphone-18-pro",
+    "name": "iPhone 18 Pro",
+    "subtitle": "Pro cameras and A20 Pro, in a 6.3-inch size.",
+    "image": "/catalog/iphone-18-pro-finish-select-black-202609.webp",
+    "badge": "New",
+    "rating": 0,
+    "reviews": 0,
+    "specs": [
+      {
+        "label": "Display",
+        "value": "6.3\" Super Retina XDR, ProMotion 120Hz, Always-On"
+      },
+      {
+        "label": "Chip",
+        "value": "A20 Pro"
+      },
+      {
+        "label": "Camera",
+        "value": "48MP Fusion Main (variable aperture) + 48MP Ultra Wide + 48MP 4x Telephoto, up to 8x optical-quality"
+      },
+      {
+        "label": "Front camera",
+        "value": "18MP Center Stage"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 34 hours video playback"
+      },
+      {
+        "label": "Weight",
+        "value": "211 g"
+      },
+      {
+        "label": "Build",
+        "value": "Aluminium unibody, Ceramic Shield 2, IP68"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Apple C2 modem, Wi-Fi 7, satellite features"
+      }
+    ],
+    "description": "The full iPhone 18 Pro camera system and A20 Pro chip in a 6.3-inch body. Three 48MP Fusion cameras with a variable-aperture Main camera and up to 8x optical-quality zoom, an 18MP Center Stage front camera and up to 34 hours of video playback.",
+    "category": "Pro",
+    "variants": [
+      {
+        "color": "Black",
+        "image": "/catalog/iphone-18-pro-finish-select-black-202609.webp",
+        "price": 1449,
+        "stock": 10,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#2B2B2D"
+      },
+      {
+        "color": "Black",
+        "image": "/catalog/iphone-18-pro-finish-select-black-202609.webp",
+        "price": 1699,
+        "stock": 10,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#2B2B2D"
+      },
+      {
+        "color": "Black",
+        "image": "/catalog/iphone-18-pro-finish-select-black-202609.webp",
+        "price": 2199,
+        "stock": 10,
+        "inStock": true,
+        "storage": "1TB",
+        "colorHex": "#2B2B2D"
+      },
+      {
+        "color": "Black",
+        "image": "/catalog/iphone-18-pro-finish-select-black-202609.webp",
+        "price": 2949,
+        "stock": 10,
+        "inStock": true,
+        "storage": "2TB",
+        "colorHex": "#2B2B2D"
+      },
+      {
+        "color": "Silver",
+        "image": "/catalog/iphone-18-pro-finish-select-silver-202609.webp",
+        "price": 1449,
+        "stock": 10,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#E3E4E5"
+      },
+      {
+        "color": "Silver",
+        "image": "/catalog/iphone-18-pro-finish-select-silver-202609.webp",
+        "price": 1699,
+        "stock": 10,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#E3E4E5"
+      },
+      {
+        "color": "Silver",
+        "image": "/catalog/iphone-18-pro-finish-select-silver-202609.webp",
+        "price": 2199,
+        "stock": 10,
+        "inStock": true,
+        "storage": "1TB",
+        "colorHex": "#E3E4E5"
+      },
+      {
+        "color": "Silver",
+        "image": "/catalog/iphone-18-pro-finish-select-silver-202609.webp",
+        "price": 2949,
+        "stock": 10,
+        "inStock": true,
+        "storage": "2TB",
+        "colorHex": "#E3E4E5"
+      },
+      {
+        "color": "Glacier",
+        "image": "/catalog/iphone-18-pro-finish-select-glacier-202609.webp",
+        "price": 1449,
+        "stock": 10,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#C9D9E3"
+      },
+      {
+        "color": "Glacier",
+        "image": "/catalog/iphone-18-pro-finish-select-glacier-202609.webp",
+        "price": 1699,
+        "stock": 10,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#C9D9E3"
+      },
+      {
+        "color": "Glacier",
+        "image": "/catalog/iphone-18-pro-finish-select-glacier-202609.webp",
+        "price": 2199,
+        "stock": 10,
+        "inStock": true,
+        "storage": "1TB",
+        "colorHex": "#C9D9E3"
+      },
+      {
+        "color": "Glacier",
+        "image": "/catalog/iphone-18-pro-finish-select-glacier-202609.webp",
+        "price": 2949,
+        "stock": 10,
+        "inStock": true,
+        "storage": "2TB",
+        "colorHex": "#C9D9E3"
+      },
+      {
+        "color": "Burgundy",
+        "image": "/catalog/iphone-18-pro-finish-select-burgundy-202609.webp",
+        "price": 1449,
+        "stock": 10,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#6B2333"
+      },
+      {
+        "color": "Burgundy",
+        "image": "/catalog/iphone-18-pro-finish-select-burgundy-202609.webp",
+        "price": 1699,
+        "stock": 10,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#6B2333"
+      },
+      {
+        "color": "Burgundy",
+        "image": "/catalog/iphone-18-pro-finish-select-burgundy-202609.webp",
+        "price": 2199,
+        "stock": 10,
+        "inStock": true,
+        "storage": "1TB",
+        "colorHex": "#6B2333"
+      },
+      {
+        "color": "Burgundy",
+        "image": "/catalog/iphone-18-pro-finish-select-burgundy-202609.webp",
+        "price": 2949,
+        "stock": 10,
+        "inStock": true,
+        "storage": "2TB",
+        "colorHex": "#6B2333"
+      }
+    ],
+    "created_at": "2026-09-18T12:00:00.000Z",
+    "updated_at": "2026-10-29T16:12:58.428Z"
+  },
+  {
+    "id": "iphone-17e",
+    "name": "iPhone 17e",
+    "subtitle": "A19, MagSafe and 256GB to start.",
+    "image": "/catalog/iphone-17e-finish-select-black-202603.webp",
+    "badge": null,
+    "rating": 0,
+    "reviews": 0,
+    "specs": [
+      {
+        "label": "Display",
+        "value": "6.1\" Super Retina XDR OLED"
+      },
+      {
+        "label": "Chip",
+        "value": "A19"
+      },
+      {
+        "label": "Camera",
+        "value": "48MP Fusion (2x optical-quality)"
+      },
+      {
+        "label": "Front camera",
+        "value": "12MP TrueDepth"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 26 hours video playback"
+      },
+      {
+        "label": "Weight",
+        "value": "170 g"
+      },
+      {
+        "label": "Build",
+        "value": "Aluminium, Ceramic Shield 2, IP68"
+      },
+      {
+        "label": "Charging",
+        "value": "MagSafe and Qi2 up to 15W, USB-C"
+      }
+    ],
+    "description": "The most affordable iPhone, now with the A19 chip, MagSafe and Qi2 charging, and 256GB of storage to start. Its 48MP Fusion camera also takes 2x optical-quality shots, and it lasts up to 26 hours of video playback.",
+    "category": "Standard",
+    "variants": [
+      {
+        "color": "Black",
+        "image": "/catalog/iphone-17e-finish-select-black-202603.webp",
+        "price": 849,
+        "stock": 10,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#232325"
+      },
+      {
+        "color": "Black",
+        "image": "/catalog/iphone-17e-finish-select-black-202603.webp",
+        "price": 1099,
+        "stock": 10,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#232325"
+      },
+      {
+        "color": "White",
+        "image": "/catalog/iphone-17e-finish-select-white-202603.webp",
+        "price": 849,
+        "stock": 10,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#F5F5F3"
+      },
+      {
+        "color": "White",
+        "image": "/catalog/iphone-17e-finish-select-white-202603.webp",
+        "price": 1099,
+        "stock": 10,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#F5F5F3"
+      },
+      {
+        "color": "Soft Pink",
+        "image": "/catalog/iphone-17e-finish-select-softpink-202603.webp",
+        "price": 849,
+        "stock": 10,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#F2D3D6"
+      },
+      {
+        "color": "Soft Pink",
+        "image": "/catalog/iphone-17e-finish-select-softpink-202603.webp",
+        "price": 1099,
+        "stock": 10,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#F2D3D6"
+      }
+    ],
+    "created_at": "2026-03-11T12:00:00.000Z",
+    "updated_at": "2026-10-29T16:12:58.565Z"
+  },
+  {
+    "id": "iphone-17",
+    "name": "iPhone 17",
+    "subtitle": "ProMotion and two 48MP cameras.",
+    "image": "/catalog/iphone-17-finish-select-lavender-202509_GEO_EMEA.webp",
+    "badge": null,
+    "rating": 0,
+    "reviews": 0,
+    "specs": [
+      {
+        "label": "Display",
+        "value": "6.3\" Super Retina XDR, ProMotion 120Hz"
+      },
+      {
+        "label": "Chip",
+        "value": "A19"
+      },
+      {
+        "label": "Camera",
+        "value": "48MP Fusion Main (2x optical-quality) + 48MP Ultra Wide"
+      },
+      {
+        "label": "Front camera",
+        "value": "18MP Center Stage"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 30 hours video playback"
+      },
+      {
+        "label": "Weight",
+        "value": "177 g"
+      },
+      {
+        "label": "Build",
+        "value": "Aluminium, Ceramic Shield 2"
+      }
+    ],
+    "description": "A 6.3-inch display with ProMotion up to 120Hz, the A19 chip and two 48MP Fusion cameras (Main and Ultra Wide). The 18MP Center Stage front camera keeps everyone in frame, and it lasts up to 30 hours of video playback. 256GB to start.",
+    "category": "Standard",
+    "variants": [
+      {
+        "color": "Lavender",
+        "image": "/catalog/iphone-17-finish-select-lavender-202509_GEO_EMEA.webp",
+        "price": 1099,
+        "stock": 10,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#DCCFE8"
+      },
+      {
+        "color": "Lavender",
+        "image": "/catalog/iphone-17-finish-select-lavender-202509_GEO_EMEA.webp",
+        "price": 1349,
+        "stock": 10,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#DCCFE8"
+      },
+      {
+        "color": "Sage",
+        "image": "/catalog/iphone-17-finish-select-sage-202509_GEO_EMEA.webp",
+        "price": 1099,
+        "stock": 10,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#B9C3A6"
+      },
+      {
+        "color": "Sage",
+        "image": "/catalog/iphone-17-finish-select-sage-202509_GEO_EMEA.webp",
+        "price": 1349,
+        "stock": 10,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#B9C3A6"
+      },
+      {
+        "color": "Mist Blue",
+        "image": "/catalog/iphone-17-finish-select-mistblue-202509_GEO_EMEA.webp",
+        "price": 1099,
+        "stock": 10,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#A9BDD3"
+      },
+      {
+        "color": "Mist Blue",
+        "image": "/catalog/iphone-17-finish-select-mistblue-202509_GEO_EMEA.webp",
+        "price": 1349,
+        "stock": 10,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#A9BDD3"
+      },
+      {
+        "color": "White",
+        "image": "/catalog/iphone-17-finish-select-white-202509_GEO_EMEA.webp",
+        "price": 1099,
+        "stock": 10,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#F5F5F3"
+      },
+      {
+        "color": "White",
+        "image": "/catalog/iphone-17-finish-select-white-202509_GEO_EMEA.webp",
+        "price": 1349,
+        "stock": 10,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#F5F5F3"
+      },
+      {
+        "color": "Black",
+        "image": "/catalog/iphone-17-finish-select-black-202509_GEO_EMEA.webp",
+        "price": 1099,
+        "stock": 10,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#232325"
+      },
+      {
+        "color": "Black",
+        "image": "/catalog/iphone-17-finish-select-black-202509_GEO_EMEA.webp",
+        "price": 1349,
+        "stock": 10,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#232325"
+      }
+    ],
+    "created_at": "2025-09-19T12:00:00.000Z",
+    "updated_at": "2026-10-29T16:12:58.888Z"
+  },
+  {
+    "id": "iphone-duo",
+    "name": "iPhone Duo",
+    "subtitle": "The first foldable iPhone.",
+    "image": "/catalog/iphone-duo-finish-select-night-sky-202609_GEO_EMEA.webp",
+    "badge": "New",
+    "rating": 0,
+    "reviews": 0,
+    "specs": [
+      {
+        "label": "Display",
+        "value": "7.6\" foldable inner + 5.4\" outer, Super Retina XDR, ProMotion 120Hz"
+      },
+      {
+        "label": "Chip",
+        "value": "A20 Pro"
+      },
+      {
+        "label": "Camera",
+        "value": "48MP Fusion Main (2x optical-quality) + 48MP Ultra Wide"
+      },
+      {
+        "label": "Front camera",
+        "value": "12MP Center Stage (outer), under-display camera (inner)"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 44 hours video playback (outer display), 31 hours (inner)"
+      },
+      {
+        "label": "Weight",
+        "value": "254 g"
+      },
+      {
+        "label": "Build",
+        "value": "Titanium, Ceramic Shield 2, IP68"
+      },
+      {
+        "label": "Security",
+        "value": "Touch ID in the side button"
+      },
+      {
+        "label": "SIM",
+        "value": "eSIM only"
+      }
+    ],
+    "description": "Apple's first foldable opens from a 5.4-inch phone into a 7.6-inch display, both with ProMotion up to 120Hz. It runs on the A20 Pro chip, unlocks with Touch ID in the side button, and has a 48MP Fusion Main and 48MP Ultra Wide camera. Titanium design, IP68, eSIM only.",
+    "category": "Pro",
+    "variants": [
+      {
+        "color": "Night Sky",
+        "image": "/catalog/iphone-duo-finish-select-night-sky-202609_GEO_EMEA.webp",
+        "price": 2299,
+        "stock": 10,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#1E2230"
+      },
+      {
+        "color": "Night Sky",
+        "image": "/catalog/iphone-duo-finish-select-night-sky-202609_GEO_EMEA.webp",
+        "price": 2549,
+        "stock": 10,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#1E2230"
+      },
+      {
+        "color": "Night Sky",
+        "image": "/catalog/iphone-duo-finish-select-night-sky-202609_GEO_EMEA.webp",
+        "price": 3049,
+        "stock": 10,
+        "inStock": true,
+        "storage": "1TB",
+        "colorHex": "#1E2230"
+      },
+      {
+        "color": "Night Sky",
+        "image": "/catalog/iphone-duo-finish-select-night-sky-202609_GEO_EMEA.webp",
+        "price": 3799,
+        "stock": 10,
+        "inStock": true,
+        "storage": "2TB",
+        "colorHex": "#1E2230"
+      },
+      {
+        "color": "Star White",
+        "image": "/catalog/iphone-duo-finish-select-star-white-202609_GEO_EMEA.webp",
+        "price": 2299,
+        "stock": 10,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#F2F1EC"
+      },
+      {
+        "color": "Star White",
+        "image": "/catalog/iphone-duo-finish-select-star-white-202609_GEO_EMEA.webp",
+        "price": 2549,
+        "stock": 10,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#F2F1EC"
+      },
+      {
+        "color": "Star White",
+        "image": "/catalog/iphone-duo-finish-select-star-white-202609_GEO_EMEA.webp",
+        "price": 3049,
+        "stock": 10,
+        "inStock": true,
+        "storage": "1TB",
+        "colorHex": "#F2F1EC"
+      },
+      {
+        "color": "Star White",
+        "image": "/catalog/iphone-duo-finish-select-star-white-202609_GEO_EMEA.webp",
+        "price": 3799,
+        "stock": 10,
+        "inStock": true,
+        "storage": "2TB",
+        "colorHex": "#F2F1EC"
+      }
+    ],
+    "created_at": "2026-10-23T12:00:00.000Z",
+    "updated_at": "2026-10-29T16:12:58.164Z"
+  },
+  {
+    "id": "airpods-5-wireless",
+    "name": "AirPods 5 with Wireless Charging Case",
+    "subtitle": "AirPods 5, with a case that charges wirelessly.",
+    "image": "/catalog/airpods-5-wcc-select-202609_FV1.webp",
+    "badge": "New",
+    "rating": 0,
+    "reviews": 0,
+    "specs": [
+      {
+        "label": "Chip",
+        "value": "H2"
+      },
+      {
+        "label": "Noise control",
+        "value": "Active Noise Cancellation, Transparency, Adaptive Audio"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 5 hours with ANC (7 hours off), up to 22 hours with case"
+      },
+      {
+        "label": "Case",
+        "value": "Wireless Charging Case (USB-C, Apple Watch charger, Qi), Find My speaker"
+      }
+    ],
+    "description": "AirPods 5 with a case that charges on Apple Watch and Qi chargers or over USB-C, adds a speaker for Find My and lets you swipe to change volume. Up to 5 hours of listening with ANC on, and up to 22 hours with the case.",
+    "category": "Accessories",
+    "variants": [
+      {
+        "color": "White",
+        "image": "/catalog/airpods-5-wcc-select-202609_FV1.webp",
+        "price": 169,
+        "stock": 10,
+        "inStock": true,
+        "storage": "",
+        "colorHex": "#F5F5F0"
+      }
+    ],
+    "created_at": "2026-09-18T10:59:00.000Z",
+    "updated_at": "2026-10-29T16:12:59.291Z"
+  },
+  {
+    "id": "airpods-pro-3",
+    "name": "AirPods Pro 3",
+    "subtitle": "Noise cancellation and heart-rate sensing.",
+    "image": "/catalog/airpods-pro-3-hero-select-202509.webp",
+    "badge": null,
+    "rating": 0,
+    "reviews": 0,
+    "specs": [
+      {
+        "label": "Chip",
+        "value": "H2"
+      },
+      {
+        "label": "Noise control",
+        "value": "Active Noise Cancellation, Transparency, Adaptive Audio"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 8 hours with ANC, up to 24 hours with case"
+      },
+      {
+        "label": "Health",
+        "value": "Heart-rate sensing, Hearing Test, Hearing Aid, Hearing Protection"
+      },
+      {
+        "label": "Case",
+        "value": "MagSafe Charging Case (USB-C), Find My"
+      },
+      {
+        "label": "Water resistance",
+        "value": "IP57 (earbuds and case)"
+      }
+    ],
+    "description": "Apple's in-ear AirPods Pro with Active Noise Cancellation, built-in heart-rate sensing for workouts and hearing health features including Hearing Test and Hearing Aid. Up to 8 hours of listening with ANC and up to 24 hours with the MagSafe case. IP57.",
+    "category": "Accessories",
+    "variants": [
+      {
+        "color": "White",
+        "image": "/catalog/airpods-pro-3-hero-select-202509.webp",
+        "price": 249,
+        "stock": 10,
+        "inStock": true,
+        "storage": "",
+        "colorHex": "#F5F5F0"
+      }
+    ],
+    "created_at": "2025-09-19T11:00:00.000Z",
+    "updated_at": "2026-10-29T16:12:59.421Z"
+  },
+  {
+    "id": "iphone-16e",
+    "name": "iPhone 16e",
+    "subtitle": "A18 and a 48MP camera.",
+    "image": "/catalog/iphone-16e-finish-select-202502-black.webp",
+    "badge": null,
+    "rating": 0,
+    "reviews": 0,
+    "specs": [
+      {
+        "label": "Display",
+        "value": "6.1\" Super Retina XDR OLED"
+      },
+      {
+        "label": "Chip",
+        "value": "A18"
+      },
+      {
+        "label": "Camera",
+        "value": "48MP Fusion (2x optical-quality)"
+      },
+      {
+        "label": "Front camera",
+        "value": "12MP TrueDepth"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 26 hours video playback"
+      },
+      {
+        "label": "Weight",
+        "value": "167 g"
+      },
+      {
+        "label": "Build",
+        "value": "Aluminium, IP68"
+      }
+    ],
+    "description": "A 6.1-inch iPhone with the A18 chip, Apple Intelligence, the Action button and a 48MP Fusion camera with 2x optical-quality zoom. Up to 26 hours of video playback.",
+    "category": "Standard",
+    "variants": [
+      {
+        "color": "Black",
+        "image": "/catalog/iphone-16e-finish-select-202502-black.webp",
+        "price": 599,
+        "stock": 40,
+        "inStock": true,
+        "storage": "128GB",
+        "colorHex": "#1D1D1F"
+      },
+      {
+        "color": "Black",
+        "image": "/catalog/iphone-16e-finish-select-202502-black.webp",
+        "price": 699,
+        "stock": 35,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#1D1D1F"
+      },
+      {
+        "color": "White",
+        "image": "/catalog/iphone-16e-finish-select-202502-white.webp",
+        "price": 599,
+        "stock": 38,
+        "inStock": true,
+        "storage": "128GB",
+        "colorHex": "#F5F5F7"
+      },
+      {
+        "color": "White",
+        "image": "/catalog/iphone-16e-finish-select-202502-white.webp",
+        "price": 699,
+        "stock": 30,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#F5F5F7"
+      }
+    ],
+    "created_at": "2025-02-28T12:00:00.000Z",
+    "updated_at": "2026-10-29T16:12:59.812Z"
+  },
+  {
+    "id": "iphone-16-pro",
+    "name": "iPhone 16 Pro",
+    "subtitle": "Titanium and the A18 Pro, at 6.3 inches.",
+    "image": "/catalog/iphone-16-pro-finish-select-202409-6-3inch-deserttitanium.webp",
+    "badge": null,
+    "rating": 0,
+    "reviews": 0,
+    "specs": [
+      {
+        "label": "Display",
+        "value": "6.3\" Super Retina XDR, ProMotion 120Hz, Always-On"
+      },
+      {
+        "label": "Chip",
+        "value": "A18 Pro"
+      },
+      {
+        "label": "Camera",
+        "value": "48MP Fusion + 48MP Ultra Wide + 12MP 5x Telephoto"
+      },
+      {
+        "label": "Front camera",
+        "value": "12MP TrueDepth"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 27 hours video playback"
+      },
+      {
+        "label": "Weight",
+        "value": "199 g"
+      },
+      {
+        "label": "Build",
+        "value": "Titanium, IP68"
+      }
+    ],
+    "description": "A 6.3-inch titanium iPhone with the A18 Pro chip, Camera Control and a 48MP Fusion camera system with a 5x Telephoto. Up to 27 hours of video playback.",
+    "category": "Pro",
+    "variants": [
+      {
+        "color": "Desert Titanium",
+        "image": "/catalog/iphone-16-pro-finish-select-202409-6-3inch-deserttitanium.webp",
+        "price": 999,
+        "stock": 25,
+        "inStock": true,
+        "storage": "128GB",
+        "colorHex": "#BFA48F"
+      },
+      {
+        "color": "Desert Titanium",
+        "image": "/catalog/iphone-16-pro-finish-select-202409-6-3inch-deserttitanium.webp",
+        "price": 1099,
+        "stock": 20,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#BFA48F"
+      },
+      {
+        "color": "Desert Titanium",
+        "image": "/catalog/iphone-16-pro-finish-select-202409-6-3inch-deserttitanium.webp",
+        "price": 1299,
+        "stock": 12,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#BFA48F"
+      },
+      {
+        "color": "Desert Titanium",
+        "image": "/catalog/iphone-16-pro-finish-select-202409-6-3inch-deserttitanium.webp",
+        "price": 1499,
+        "stock": 6,
+        "inStock": true,
+        "storage": "1TB",
+        "colorHex": "#BFA48F"
+      },
+      {
+        "color": "Natural Titanium",
+        "image": "/catalog/iphone-16-pro-finish-select-202409-6-3inch-naturaltitanium.webp",
+        "price": 999,
+        "stock": 22,
+        "inStock": true,
+        "storage": "128GB",
+        "colorHex": "#C2BCB2"
+      },
+      {
+        "color": "Natural Titanium",
+        "image": "/catalog/iphone-16-pro-finish-select-202409-6-3inch-naturaltitanium.webp",
+        "price": 1099,
+        "stock": 18,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#C2BCB2"
+      },
+      {
+        "color": "Natural Titanium",
+        "image": "/catalog/iphone-16-pro-finish-select-202409-6-3inch-naturaltitanium.webp",
+        "price": 1299,
+        "stock": 10,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#C2BCB2"
+      },
+      {
+        "color": "Natural Titanium",
+        "image": "/catalog/iphone-16-pro-finish-select-202409-6-3inch-naturaltitanium.webp",
+        "price": 1499,
+        "stock": 5,
+        "inStock": true,
+        "storage": "1TB",
+        "colorHex": "#C2BCB2"
+      },
+      {
+        "color": "White Titanium",
+        "image": "/catalog/iphone-16-pro-finish-select-202409-6-3inch-whitetitanium.webp",
+        "price": 999,
+        "stock": 20,
+        "inStock": true,
+        "storage": "128GB",
+        "colorHex": "#F2F1ED"
+      },
+      {
+        "color": "White Titanium",
+        "image": "/catalog/iphone-16-pro-finish-select-202409-6-3inch-whitetitanium.webp",
+        "price": 1099,
+        "stock": 16,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#F2F1ED"
+      },
+      {
+        "color": "White Titanium",
+        "image": "/catalog/iphone-16-pro-finish-select-202409-6-3inch-whitetitanium.webp",
+        "price": 1299,
+        "stock": 8,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#F2F1ED"
+      },
+      {
+        "color": "White Titanium",
+        "image": "/catalog/iphone-16-pro-finish-select-202409-6-3inch-whitetitanium.webp",
+        "price": 1499,
+        "stock": 4,
+        "inStock": true,
+        "storage": "1TB",
+        "colorHex": "#F2F1ED"
+      },
+      {
+        "color": "Black Titanium",
+        "image": "/catalog/iphone-16-pro-finish-select-202409-6-3inch-blacktitanium.webp",
+        "price": 999,
+        "stock": 28,
+        "inStock": true,
+        "storage": "128GB",
+        "colorHex": "#3C3C3D"
+      },
+      {
+        "color": "Black Titanium",
+        "image": "/catalog/iphone-16-pro-finish-select-202409-6-3inch-blacktitanium.webp",
+        "price": 1099,
+        "stock": 22,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#3C3C3D"
+      },
+      {
+        "color": "Black Titanium",
+        "image": "/catalog/iphone-16-pro-finish-select-202409-6-3inch-blacktitanium.webp",
+        "price": 1299,
+        "stock": 14,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#3C3C3D"
+      },
+      {
+        "color": "Black Titanium",
+        "image": "/catalog/iphone-16-pro-finish-select-202409-6-3inch-blacktitanium.webp",
+        "price": 1499,
+        "stock": 7,
+        "inStock": true,
+        "storage": "1TB",
+        "colorHex": "#3C3C3D"
+      }
+    ],
+    "created_at": "2024-09-20T12:02:00.000Z",
+    "updated_at": "2026-10-29T16:13:00.074Z"
+  },
+  {
+    "id": "iphone-18-pro-max",
+    "name": "iPhone 18 Pro Max",
+    "subtitle": "The biggest screen and longest battery of any iPhone.",
+    "image": "/catalog/iphone-18-pro-max-finish-select-black-202609.webp",
+    "badge": "New",
+    "rating": 0,
+    "reviews": 0,
+    "specs": [
+      {
+        "label": "Display",
+        "value": "6.9\" Super Retina XDR, ProMotion 120Hz, Always-On"
+      },
+      {
+        "label": "Chip",
+        "value": "A20 Pro"
+      },
+      {
+        "label": "Camera",
+        "value": "48MP Fusion Main (variable aperture) + 48MP Ultra Wide + 48MP 4x Telephoto, up to 8x optical-quality"
+      },
+      {
+        "label": "Front camera",
+        "value": "18MP Center Stage"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 43 hours video playback"
+      },
+      {
+        "label": "Weight",
+        "value": "249 g"
+      },
+      {
+        "label": "Build",
+        "value": "Aluminium unibody, Ceramic Shield 2, IP68"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Apple C2 modem, Wi-Fi 7, satellite features"
+      }
+    ],
+    "description": "A 6.9-inch ProMotion display, the A20 Pro chip with vapour-chamber cooling and up to 43 hours of video playback. Three 48MP Fusion cameras, with a new variable-aperture Main camera and a 4x Telephoto that reaches 8x optical quality. Available up to 2TB.",
+    "category": "Pro",
+    "variants": [
+      {
+        "color": "Black",
+        "image": "/catalog/iphone-18-pro-max-finish-select-black-202609.webp",
+        "price": 1599,
+        "stock": 10,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#2B2B2D"
+      },
+      {
+        "color": "Black",
+        "image": "/catalog/iphone-18-pro-max-finish-select-black-202609.webp",
+        "price": 1849,
+        "stock": 10,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#2B2B2D"
+      },
+      {
+        "color": "Black",
+        "image": "/catalog/iphone-18-pro-max-finish-select-black-202609.webp",
+        "price": 2349,
+        "stock": 10,
+        "inStock": true,
+        "storage": "1TB",
+        "colorHex": "#2B2B2D"
+      },
+      {
+        "color": "Black",
+        "image": "/catalog/iphone-18-pro-max-finish-select-black-202609.webp",
+        "price": 3099,
+        "stock": 10,
+        "inStock": true,
+        "storage": "2TB",
+        "colorHex": "#2B2B2D"
+      },
+      {
+        "color": "Silver",
+        "image": "/catalog/iphone-18-pro-max-finish-select-silver-202609.webp",
+        "price": 1599,
+        "stock": 10,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#E3E4E5"
+      },
+      {
+        "color": "Silver",
+        "image": "/catalog/iphone-18-pro-max-finish-select-silver-202609.webp",
+        "price": 1849,
+        "stock": 10,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#E3E4E5"
+      },
+      {
+        "color": "Silver",
+        "image": "/catalog/iphone-18-pro-max-finish-select-silver-202609.webp",
+        "price": 2349,
+        "stock": 10,
+        "inStock": true,
+        "storage": "1TB",
+        "colorHex": "#E3E4E5"
+      },
+      {
+        "color": "Silver",
+        "image": "/catalog/iphone-18-pro-max-finish-select-silver-202609.webp",
+        "price": 3099,
+        "stock": 10,
+        "inStock": true,
+        "storage": "2TB",
+        "colorHex": "#E3E4E5"
+      },
+      {
+        "color": "Glacier",
+        "image": "/catalog/iphone-18-pro-max-finish-select-glacier-202609.webp",
+        "price": 1599,
+        "stock": 10,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#C9D9E3"
+      },
+      {
+        "color": "Glacier",
+        "image": "/catalog/iphone-18-pro-max-finish-select-glacier-202609.webp",
+        "price": 1849,
+        "stock": 10,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#C9D9E3"
+      },
+      {
+        "color": "Glacier",
+        "image": "/catalog/iphone-18-pro-max-finish-select-glacier-202609.webp",
+        "price": 2349,
+        "stock": 10,
+        "inStock": true,
+        "storage": "1TB",
+        "colorHex": "#C9D9E3"
+      },
+      {
+        "color": "Glacier",
+        "image": "/catalog/iphone-18-pro-max-finish-select-glacier-202609.webp",
+        "price": 3099,
+        "stock": 10,
+        "inStock": true,
+        "storage": "2TB",
+        "colorHex": "#C9D9E3"
+      },
+      {
+        "color": "Burgundy",
+        "image": "/catalog/iphone-18-pro-max-finish-select-burgundy-202609.webp",
+        "price": 1599,
+        "stock": 10,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#6B2333"
+      },
+      {
+        "color": "Burgundy",
+        "image": "/catalog/iphone-18-pro-max-finish-select-burgundy-202609.webp",
+        "price": 1849,
+        "stock": 10,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#6B2333"
+      },
+      {
+        "color": "Burgundy",
+        "image": "/catalog/iphone-18-pro-max-finish-select-burgundy-202609.webp",
+        "price": 2349,
+        "stock": 10,
+        "inStock": true,
+        "storage": "1TB",
+        "colorHex": "#6B2333"
+      },
+      {
+        "color": "Burgundy",
+        "image": "/catalog/iphone-18-pro-max-finish-select-burgundy-202609.webp",
+        "price": 3099,
+        "stock": 10,
+        "inStock": true,
+        "storage": "2TB",
+        "colorHex": "#6B2333"
+      }
+    ],
+    "created_at": "2026-09-18T12:01:00.000Z",
+    "updated_at": "2026-10-29T16:12:58.295Z"
+  },
+  {
+    "id": "iphone-air",
+    "name": "iPhone Air",
+    "subtitle": "The thinnest iPhone, at 165 grams.",
+    "image": "/catalog/iphone-air-finish-select-spaceblack-202509_GEO_EMEA.webp",
+    "badge": null,
+    "rating": 0,
+    "reviews": 0,
+    "specs": [
+      {
+        "label": "Display",
+        "value": "6.5\" Super Retina XDR, ProMotion 120Hz"
+      },
+      {
+        "label": "Chip",
+        "value": "A19 Pro"
+      },
+      {
+        "label": "Camera",
+        "value": "48MP Fusion (2x optical-quality)"
+      },
+      {
+        "label": "Front camera",
+        "value": "18MP Center Stage"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 27 hours video playback"
+      },
+      {
+        "label": "Weight",
+        "value": "165 g"
+      },
+      {
+        "label": "Build",
+        "value": "Titanium, Ceramic Shield front and back"
+      },
+      {
+        "label": "SIM",
+        "value": "eSIM only"
+      }
+    ],
+    "description": "A titanium iPhone that weighs just 165 g, with a 6.5-inch ProMotion display and the A19 Pro chip. It has a single 48MP Fusion camera with 2x optical-quality zoom, an 18MP Center Stage front camera and up to 27 hours of video playback. eSIM only.",
+    "category": "Pro",
+    "variants": [
+      {
+        "color": "Space Black",
+        "image": "/catalog/iphone-air-finish-select-spaceblack-202509_GEO_EMEA.webp",
+        "price": 1299,
+        "stock": 10,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#1F1F21"
+      },
+      {
+        "color": "Space Black",
+        "image": "/catalog/iphone-air-finish-select-spaceblack-202509_GEO_EMEA.webp",
+        "price": 1549,
+        "stock": 10,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#1F1F21"
+      },
+      {
+        "color": "Space Black",
+        "image": "/catalog/iphone-air-finish-select-spaceblack-202509_GEO_EMEA.webp",
+        "price": 2049,
+        "stock": 10,
+        "inStock": true,
+        "storage": "1TB",
+        "colorHex": "#1F1F21"
+      },
+      {
+        "color": "Cloud White",
+        "image": "/catalog/iphone-air-finish-select-cloudwhite-202509_GEO_EMEA.webp",
+        "price": 1299,
+        "stock": 10,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#F4F4F1"
+      },
+      {
+        "color": "Cloud White",
+        "image": "/catalog/iphone-air-finish-select-cloudwhite-202509_GEO_EMEA.webp",
+        "price": 1549,
+        "stock": 10,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#F4F4F1"
+      },
+      {
+        "color": "Cloud White",
+        "image": "/catalog/iphone-air-finish-select-cloudwhite-202509_GEO_EMEA.webp",
+        "price": 2049,
+        "stock": 10,
+        "inStock": true,
+        "storage": "1TB",
+        "colorHex": "#F4F4F1"
+      },
+      {
+        "color": "Light Gold",
+        "image": "/catalog/iphone-air-finish-select-lightgold-202509_GEO_EMEA.webp",
+        "price": 1299,
+        "stock": 10,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#EADDC6"
+      },
+      {
+        "color": "Light Gold",
+        "image": "/catalog/iphone-air-finish-select-lightgold-202509_GEO_EMEA.webp",
+        "price": 1549,
+        "stock": 10,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#EADDC6"
+      },
+      {
+        "color": "Light Gold",
+        "image": "/catalog/iphone-air-finish-select-lightgold-202509_GEO_EMEA.webp",
+        "price": 2049,
+        "stock": 10,
+        "inStock": true,
+        "storage": "1TB",
+        "colorHex": "#EADDC6"
+      },
+      {
+        "color": "Sky Blue",
+        "image": "/catalog/iphone-air-finish-select-skyblue-202509_GEO_EMEA.webp",
+        "price": 1299,
+        "stock": 22,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#CFE3EF"
+      },
+      {
+        "color": "Sky Blue",
+        "image": "/catalog/iphone-air-finish-select-skyblue-202509_GEO_EMEA.webp",
+        "price": 1549,
+        "stock": 10,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#CFE3EF"
+      },
+      {
+        "color": "Sky Blue",
+        "image": "/catalog/iphone-air-finish-select-skyblue-202509_GEO_EMEA.webp",
+        "price": 2049,
+        "stock": 10,
+        "inStock": true,
+        "storage": "1TB",
+        "colorHex": "#CFE3EF"
+      }
+    ],
+    "created_at": "2025-09-19T12:02:00.000Z",
+    "updated_at": "2026-10-29T16:12:58.746Z"
+  },
+  {
+    "id": "iphone-16",
+    "name": "iPhone 16",
+    "subtitle": "A18 and Camera Control.",
+    "image": "/catalog/iphone-16-finish-select-202409-6-1inch-ultramarine.webp",
+    "badge": null,
+    "rating": 0,
+    "reviews": 0,
+    "specs": [
+      {
+        "label": "Display",
+        "value": "6.1\" Super Retina XDR OLED"
+      },
+      {
+        "label": "Chip",
+        "value": "A18"
+      },
+      {
+        "label": "Camera",
+        "value": "48MP Fusion (2x optical-quality) + 12MP Ultra Wide"
+      },
+      {
+        "label": "Front camera",
+        "value": "12MP TrueDepth"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 22 hours video playback"
+      },
+      {
+        "label": "Weight",
+        "value": "170 g"
+      },
+      {
+        "label": "Build",
+        "value": "Aluminium, colour-infused glass back"
+      }
+    ],
+    "description": "A 6.1-inch iPhone with the A18 chip, Apple Intelligence, Camera Control and the Action button. A 48MP Fusion camera with 2x optical-quality zoom and a 12MP Ultra Wide, and up to 22 hours of video playback. Apple now sells it in 128GB.",
+    "category": "Standard",
+    "variants": [
+      {
+        "color": "Ultramarine",
+        "image": "/catalog/iphone-16-finish-select-202409-6-1inch-ultramarine.webp",
+        "price": 999,
+        "stock": 40,
+        "inStock": true,
+        "storage": "128GB",
+        "colorHex": "#748DFF"
+      },
+      {
+        "color": "Teal",
+        "image": "/catalog/iphone-16-finish-select-202409-6-1inch-teal.webp",
+        "price": 999,
+        "stock": 38,
+        "inStock": true,
+        "storage": "128GB",
+        "colorHex": "#B0D4D1"
+      },
+      {
+        "color": "Pink",
+        "image": "/catalog/iphone-16-finish-select-202409-6-1inch-pink.webp",
+        "price": 999,
+        "stock": 30,
+        "inStock": true,
+        "storage": "128GB",
+        "colorHex": "#F4C1D2"
+      },
+      {
+        "color": "White",
+        "image": "/catalog/iphone-16-finish-select-202409-6-1inch-white.webp",
+        "price": 999,
+        "stock": 32,
+        "inStock": true,
+        "storage": "128GB",
+        "colorHex": "#F5F5F0"
+      },
+      {
+        "color": "Black",
+        "image": "/catalog/iphone-16-finish-select-202409-6-1inch-black.webp",
+        "price": 999,
+        "stock": 45,
+        "inStock": true,
+        "storage": "128GB",
+        "colorHex": "#3C3C3D"
+      }
+    ],
+    "created_at": "2024-09-20T12:01:00.000Z",
+    "updated_at": "2026-10-29T16:12:59.023Z"
+  },
+  {
+    "id": "iphone-15",
+    "name": "iPhone 15",
+    "subtitle": "Dynamic Island, 48MP and USB-C.",
+    "image": "/catalog/iphone-15-finish-select-202309-6-1inch-pink.webp",
+    "badge": null,
+    "rating": 0,
+    "reviews": 0,
+    "specs": [
+      {
+        "label": "Display",
+        "value": "6.1\" Super Retina XDR OLED"
+      },
+      {
+        "label": "Chip",
+        "value": "A16 Bionic"
+      },
+      {
+        "label": "Camera",
+        "value": "48MP Main + 12MP Ultra Wide"
+      },
+      {
+        "label": "Front camera",
+        "value": "12MP TrueDepth"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 20 hours video playback"
+      },
+      {
+        "label": "Weight",
+        "value": "171 g"
+      },
+      {
+        "label": "Build",
+        "value": "Aluminium, colour-infused glass back"
+      }
+    ],
+    "description": "A 6.1-inch iPhone with the Dynamic Island, a 48MP Main camera, USB-C and the A16 Bionic chip, in colour-infused glass. Up to 20 hours of video playback.",
+    "category": "Standard",
+    "variants": [
+      {
+        "color": "Pink",
+        "image": "/catalog/iphone-15-finish-select-202309-6-1inch-pink.webp",
+        "price": 699,
+        "stock": 25,
+        "inStock": true,
+        "storage": "128GB",
+        "colorHex": "#F4C1D2",
+        "originalPrice": 799
+      },
+      {
+        "color": "Pink",
+        "image": "/catalog/iphone-15-finish-select-202309-6-1inch-pink.webp",
+        "price": 799,
+        "stock": 20,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#F4C1D2",
+        "originalPrice": 899
+      },
+      {
+        "color": "Pink",
+        "image": "/catalog/iphone-15-finish-select-202309-6-1inch-pink.webp",
+        "price": 999,
+        "stock": 10,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#F4C1D2",
+        "originalPrice": 1099
+      },
+      {
+        "color": "Yellow",
+        "image": "/catalog/iphone-15-finish-select-202309-6-1inch-yellow.webp",
+        "price": 699,
+        "stock": 22,
+        "inStock": true,
+        "storage": "128GB",
+        "colorHex": "#F9E479",
+        "originalPrice": 799
+      },
+      {
+        "color": "Yellow",
+        "image": "/catalog/iphone-15-finish-select-202309-6-1inch-yellow.webp",
+        "price": 799,
+        "stock": 18,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#F9E479",
+        "originalPrice": 899
+      },
+      {
+        "color": "Yellow",
+        "image": "/catalog/iphone-15-finish-select-202309-6-1inch-yellow.webp",
+        "price": 999,
+        "stock": 8,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#F9E479",
+        "originalPrice": 1099
+      },
+      {
+        "color": "Green",
+        "image": "/catalog/iphone-15-finish-select-202309-6-1inch-green.webp",
+        "price": 699,
+        "stock": 20,
+        "inStock": true,
+        "storage": "128GB",
+        "colorHex": "#D1E6C8",
+        "originalPrice": 799
+      },
+      {
+        "color": "Green",
+        "image": "/catalog/iphone-15-finish-select-202309-6-1inch-green.webp",
+        "price": 799,
+        "stock": 15,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#D1E6C8",
+        "originalPrice": 899
+      },
+      {
+        "color": "Green",
+        "image": "/catalog/iphone-15-finish-select-202309-6-1inch-green.webp",
+        "price": 999,
+        "stock": 6,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#D1E6C8",
+        "originalPrice": 1099
+      },
+      {
+        "color": "Blue",
+        "image": "/catalog/iphone-15-finish-select-202309-6-1inch-blue.webp",
+        "price": 699,
+        "stock": 18,
+        "inStock": true,
+        "storage": "128GB",
+        "colorHex": "#7EB4D2",
+        "originalPrice": 799
+      },
+      {
+        "color": "Blue",
+        "image": "/catalog/iphone-15-finish-select-202309-6-1inch-blue.webp",
+        "price": 799,
+        "stock": 14,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#7EB4D2",
+        "originalPrice": 899
+      },
+      {
+        "color": "Blue",
+        "image": "/catalog/iphone-15-finish-select-202309-6-1inch-blue.webp",
+        "price": 999,
+        "stock": 5,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#7EB4D2",
+        "originalPrice": 1099
+      },
+      {
+        "color": "Black",
+        "image": "/catalog/iphone-15-finish-select-202309-6-1inch-black.webp",
+        "price": 699,
+        "stock": 30,
+        "inStock": true,
+        "storage": "128GB",
+        "colorHex": "#3C3C3D",
+        "originalPrice": 799
+      },
+      {
+        "color": "Black",
+        "image": "/catalog/iphone-15-finish-select-202309-6-1inch-black.webp",
+        "price": 799,
+        "stock": 25,
+        "inStock": true,
+        "storage": "256GB",
+        "colorHex": "#3C3C3D",
+        "originalPrice": 899
+      },
+      {
+        "color": "Black",
+        "image": "/catalog/iphone-15-finish-select-202309-6-1inch-black.webp",
+        "price": 999,
+        "stock": 12,
+        "inStock": true,
+        "storage": "512GB",
+        "colorHex": "#3C3C3D",
+        "originalPrice": 1099
+      }
+    ],
+    "created_at": "2023-09-22T12:00:00.000Z",
+    "updated_at": "2026-10-29T16:13:00.462Z"
+  }
+]

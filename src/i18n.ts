@@ -10,12 +10,8 @@ export function getMessages(locale: Locale) {
   return messages[locale];
 }
 
-export function getLocaleFromCookie(): Locale {
-  if (typeof document === "undefined") return "sq";
-  const match = document.cookie.match(/(?:^|; )locale=(\w+)/);
-  return match && locales.includes(match[1] as Locale)
-    ? (match[1] as Locale)
-    : "sq";
+export function resolveLocale(value: string | undefined): Locale {
+  return value && locales.includes(value as Locale) ? (value as Locale) : "sq";
 }
 
 export function setLocaleCookie(locale: Locale) {

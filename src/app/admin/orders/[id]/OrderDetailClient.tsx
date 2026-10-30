@@ -214,6 +214,14 @@ export default function OrderDetailClient({
                   <p className="text-gray-500 dark:text-gray-400">
                     {order.customer.email}
                   </p>
+                  {order.customer.phone && (
+                    <a
+                      href={`tel:${order.customer.phone.replace(/\s/g, "")}`}
+                      className="block font-medium text-gray-900 dark:text-white"
+                    >
+                      {order.customer.phone}
+                    </a>
+                  )}
                 </div>
               </div>
 
