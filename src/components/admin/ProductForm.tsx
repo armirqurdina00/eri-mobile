@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { createProductAction, updateProductAction } from "@/actions/products";
 import SpecEditor from "./SpecEditor";
+import Select from "./Select";
 import { Save, Loader2, ArrowLeft, Plus, Trash2, Upload } from "lucide-react";
 import Link from "next/link";
 import type { AdminProduct, ProductVariant } from "@/types/admin";
@@ -190,15 +191,17 @@ export default function ProductForm({ product, mode }: ProductFormProps) {
                   <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
                     Category
                   </label>
-                  <select
+                  <Select
                     name="category"
+                    label="Category"
                     defaultValue={product?.category || "Standard"}
-                    className="mt-1 w-full rounded-xl border border-gray-200 px-4 py-2.5 text-sm outline-none transition-colors focus:border-blue-500 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
-                  >
-                    <option value="Pro">Pro</option>
-                    <option value="Standard">Standard</option>
-                    <option value="Accessories">Accessories</option>
-                  </select>
+                    className="mt-1"
+                    options={[
+                      { value: "Pro", label: "Pro" },
+                      { value: "Standard", label: "Standard" },
+                      { value: "Accessories", label: "Accessories" },
+                    ]}
+                  />
                 </div>
               </div>
 
@@ -253,15 +256,17 @@ export default function ProductForm({ product, mode }: ProductFormProps) {
                 <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
                   Badge
                 </label>
-                <select
+                <Select
                   name="badge"
+                  label="Badge"
                   defaultValue={product?.badge || ""}
-                  className="mt-1 w-full rounded-xl border border-gray-200 px-4 py-2.5 text-sm outline-none transition-colors focus:border-blue-500 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
-                >
-                  <option value="">None</option>
-                  <option value="New">New</option>
-                  <option value="Sale">Sale</option>
-                </select>
+                  className="mt-1"
+                  options={[
+                    { value: "", label: "None" },
+                    { value: "New", label: "New" },
+                    { value: "Sale", label: "Sale" },
+                  ]}
+                />
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
@@ -495,20 +500,19 @@ export default function ProductForm({ product, mode }: ProductFormProps) {
                       <label className="block text-xs font-medium text-gray-600 dark:text-gray-400">
                         In Stock
                       </label>
-                      <select
+                      <Select
+                        size="sm"
+                        label="In Stock"
                         value={v.inStock ? "true" : "false"}
-                        onChange={(e) =>
-                          updateVariant(
-                            i,
-                            "inStock",
-                            e.target.value === "true"
-                          )
+                        onChange={(value) =>
+                          updateVariant(i, "inStock", value === "true")
                         }
-                        className="mt-1 w-full rounded-lg border border-gray-200 px-3 py-2 text-xs outline-none focus:border-blue-500 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
-                      >
-                        <option value="true">Yes</option>
-                        <option value="false">No</option>
-                      </select>
+                        className="mt-1"
+                        options={[
+                          { value: "true", label: "Yes" },
+                          { value: "false", label: "No" },
+                        ]}
+                      />
                     </div>
                   </div>
                     </div>

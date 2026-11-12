@@ -3,6 +3,7 @@
 import { useState } from "react";
 import AdminSidebar from "@/components/admin/AdminSidebar";
 import AdminHeader from "@/components/admin/AdminHeader";
+import Select from "@/components/admin/Select";
 import { updateSettingsAction } from "@/actions/settings";
 import { changePasswordAction } from "@/actions/auth";
 import { Save, Loader2, Lock, Store, Check } from "lucide-react";
@@ -129,15 +130,17 @@ export default function SettingsClient({
                     <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
                       Currency
                     </label>
-                    <select
+                    <Select
                       name="currency"
+                      label="Currency"
                       defaultValue={settings.currency}
-                      className="mt-1 w-full rounded-xl border border-gray-200 px-4 py-2.5 text-sm outline-none focus:border-blue-500 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
-                    >
-                      <option value="EUR">EUR (€)</option>
-                      <option value="USD">USD ($)</option>
-                      <option value="GBP">GBP (£)</option>
-                    </select>
+                      className="mt-1"
+                      options={[
+                        { value: "EUR", label: "EUR (€)" },
+                        { value: "USD", label: "USD ($)" },
+                        { value: "GBP", label: "GBP (£)" },
+                      ]}
+                    />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
