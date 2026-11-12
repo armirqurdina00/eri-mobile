@@ -7,6 +7,7 @@ import type { Product } from "@/data/products";
 import { useLocale } from "@/components/LocaleProvider";
 import { finishesOf, formatPrice, minPrice, productHref, storagesOf } from "@/lib/catalog";
 import { MAX_COMPARE, useShop } from "./ShopProvider";
+import Dropdown from "./Dropdown";
 import Vitrine from "./Vitrine";
 
 export default function CompareView() {
@@ -85,21 +86,19 @@ export default function CompareView() {
               );
             })}
             {chosen.length < MAX_COMPARE && (
-              <label className="flex aspect-square flex-col items-center justify-center gap-3 rounded-[20px] border border-dashed border-edge p-3 text-center">
+              <div className="flex aspect-square flex-col items-center justify-center gap-3 rounded-[20px] border border-dashed border-edge p-3 text-center">
                 <span className="text-sm font-medium sm:text-[15px]">{t("add")}</span>
-                <select
-                  value=""
-                  onChange={(e) => e.target.value && toggleCompare(e.target.value)}
-                  className="w-full max-w-[200px] rounded-full border border-edge bg-panel px-3 py-2 text-sm"
-                >
-                  <option value="">—</option>
-                  {addable.map((p) => (
-                    <option key={p.id} value={p.id}>
-                      {p.name}
-                    </option>
-                  ))}
-                </select>
-              </label>
+                <Dropdown
+                  value={undefined}
+                  onChange={toggleCompare}
+                  label={t("add")}
+                  placeholder={t("choose")}
+                  align="right"
+                  className="w-full max-w-[200px]"
+                  buttonClassName="!h-10 !px-3 !text-sm"
+                  options={addable.map((p) => ({ value: p.id, label: p.name }))}
+                />
+              </div>
             )}
           </div>
 
